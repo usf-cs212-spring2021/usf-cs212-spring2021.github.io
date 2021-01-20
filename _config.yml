@@ -1,0 +1,48 @@
+
+title: 'CS 212 Software Development'
+subtitle: 'CS 212-01, CS 212-02 &bullet; Spring 2021'
+
+description: >-
+  This course gives students experience with advanced programming topics, including inheritance and polymorphism, multithreaded programming, networking, database programming, and web development. Students will also learn techniques for designing, debugging, refactoring, and reviewing code.
+
+timezone: 'America/Los_Angeles'
+
+name: 'Sophie Engle'
+email: 'sjengle@cs.usfca.edu'
+github_username:  'sjengle'
+
+include: ['favicon.ico']
+permalink: '/guides/:title:output_ext'
+
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: 'default'
+
+collections:
+  general:
+    title: 'General Guides'
+    output: true
+    permalink: /guides/:collection/:name:output_ext
+
+  eclipse:
+    title: 'Eclipse Guides'
+    output: true
+    permalink: /guides/:collection/:name:output_ext
+
+  # sql:
+  #   title: 'SQL Guides'
+  #   output: true
+  #   permalink: /guides/:collection/:name:output_ext
+
+  homework:
+    title: 'Homework Guides'
+    output: true
+    permalink: /guides/:collection/:name:output_ext
+
+  projects:
+    title: 'Project Guides'
+    output: true
+    permalink: /guides/:collection/:name:output_ext
