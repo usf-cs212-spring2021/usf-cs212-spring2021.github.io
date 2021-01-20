@@ -58,19 +58,15 @@ ul.icons > li > i {
 {% for week in site.data.schedule.weeks offset:beg_index limit:2 %}
 {% include week.html week = week %}
 {% endfor %}
+{% endcomment %}
 
 ## Weekly Overview
 
-Find the regular weekly schedule below. Note this may change due to holidays, additions, or cancellations. Always check the [Canvas]({{ side.data.info.links.canvas.link }}) calendar for the most recent schedule.
+Find the regular weekly schedule below. Always check the [Canvas]({{ side.data.info.links.canvas.link }}) calendar for the most recent deadlines.
 
-{::nomarkdown}
 <div class="has-text-centered">
-
-{% include overview.svg %}
-
+<iframe src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=Y3MudXNmY2EuZWR1XzNnaDZiMmkybDM0cnNoNm1iY29zOHFyYXBnQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y3MudXNmY2EuZWR1X200cGZ1Z2l2ZXM5ODI0c3ZtcWk5NHZ1Y2hrQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=YTk5dTFqamFoZjhpajRjMmJxbWZ0cmJuNXIwZXI3NG1AaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23B39DDB&amp;color=%230B8043&amp;color=%230B8043&amp;title=CS%20212%20Fall%202021&amp;mode=WEEK&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showNav=1&amp;showDate=1&amp;showTitle=0" style="border: none;" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
 </div>
-{:/}
-{% endcomment %}
 
 ## Navigation
 
