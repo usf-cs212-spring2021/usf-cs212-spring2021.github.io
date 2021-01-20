@@ -34,11 +34,11 @@ Open the downloaded file and follow the prompts to install.
 
 Most Zoom meetings and webinars will require you to sign in using your USF account. Using your USF account provides greater security and access to additional features.
 
-To sign in, click the "Sign in with SSO" button, enter usfca when prompted for a domain, and then click "Continue" to sign in using your USF account:
+To sign in, click the "Sign in with SSO" button, enter `usfca` when prompted for a domain, and then click "Continue" to sign in using your USF account:
 
-![Zoom SSO Signon](/images/zoomsignin.gif){: width="350" class="is-bordered" }
+![Zoom SSO Signon](/images/zoomsignin.gif){: width="400" class="is-bordered" }
 
-If you are having trouble logging in with your USF account, see the Student Quick Start Guide from ITS. There is also a "live chat" feature accessible on that page for additional assistance with your account.
+If you are having trouble logging in with your USF account, see the [Student Quick Start Guide](https://usf.service-now.com/kburl.do?article=KB13682) from ITS.
 
 <i class="fas fa-info-circle"></i>
 The acronym SSO stands for **single-sign on**, which is a process that allows you to use a single username and password for multiple different services, like MyUSF, Canvas, and Zoom.
@@ -90,7 +90,7 @@ For interaction with the instructor and other students, it will be important to 
 
       The instructor will see hands in the order they are raised. Some meetings might have other features (like responding "Yes") as well. Since your video might not always be visible to the instructor, this is usually the preferred method for getting the host's attention.
 
-      Note: This is different from [meeting reactions](https://support.zoom.us/hc/en-us/articles/360038311212-Meeting-reactions), which shows an emoji in the corner of your screen for a short time:
+      Note: This is different from [nonverbal reactions](https://support.zoom.us/hc/en-us/articles/115001286183-Non-verbal-feedback-and-reactions-), which shows an emoji in the corner of your screen for a short time:
 
       ![Zoom Reactions](/images/zoomreactions.png){: width="100" class="is-bordered" }
 
