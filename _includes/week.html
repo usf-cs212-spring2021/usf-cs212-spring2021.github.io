@@ -24,11 +24,16 @@
 
         {%- if section.items %}
         <ul class="icons">
-          {%- for item in section.items %}
-          <li class="{{ item. type }}">
-            {%- if item.zoom %}<i class="{{ site.data.schedule.icons_special.stream.class }}"></i>
-            {%- elsif item.icon %}<i class="{{ item.icon.class }}"></i>
-            {%- else %}<i class="{{ site.data.schedule.icons_special.pending.class }}"></i>{% endif %}
+          {%- for found in section.items %}
+          {%- if found.file %}
+          {% assign item = site.data[found.file][found.name] %}
+          {%- else %}
+          {% assign item = found %}
+          {%- endif %}
+          <li class="{{ item.type }}">
+            {%- if item.zoom %}<i class="{{ site.data.icons.stream.class }}"></i>
+            {%- elsif item.icon %}<i class="{{ site.data.icons[item.icon].class }}"></i>
+            {%- else %}<i class="{{ site.data.icons.pending.class }}"></i>{% endif %}
             {%- if item.show or section.dates == true and item.date %}
             {%- if item.date == day.date and item.show != true %}
             <strong>Due: </strong>
@@ -50,6 +55,7 @@
           {%- endfor %}
         </ul>
         {%- endif %}
+
         {%- endfor %}
       </div> <!-- end day -->
       {% endfor %}
