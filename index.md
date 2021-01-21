@@ -5,7 +5,6 @@ navbar: Home
 
 Welcome to <strong class="has-text-usf-green">CS {{ site.data.info.code }} {{ site.data.info.name }}</strong> for <strong class="has-text-usf-green">{{ site.data.info.term }}</strong>. {{ site.data.info.blurb }}
 
-{% comment %}
 ## Upcoming Schedule
 
 Here is the upcoming course schedule, which includes links to lecture material, assigned quizzes and homework, and more:
@@ -36,7 +35,7 @@ ul.icons > li > i {
 
 {%- assign today_date = 'now' | date: '%Y-%m-%d' -%}
 {%- assign today = today_date | date: '%s'| abs -%}
-{%- assign beg_date = '2020-01-25' | date: '%s' | abs -%}
+{%- assign beg_date = '2021-01-25' | date: '%s' | abs -%}
 {%- assign beg_index = 0 -%}
 
 {%- if today > beg_date -%}
@@ -58,7 +57,6 @@ ul.icons > li > i {
 {% for week in site.data.schedule.weeks offset:beg_index limit:2 %}
 {% include week.html week = week %}
 {% endfor %}
-{% endcomment %}
 
 ## Weekly Overview
 
