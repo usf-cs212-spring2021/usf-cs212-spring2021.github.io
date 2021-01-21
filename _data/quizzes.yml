@@ -1,0 +1,11 @@
+intros: &default
+  text: 'Course Syllabus'
+  date: 2020-01-26
+  link: 'https://usfca.instructure.com/courses/1597848/assignments/7044809'
+  icon: 'quiz'
+
+paths:
+  <<: *default
+  text: 'Paths and Files'
+  link: 'https://usfca.instructure.com/courses/1597848/assignments/7044811'
+  date: 2021-02-04
