@@ -1,0 +1,121 @@
+defaults:
+  lectures: &lectures
+    label: 'Livestream'
+    dates: false
+    items:
+      - text: 'CS 212-01 Lecture'
+        zoom: 'lecture1'
+
+      - text: 'CS 212-02 Lecture'
+        zoom: 'lecture2'
+
+  labs: &labs
+    label: 'Livestream'
+    dates: false
+    items:
+      - text: 'CS 212L-01 Lab'
+        zoom: 'lab1'
+
+      - text: 'CS 212L-02 Lab'
+        zoom: 'lab2'
+
+  recordings: &recordings
+    label: 'Recordings'
+    dates: false
+
+  assignments: &assignments
+    label: 'Assignments'
+    dates: true
+
+  deadlines: &deadlines
+    label: 'Dates and Deadlines'
+    dates: true
+
+weeks:
+  - week: 1
+    days:
+      - date: 2021-01-26
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Getting Started'
+                link: '/guides/general/getting-started.html'
+                icon: 'website'
+
+              - text: 'Syllabus'
+                link: '/syllabus.html'
+                icon: 'website'
+
+              - text: 'Course Introduction'
+                type: 'bump has-text-grey-light'
+
+          - <<: *assignments
+            items:
+              - file: 'participation'
+                name: 'intros'
+
+              - file: 'participation'
+                name: 'forum_setup'
+
+          - label: 'Dates and Deadlines'
+            dates: true
+            items:
+              - text: 'Classes Begin'
+                date: 2021-01-25
+                icon: 'date'
+
+      - date: 2021-01-28
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Paths and Files'
+                type: 'has-text-grey-light'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class1'
+
+      - date: 2021-01-29
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Setup'
+                type: 'has-text-grey-light'
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'argumentmap'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other1'
+
+  - week: 2
+  - week: 3
+  - week: 4
+  - week: 5
+  - week: 6
+  - week: 7
+  - week: 8
+  - week: 9
+  - week: 10
+  - week: 11
+  - week: 12
+  - week: 13
+  - week: 14
+  - week: 15
+  - week: 16
+  - text: 'Finals'
+
+rows:
+  - false # top row (usually lecture items)
+  - true  # bottom row (usually deadlines)
