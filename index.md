@@ -5,6 +5,8 @@ navbar: Home
 
 Welcome to <strong class="has-text-usf-green">CS {{ site.data.info.code }} {{ site.data.info.name }}</strong> for <strong class="has-text-usf-green">{{ site.data.info.term }}</strong>. {{ site.data.info.blurb }}
 
+[Course Syllabus](syllabus.html){: .button .is-primary } &nbsp; [Getting Started Guide](/guides/general/getting-started.html){: .button .is-primary }
+
 ## Upcoming Schedule
 
 Here is the upcoming course schedule, which includes links to lecture material, assigned quizzes and homework, and more:

@@ -35,6 +35,8 @@ Here are the Zoom links for office hours:
 | Andrew Cabezudo | Pending | Pending |
 {: class="table is-hoverable" style="width: auto;" }
 
+Office hours are first-come first-serve.
+
 ## Weekly Overview
 
 Below you can find the current weekly overview for this class. This may change week-to-week, but gives you an idea of what to expect for most of the semester.
