@@ -62,6 +62,9 @@ weeks:
               - file: 'participation'
                 name: 'forum_setup'
 
+              - file: 'quizzes'
+                name: 'syllabus'
+
           - label: 'Dates and Deadlines'
             dates: true
             items:
@@ -146,6 +149,9 @@ weeks:
 
               - file: 'participation'
                 name: 'forum_setup'
+
+              - file: 'quizzes'
+                name: 'syllabus'
 
       - date: 2021-02-04
         sections:

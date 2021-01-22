@@ -1,6 +1,6 @@
 intros: &default
   text: 'Introductions'
-  date: 2021-02-04
+  date: 2021-02-02
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7041369'
   icon: 'participation'
 
@@ -8,4 +8,4 @@ forum_setup:
   <<: *default
   text: 'Forum Setup'
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7040987'
-  date: 2021-02-04
+  date: 2021-02-02
