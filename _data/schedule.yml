@@ -50,7 +50,9 @@ weeks:
                 icon: 'website'
 
               - text: 'Course Introduction'
-                type: ['bump', *pending]
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vSp6CCFB6Lb4FnX6Go2WPc2bwL8kyCM4W1G08tItWyFL23hVbBP7Hrcgjr6EDLQx5yCjSq_WY9N8hPI/pub?start=false&loop=false&delayms=3000'
+                type: 'bump'
+                icon: 'slides'
 
           - <<: *assignments
             items:
