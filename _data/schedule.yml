@@ -1,4 +1,5 @@
 defaults:
+  pending: &pending 'has-text-grey-light'
   lectures: &lectures
     label: 'Livestream'
     dates: false
@@ -49,7 +50,7 @@ weeks:
                 icon: 'website'
 
               - text: 'Course Introduction'
-                type: 'bump has-text-grey-light'
+                type: ['bump', *pending]
 
           - <<: *assignments
             items:
@@ -65,6 +66,7 @@ weeks:
               - text: 'Classes Begin'
                 date: 2021-01-25
                 icon: 'date'
+                type: *pending
 
       - date: 2021-01-28
         sections:
@@ -72,8 +74,11 @@ weeks:
 
           - label: 'Lecture'
             items:
-              - text: 'Paths and Files'
-                type: 'has-text-grey-light'
+              - text: 'Project Euler'
+                type: *pending
+
+              - text: 'Exceptions'
+                type: *pending
 
           - <<: *deadlines
             items:
@@ -86,8 +91,11 @@ weeks:
 
           - label: 'Lab'
             items:
+              - text: 'Java and Eclipse Setup'
+                type: *pending
+
               - text: 'Homework Setup'
-                type: 'has-text-grey-light'
+                type: *pending
 
           - <<: *assignments
             items:
@@ -99,22 +107,993 @@ weeks:
               - file: 'attendance'
                 name: 'other1'
 
+              - text: 'Add Deadline'
+                date: '2021-02-05'
+                show: true
+                icon: 'date'
+                type: ['bump', *pending]
+
   - week: 2
+    days:
+      - date: 2021-02-02
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Paths and Files'
+                type: *pending
+
+              - text: 'Data Structures'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Paths and Files'
+                icon: 'quiz'
+                type: *pending
+
+              - text: 'Data Structures'
+                icon: 'quiz'
+                type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'participation'
+                name: 'intros'
+
+              - file: 'participation'
+                name: 'forum_setup'
+
+      - date: 2021-02-04
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Data Structures'
+                type: *pending
+
+              - text: 'Iteration and Search'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Using Maps'
+                icon: 'quiz'
+                type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class2'
+
+      - date: 2021-02-05
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Testing Homework'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'simplejsonwriter'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other2'
+
+              - file: 'homework'
+                name: 'argumentmap'
+
   - week: 3
+    days:
+      - date: 2021-02-09
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Object Oriented Programming'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Static vs Instance'
+                icon: 'quiz'
+                type: *pending
+
+          # - <<: *deadlines
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+      - date: 2021-02-11
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Object Oriented Programming'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Instance vs Identifier'
+                icon: 'quiz'
+                type: *pending
+
+              - text: 'Mutability, Part 1'
+                icon: 'quiz'
+                type: *pending
+
+              - text: 'Mutability, Part 2'
+                icon: 'quiz'
+                type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class3'
+
+      - date: 2021-02-12
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Project Setup'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'textfilestemmer'
+
+              - file: 'projects'
+                name: '1f'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other3'
+
+              - file: 'homework'
+                name: 'simplejsonwriter'
+
+              - text: 'Drop Deadline'
+                date: 2021-02-12
+                show: true
+                icon: 'date'
+                type: ['bump', *pending]
+
   - week: 4
+    days:
+      - date: 2021-02-16
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Inheritance'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Keywords'
+                icon: 'quiz'
+                type: *pending
+
+              - text: 'Casting'
+                icon: 'quiz'
+                type: *pending
+
+              - text: 'Collections Revisited'
+                icon: 'quiz'
+                type: *pending
+
+          # - <<: *deadlines
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+      - date: 2021-02-18
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Inheritance'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Nested Classes'
+                icon: 'quiz'
+                type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class4'
+
+      - date: 2021-02-19
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Testing Projects'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'textfileindex'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other4'
+
+              - file: 'homework'
+                name: 'textfilestemmer'
+
   - week: 5
+    days:
+      - date: 2021-02-23
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Lambda Expressions'
+                type: *pending
+
+              - text: 'Stream Pipelines'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Java Features'
+                icon: 'quiz'
+                type: *pending
+
+              - text: 'Lambda Expressions'
+                icon: 'quiz'
+                type: *pending
+
+          # - <<: *deadlines
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+      - date: 2021-02-25
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Lambda Expressions'
+                type: *pending
+
+              - text: 'Stream Pipelines'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Stream Pipelines'
+                icon: 'quiz'
+                type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class5'
+
+      - date: 2021-02-26
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'textfilefinder'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other5'
+
+              - file: 'homework'
+                name: 'textfileindex'
+
   - week: 6
+    days:
+      - date: 2021-03-02
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Logging and Debugging'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Logging'
+                icon: 'quiz'
+                type: *pending
+
+              - text: 'Assertions'
+                icon: 'quiz'
+                type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'projects'
+                name: '1f'
+
+      - date: 2021-03-04
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Exam Review'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class6'
+
+      - date: 2021-03-05
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Help'
+                icon: 'homework'
+                type: 'bump'
+
+              - text: 'Project Help'
+                icon: 'project'
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'loggingsetup'
+
+              - file: 'projects'
+                name: '2f'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other6'
+
+              - file: 'homework'
+                name: 'textfilefinder'
+
   - week: 7
+    days:
+      - date: 2021-03-09
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Exam 1'
+                icon: 'exam'
+                type: ['has-text-weight-bold', 'has-text-danger']
+
+      - date: 2021-03-11
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Exam 1 Retake'
+                icon: 'exam'
+                type: ['has-text-weight-bold', 'has-text-danger']
+
+      - date: 2021-03-12
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'extra1'
+
+              - file: 'homework'
+                name: 'loggingsetup'
+
   - week: 8
+    days:
+      - date: 2021-03-16
+        sections:
+          - label: 'No Class'
+            items:
+              - text: 'Spring Break'
+                type: *pending
+                icon: 'spring'
+
+      - date: 2021-03-18
+        sections:
+          - label: 'No Class'
+            items:
+              - text: 'Spring Break'
+                type: *pending
+                icon: 'spring'
+
+      - date: 2021-03-19
+        sections:
+          - label: 'No Class'
+            items:
+              - text: 'Spring Break'
+                type: *pending
+                icon: 'spring'
+
   - week: 9
+    days:
+      - date: 2021-03-23
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Regular Expressions'
+                type: *pending
+
+          - <<: *assignments
+            items:
+              - text: 'Regex Basics'
+                icon: 'quiz'
+                type: *pending
+
+          # - <<: *deadlines
+          #   items:
+
+
+      - date: 2021-03-25
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Software Testing'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class9'
+
+      - date: 2021-03-26
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Help'
+                icon: 'homework'
+                type: 'bump'
+
+              - text: 'Project Help'
+                icon: 'project'
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'linkparser'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other9'
+
+              - file: 'projects'
+                name: '1d'
+
   - week: 10
+    days:
+      - date: 2021-03-30
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Multithreading Basics'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+          #
+          - <<: *deadlines
+            items:
+              - file: 'projects'
+                name: '2f'
+
+      - date: 2021-04-01
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Synchronization'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class10'
+
+              - text: 'Easter Break @ 4pm'
+                date: 2021-04-01
+                show: true
+                icon: 'easter'
+                type: [*pending, 'bump']
+
+      - date: 2021-04-02
+        sections:
+          - label: 'No Class'
+            items:
+              - text: 'Easter Break'
+                type: *pending
+                icon: 'easter'
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'readwritelock'
+
+              - file: 'projects'
+                name: '3f'
+
+          - <<: *deadlines
+            items:
+              - file: 'homework'
+                name: 'linkparser'
+
   - week: 11
+    days:
+      - date: 2021-04-06
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Multithreading Revisited'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+          #
+          # - <<: *deadlines
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+      - date: 2021-04-08
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Work Queues'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class11'
+
+      - date: 2021-04-09
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'primefinder'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other11'
+
+              - file: 'homework'
+                name: 'readwritelock'
+
+              - text: 'PROJECT CUTOFF'
+                link: '/syllabus.html#pass-requirements'
+                type: ['bump', 'has-text-weight-bold', 'has-text-danger']
+                date: 2021-04-09
+                icon: 'date'
+
+              - text: 'Withdraw Deadline'
+                date: 2021-04-12
+                icon: 'date'
+                type: 'has-text-danger'
+
   - week: 12
+    days:
+      - date: 2021-04-13
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Sockets'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+          - <<: *deadlines
+            items:
+              - text: 'Registration Begins'
+                date: 2021-04-13
+                show: true
+                icon: 'date'
+                type: *pending
+
+      - date: 2021-04-15
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Servlets'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class12'
+
+      - date: 2021-04-16
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Help'
+                icon: 'homework'
+                type: 'bump'
+
+              - text: 'Project Help'
+                icon: 'project'
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'htmlfetcher'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other12'
+
+              - file: 'homework'
+                name: 'primefinder'
+
+              - file: 'projects'
+                name: '2d'
+
   - week: 13
+    days:
+      - date: 2021-04-20
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Servlets'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'projects'
+                name: '3f'
+
+      - date: 2021-04-22
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Sessions'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class13'
+
+      - date: 2021-04-23
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'htmlcleaner'
+
+              - file: 'projects'
+                name: '4f'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other13'
+
+              - file: 'homework'
+                name: 'htmlfetcher'
+
   - week: 14
+    days:
+      - date: 2021-04-27
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'SQL Basics'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+          # - <<: *deadlines
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+      - date: 2021-04-29
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'SQL Demos'
+                type: *pending
+
+          # - <<: *assignments
+          #   items:
+          #     - text: 'Pending'
+          #       type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class14'
+
+      - date: 2021-04-30
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
+
+              - text: 'Exam Review'
+                icon: 'pending'
+                type: ['bump', *pending]
+
+          - <<: *assignments
+            items:
+              - file: 'homework'
+                name: 'headserver'
+
+              - file: 'projects'
+                name: '4d'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'other14'
+
+              - file: 'homework'
+                name: 'htmlcleaner'
+
   - week: 15
+    days:
+      - date: 2021-05-04
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Exam 2'
+                icon: 'exam'
+                type: ['has-text-weight-bold', 'has-text-danger']
+
+      - date: 2021-05-06
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Exam 2 Retake'
+                icon: 'exam'
+                type: ['has-text-weight-bold', 'has-text-danger']
+
+      - date: 2021-05-07
+        sections:
+          - <<: *labs
+
+          - label: 'Lab'
+            items:
+              - text: 'Homework Help'
+                icon: 'homework'
+
+              - text: 'Project Help'
+                icon: 'project'
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'extra2'
+
+              - file: 'homework'
+                name: 'headserver'
+
+              - file: 'projects'
+                name: '3d'
+
   - week: 16
+    days:
+      - date: 2021-05-11
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Java Database Connectivity'
+                type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'projects'
+                name: '4f'
+
+      - date: 2021-05-13
+        sections:
+          - <<: *lectures
+
+          - label: 'Lecture'
+            items:
+              - text: 'Search Engine Demo'
+                type: *pending
+
+              - text: "What's Next"
+                type: *pending
+
+          - <<: *deadlines
+            items:
+              - file: 'attendance'
+                name: 'class16'
+
+              - text: 'Classes End'
+                date: 2021-05-13
+                show: true
+                type: ['bump', *pending]
+                icon: 'date'
+
+      - date: ''
+        sections:
+          - label: 'End of Semester Deadlines'
+            items:
+              - text: 'End of Semester Survey'
+                type: *pending
+
+              - text: 'Forum Post'
+                type: *pending
+
+              - text: 'Forum Response'
+                type: *pending
+
   - text: 'Finals'
+    days:
+      - date: 'Finals'
+        sections:
+          - label: 'Mon 05/17 to Thu 05/20'
+            dates: false
+            items:
+              - text: 'Final Code Reviews'
+                icon: 'project'
+
+          - <<: *deadlines
+            dates: true
+            items:
+              - file: 'projects'
+                name: '4d'
 
 rows:
   - false # top row (usually lecture items)

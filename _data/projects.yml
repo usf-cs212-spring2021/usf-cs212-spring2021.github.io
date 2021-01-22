@@ -1,6 +1,6 @@
 1f: &default
   text: 'Project 1 Inverted Index'
-  link: '/guides/projects/project-1.html'
+  # link: '/guides/projects/project-1.html'
   date: 2021-03-02
   icon: 'project'
   type: 'has-text-usf-plum'
@@ -8,41 +8,41 @@
 1d:
   <<: *default
   text: 'Project 1 Code Review'
-  link: '/guides/projects/project-1.html'
+  # link: '/guides/projects/project-1.html'
   date: 2021-03-26
 
 2f:
   <<: *default
   text: 'Project 2 Partial Search'
-  link: '/guides/projects/project-2.html'
-  date: 2021-03-23
+  # link: '/guides/projects/project-2.html'
+  date: 2021-03-30
 
 2d:
   <<: *default
   text: 'Project 2 Code Review'
-  link: '/guides/projects/project-2.html'
+  # link: '/guides/projects/project-2.html'
   date: 2021-04-16
 
 3f:
   <<: *default
   text: 'Project 3 Multithreading'
-  link: '/guides/projects/project-3.html'
-  date: 2021-04-13
+  # link: '/guides/projects/project-3.html'
+  date: 2021-04-20
 
 3d:
   <<: *default
   text: 'Project 3 Code Review'
-  link: '/guides/projects/project-3.html'
+  # link: '/guides/projects/project-3.html'
   date: 2021-05-07
 
 4f:
   <<: *default
   text: 'Project 4 Web Crawler'
-  link: '/guides/projects/project-4.html'
-  date: 2021-05-04
+  # link: '/guides/projects/project-4.html'
+  date: 2021-05-11
 
 4d:
   <<: *default
   text: 'Project 4 Search Engine'
-  link: '/guides/projects/project-4.html'
-  date: 2021-05-20
+  # link: '/guides/projects/project-4.html'
+  date: 'Finals'

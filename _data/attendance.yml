@@ -62,6 +62,7 @@ other6:
 
 extra1:
   <<: *default_other
+  text: 'Attendance (Extra)'
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7040950'
   date: 2021-03-12
 
@@ -122,6 +123,7 @@ other14:
 
 extra2:
   <<: *default_other
+  text: 'Attendance (Extra)'
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7040951'
   date: 2021-05-07
 
@@ -129,8 +131,3 @@ class16:
   <<: *default_class
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7040742'
   date: 2021-05-13
-
-other16:
-  <<: *default_other
-  link: 'https://usfca.instructure.com/courses/1597848/assignments/7040924'
-  date: 2021-05-14

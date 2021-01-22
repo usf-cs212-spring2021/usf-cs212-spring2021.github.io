@@ -26,11 +26,11 @@
         <ul class="icons">
           {%- for found in section.items %}
           {%- if found.file %}
-          {% assign item = site.data[found.file][found.name] %}
+          {%- assign item = site.data[found.file][found.name] %}
           {%- else %}
-          {% assign item = found %}
+          {%- assign item = found %}
           {%- endif %}
-          <li class="{{ item.type }}">
+          <li class="{{ item.type | join: " " }} {{ found.type | join: " " }}">
             {%- if item.zoom %}<i class="{{ site.data.icons.stream.class }}"></i>
             {%- elsif item.icon %}<i class="{{ site.data.icons[item.icon].class }}"></i>
             {%- else %}<i class="{{ site.data.icons.pending.class }}"></i>{% endif %}

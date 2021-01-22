@@ -96,3 +96,11 @@ nothing:
 time:
   label: 'Time'
   class: 'far fa-alarm-clock'
+
+spring:
+  label: 'Spring Break'
+  class: 'far fa-flower-tulip'
+
+easter:
+  label: 'Easter Holiday'
+  class: 'far fa-rabbit'
