@@ -19,7 +19,7 @@ You first need to add the Github repository to Eclipse. Log into Github and open
 
       ![Screenshot]({{ "/images/github-clone-or-download.png" | relative_url }}){: style="width: calc(540px * 0.75);"}  
 
-  2. Switch to Eclipse and open the "Git Perspective"  [(Help)](https://help.eclipse.org/2020-06/topic/org.eclipse.platform.doc.user/tasks/tasks-9f.htm). Select "Window" &raquo; "Perspective" &raquo; "Open Perspective" &raquo; "Other" from the menu, and then "Git" on the dialog box.
+  2. Switch to Eclipse and open the "Git Perspective"  [(Help)](https://help.eclipse.org/2020-12/topic/org.eclipse.platform.doc.user/tasks/tasks-9f.htm). Select "Window" &raquo; "Perspective" &raquo; "Open Perspective" &raquo; "Other" from the menu, and then "Git" on the dialog box.
 
       ![Screenshot]({{ "/images/eclipse-other-perspectives.png" | relative_url }}){: style="width: calc(353px * 0.75);"}  
 
@@ -45,14 +45,14 @@ You first need to add the Github repository to Eclipse. Log into Github and open
 
       You can right-click the repository to access several `git` actions, including the "Pull" action which you will need to keep this local repository (on your system) synchronized with your remote repository (on Github).
 
-You only need to add this repository once, even if there are multiple Eclipse projects within that repository. For example, you only need to import the [lectures](https://github.com/usf-cs212-fall2020/lectures) repository once. However, since each homework assignment has its own repository, you will have to import each repository separately.
+You only need to add this repository once, even if there are multiple Eclipse projects within that repository. For example, you only need to import the [lectures](https://github.com/usf-cs212-spring2021/lectures) repository once. However, since each homework assignment has its own repository, you will have to import each repository separately.
 
 ## Import Projects into Eclipse
 
 Before you start, double-check that you have the latest version of the remote repository by performing a "Pull" action [(Help)](http://wiki.eclipse.org/EGit/User_Guide#Pulling_New_Changes_from_Upstream_Branch).
 
 <i class="fas fa-info-circle"></i>
-This is especially important if you are importing new projects from a repository you added earlier, like the [lectures](https://github.com/usf-cs212-fall2020/lectures) repository. If you forget to synchronize the repository, you will not see the new lecture code.
+This is especially important if you are importing new projects from a repository you added earlier, like the [lectures](https://github.com/usf-cs212-spring2021/lectures) repository. If you forget to synchronize the repository, you will not see the new lecture code.
 {: .notification }
 
 Now that the repository is added to Eclipse and up-to-date, you can import the Java projects from that repository into Eclipse using these steps:
@@ -83,7 +83,7 @@ To fix this, right-click your project folder and select "Build Path" and "Config
 
 Now, we have to re-add the necessary libraries. Click the "Add Library..." button and follow these steps:
 
-  - Select "JRE System Library" to re-add Java 14 (if necessary). I recommend you select "Workspace default JRE" unless the default is NOT Java 14.
+  - Select "JRE System Library" to re-add Java 15 (if necessary). I recommend you select "Workspace default JRE" unless the default is NOT Java 15.
 
   - Select "JUnit" to re-add JUnit 5 (if necessary). Make sure "JUnit 5" is selected in the dropdown, **not** JUnit 4.
 
@@ -99,6 +99,7 @@ It can also help to do these steps as well:
 
 If the Eclipse workspace becomes corrupted somehow, it is often easier to make sure your code is committed and pushed to Github, and then re-importing everything in a fresh workspace.
 
+<!--
 ## Video Walkthrough
 
 This video walkthrough will illustrate this entire process on a Mac OSX system. Alternatively, you can follow the steps in the sections below. This is an older video---some steps may not align perfectly.
@@ -108,3 +109,4 @@ This video walkthrough will illustrate this entire process on a Mac OSX system. 
   <br/>
   <small><a href="https://youtu.be/-ZnV6Z7KUwI"><i class="fab fa-youtube"></i> https://youtu.be/-ZnV6Z7KUwI</a></small>
 </div>
+-->
