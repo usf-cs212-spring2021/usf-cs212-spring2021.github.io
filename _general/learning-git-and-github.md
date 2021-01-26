@@ -21,6 +21,7 @@ You can see the [instructor's profile page](https://github.com/sjengle) for an e
 If you are unfamiliar with `git` and GitHub, I recommend watching this workshop put together by two CS 212 teacher assistants:
 
 - [Git 101 Workshop, Part 1](https://www.cs.usfca.edu/~tutoring/git_workshop_part_1.mp4)
+- [Git 101 Workshop, Part 2](https://www.cs.usfca.edu/~tutoring/git_workshop_part_2.mp4)
 
 Here are some other fantastic guides you can look at to learn more:
 

@@ -28,7 +28,7 @@ All grading and code reviews will be done from your `main` branch. Use a branch 
 In general, it is a good idea to always use branches for development and keep only stable, tested, production-ready code in the `main` branch.
 
 <i class="fas fa-info-circle"></i>
-Traditionally, the primary branch of a `git` repository was the `master` branch. There is a fantastic movement to move away from this and other troubling terminology prevalent in CS and tech. I recommend manually renaming your primary branch to `main` instead. Both `git` and Github support this renaming, but it is not yet the default.
+Traditionally, the primary branch of a `git` repository was the `master` branch. There is a fantastic movement to move away from this and other troubling terminology prevalent in CS and tech. Github now automatically uses `main` as the default, but you may find older repositories still using `master` as the primary branch.
 {: .notification }
 
 ## How Should You Branch?
