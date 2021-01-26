@@ -80,10 +80,12 @@ weeks:
           - label: 'Lecture'
             items:
               - text: 'Project Euler'
-                type: *pending
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/ProjectEuler'
 
               - text: 'Exceptions'
-                type: *pending
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/FilesExceptions'
 
           - <<: *deadlines
             items:
@@ -96,8 +98,13 @@ weeks:
 
           - label: 'Lab'
             items:
+              - text: 'Learning Git and Github'
+                icon: 'website'
+                link: '/guides/general/learning-git-and-github.html'
+
               - text: 'Java and Eclipse Setup'
-                type: *pending
+                icon: 'website'
+                link: '/guides/eclipse/java-and-eclipse-setup.html'
 
               - text: 'Homework Setup'
                 type: *pending
@@ -182,8 +189,13 @@ weeks:
 
           - label: 'Lab'
             items:
-              - text: 'Testing Homework'
-                type: *pending
+              - text: 'Configuring Eclipse'
+                link: '/guides/eclipse/configuring-eclipse.html'
+                icon: 'website'
+
+              - text: 'Comparing Files in Eclipse'
+                link: '/guides/eclipse/comparing-files.html'
+                icon: 'website'
 
           - <<: *assignments
             items:
@@ -254,6 +266,10 @@ weeks:
 
           - label: 'Lab'
             items:
+              - text: 'Using Branches'
+                icon: 'website'
+                link: '/guides/general/using-branches.html'
+
               - text: 'Project Setup'
                 type: *pending
 
