@@ -91,7 +91,12 @@ weeks:
                 icon: 'code'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/ProjectEuler'
 
-              - text: 'Exceptions'
+              - text: 'Exception Handling'
+                icon: 'slides'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vTF2m0Za8HCOfMzMYNNZEApWiJxnpr6sFvbQQ0F-MtfpnwYyTS5M5-oM6sbt3Q5manwDYf_4zP4S0og/pub?start=false&loop=false&delayms=3000'
+                type: 'bump'
+
+              - text: 'Files and Exceptions'
                 icon: 'code'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/FilesExceptions'
 
