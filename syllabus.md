@@ -174,7 +174,7 @@ The teacher assistant and teacher assistant office hours for this course will be
           <br/>
 
           <i class="fa-fw fas fa-tasks bump"></i>
-          Pending
+          Projects, Lab 1
         </div>
       </div>
       <!-- end nested columns -->
@@ -202,7 +202,7 @@ The teacher assistant and teacher assistant office hours for this course will be
           <br/>
 
           <i class="fa-fw fas fa-tasks bump"></i>
-          Pending
+          Homework, Attendance, Lab 1 and 2
         </div>
       </div>
       <!-- end nested columns -->
@@ -230,13 +230,15 @@ The teacher assistant and teacher assistant office hours for this course will be
           <br/>
 
           <i class="fa-fw fas fa-tasks bump"></i>
-          Pending
+          Participation, Lab 1
         </div>
       </div>
       <!-- end nested columns -->
     </div>
   </div>
 </div>
+
+All instructors and teacher assistants will hold office hours and assist with questions on CampusWire in addition to the tasks listed above.
 
 <i class="fas fa-envelope-open-text"></i>
 See the [Communication Policy](#communication-policy) for how to contact the instructor and TAs.
