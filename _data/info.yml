@@ -90,19 +90,26 @@ streams:
     link: 'https://usfca.zoom.us/j/89495508565'
     line: true
 
-  # tajose:
-  #   name: 'Office Hours (José)'
-  #   icon: 'far fa-user-clock'
-  #   info: 'teacher assistant office hours'
-  #   room: '945 2632 9030'
-  #   link: 'https://usfca.zoom.us/j/94526329030'
-  #
-  # talev:
-  #   name: 'Office Hours (Lev)'
-  #   icon: 'far fa-user-clock'
-  #   info: 'teacher assistant office hours'
-  #   room: '576 432 4618'
-  #   link: 'https://zoom.us/j/5764324618?pwd=UGlZRkxDQUxLR1I5cTFZenlMMUxxdz09'
+  tajose:
+    name: 'Office Hours (José)'
+    icon: 'far fa-user-clock'
+    info: 'teacher assistant office hours'
+    room: '816 2061 3863'
+    link: 'https://usfca.zoom.us/j/81620613863'
+
+  talev:
+    name: 'Office Hours (Lev)'
+    icon: 'far fa-user-clock'
+    info: 'teacher assistant office hours'
+    room: '827 194 1330'
+    link: 'https://usfca.zoom.us/j/8271941330'
+
+  tadrew:
+    name: 'Office Hours (Andrew)'
+    icon: 'far fa-user-clock'
+    info: 'teacher assistant office hours'
+    room: '654 262 4790'
+    link: 'https://usfca.zoom.us/j/6542624790'
 
 pages:
   - name: 'Schedule'

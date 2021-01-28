@@ -15,10 +15,10 @@ However, to make sure we are well-acquainted, **the entire first week will be co
 
 | Section | Date/Time | Zoom Meeting |
 |:--------|:----------|:-------------|
-| CS 212-01 Lecture | Tue/Thu, 12:45-2:30p | [{{ site.data.info.streams.lecture1.room }}]({{ site.data.info.streams.lecture1.link }}) |
-| CS 212-02 Lecture | Tue/Thu, 04:35-6:20p | [{{ site.data.info.streams.lecture2.room }}]({{ site.data.info.streams.lecture2.link }}) |
-| CS 212L-01 Lab    | Fri, 2:15-3:20p | [{{ site.data.info.streams.lab1.room }}]({{ site.data.info.streams.lab1.link }}) |
-| CS 212L-02 Lab    | Fri, 3:30-4:35p | [{{ site.data.info.streams.lab2.room }}]({{ site.data.info.streams.lab2.link }}) |
+| CS 212-01 Lecture | Tue/Thu 12:45-2:30p | [{{ site.data.info.streams.lecture1.room }}]({{ site.data.info.streams.lecture1.link }}) |
+| CS 212-02 Lecture | Tue/Thu 04:35-6:20p | [{{ site.data.info.streams.lecture2.room }}]({{ site.data.info.streams.lecture2.link }}) |
+| CS 212L-01 Lab    | Fri 2:15-3:20p | [{{ site.data.info.streams.lab1.room }}]({{ site.data.info.streams.lab1.link }}) |
+| CS 212L-02 Lab    | Fri 3:30-4:35p | [{{ site.data.info.streams.lab2.room }}]({{ site.data.info.streams.lab2.link }}) |
 {: class="table is-hoverable" style="width: auto;" }
 
 **Please attend the correct section.** If you are on a waitlist, attend the section you are waitlisted for.
@@ -30,9 +30,9 @@ Here are the Zoom links for office hours:
 | Person | Date/Time | Zoom Meeting |
 |:--------|:----------|:------------|
 | Sophie Engle | Mon/Thu 2:45-4:15p | [{{ site.data.info.streams.instructor.room }}]({{ site.data.info.streams.instructor.link }}) |
-| José Corella | Pending | Pending |
-| **Lev**in Weinstein | Pending | Pending |
-| Andrew Cabezudo | Pending | Pending |
+| José Corella | Mon/Wed 10–10:45a &amp; 5–5:45p | [{{ site.data.info.streams.tajose.room }}]({{ site.data.info.streams.tajose.link }}) |
+| **Lev**in Weinstein | Tue 2:45–4:15p, Wed 1:15–2:45p | [{{ site.data.info.streams.talev.room }}]({{ site.data.info.streams.talev.link }}) |
+| Andrew Cabezudo | Pending | [{{ site.data.info.streams.tadrew.room }}]({{ site.data.info.streams.tadrew.link }}) |
 {: class="table is-hoverable" style="width: auto;" }
 
 Office hours are first-come first-serve.

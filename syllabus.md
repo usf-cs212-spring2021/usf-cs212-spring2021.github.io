@@ -166,11 +166,15 @@ The teacher assistant and teacher assistant office hours for this course will be
         <div class="column">
           <strong>José Corella</strong><br/>
           <i class="fa-fw fas fa-calendar-alt "></i>
-          <span>Pending</span>
+          <span>Mon/Wed 10:00 – 10:45am</span>
+          <br/>
+
+          <i class="fa-fw fas fa-calendar-alt "></i>
+          <span>Mon/Wed 5:00 – 5:45pm</span>
           <br/>
 
           <i class="fa-fw fas fa-signal-stream "></i>
-          Zoom: TBD
+          Zoom: <a href="{{ site.data.info.streams.tajose.link }}">{{ site.data.info.streams.tajose.room }}</a>
           <br/>
 
           <i class="fa-fw fas fa-tasks bump"></i>
@@ -194,15 +198,19 @@ The teacher assistant and teacher assistant office hours for this course will be
         <div class="column">
           <strong>Lev</strong>in <strong>Weinstein</strong><br/>
           <i class="fa-fw fas fa-calendar-alt "></i>
-          <span>Pending</span>
+          <span>Tue 2:45 – 4:15pm</span>
+          <br/>
+
+          <i class="fa-fw fas fa-calendar-alt "></i>
+          <span>Wed 1:15 – 2:45pm</span>
           <br/>
 
           <i class="fa-fw fas fa-signal-stream "></i>
-          Zoom: TBD
+          Zoom: <a href="{{ site.data.info.streams.talev.link }}">{{ site.data.info.streams.talev.room }}</a>
           <br/>
 
           <i class="fa-fw fas fa-tasks bump"></i>
-          Homework, Attendance, Lab 1 and 2
+          Homework, Attendance, Labs
         </div>
       </div>
       <!-- end nested columns -->
@@ -226,7 +234,7 @@ The teacher assistant and teacher assistant office hours for this course will be
           <br/>
 
           <i class="fa-fw fas fa-signal-stream "></i>
-          Zoom: TBD
+          Zoom: <a href="{{ site.data.info.streams.tadrew.link }}">{{ site.data.info.streams.tadrew.room }}</a>
           <br/>
 
           <i class="fa-fw fas fa-tasks bump"></i>
