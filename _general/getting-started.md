@@ -32,7 +32,7 @@ Here are the Zoom links for office hours:
 | Sophie Engle | Mon/Thu 2:45-4:15p | [{{ site.data.info.streams.instructor.room }}]({{ site.data.info.streams.instructor.link }}) |
 | José Corella | Mon/Wed 10–10:45a &amp; 5–5:45p | [{{ site.data.info.streams.tajose.room }}]({{ site.data.info.streams.tajose.link }}) |
 | **Lev**in Weinstein | Tue 2:45–4:15p, Wed 1:15–2:45p | [{{ site.data.info.streams.talev.room }}]({{ site.data.info.streams.talev.link }}) |
-| Andrew Cabezudo | Pending | [{{ site.data.info.streams.tadrew.room }}]({{ site.data.info.streams.tadrew.link }}) |
+| Andrew Cabezudo | Mon 12–1:10p, Tue 11:50–12:40p | [{{ site.data.info.streams.tadrew.room }}]({{ site.data.info.streams.tadrew.link }}) |
 {: class="table is-hoverable" style="width: auto;" }
 
 Office hours are first-come first-serve.

@@ -230,7 +230,11 @@ The teacher assistant and teacher assistant office hours for this course will be
         <div class="column">
           <strong>Andrew Cabezudo</strong><br/>
           <i class="fa-fw fas fa-calendar-alt "></i>
-          <span>Pending</span>
+          <span>Mon 12:00 – 1:10pm</span>
+          <br/>
+
+          <i class="fa-fw fas fa-calendar-alt "></i>
+          <span>Tue 11:50 – 12:40pm</span>
           <br/>
 
           <i class="fa-fw fas fa-signal-stream "></i>
