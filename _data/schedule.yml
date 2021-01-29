@@ -141,6 +141,9 @@ weeks:
               - file: 'homework'
                 name: 'argumentmap'
 
+              - file: 'participation'
+                name: 'homework_setup'
+
           - <<: *deadlines
             items:
               - file: 'attendance'
@@ -236,6 +239,9 @@ weeks:
 
               - file: 'homework'
                 name: 'argumentmap'
+
+              - file: 'participation'
+                name: 'homework_setup'
 
   - week: 3
     days:
