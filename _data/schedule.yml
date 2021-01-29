@@ -132,9 +132,9 @@ weeks:
                 icon: 'website'
                 link: '/guides/homework/homework-setup.html'
 
-              - text: 'Homework Testing'
-                icon: 'website'
-                link: '/guides/homework/homework-testing.html'
+              # - text: 'Homework Testing'
+              #   icon: 'website'
+              #   link: '/guides/homework/homework-testing.html'
 
           - <<: *assignments
             items:
