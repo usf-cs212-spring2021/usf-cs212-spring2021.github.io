@@ -76,7 +76,7 @@ I recommend you create a `CS 212` or `cs212` folder, and within it create these 
 
   - `Repositories`: This will be the folder for your GitHub repositories that will be used for homework and project submission (and Eclipse).
 
-    You can configure Eclipse to always save your CS 212 code in this folder in the "Team » Git" settings:
+    You can configure Eclipse to always save your CS 212 code in this folder in the "Version Control (Team) » Git" settings:
 
     ![Git Settings]({{ "/images/config-team-git-default.png" | relative_url }}){: style="width: calc(1572px * 0.4);"}  
 
