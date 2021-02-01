@@ -159,12 +159,12 @@ weeks:
     days:
       - date: 2021-02-02
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content'
             items:
               - text: 'Paths and Files'
-                type: *pending
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/SXbeG7fZoLf0vWWG55QgqZO0ozlWGmp7y0c05YS1jiW7dUVwxN3kclZ4V3CpL9k5.hbUIO4xnJGxedMai'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vSWdQrf9ZxSaBP_6tpW-O7SGkiBPCxQIkefAFWPhUVFXNHOlOWlwGrTaB6KdwKH1QsSORDDRfgx-edG/pub?start=false&loop=false&delayms=3000">Slides</a>)'
 
               - text: 'Data Structures'
                 type: *pending
