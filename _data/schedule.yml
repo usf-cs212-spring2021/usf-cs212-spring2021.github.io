@@ -47,7 +47,7 @@ weeks:
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/3VxTVQYz2C7GR3IHGf444sS7duUsHS8T2Aj7WRA77r0sWNzzJS3Y7YT_YfmkclP8.8lM-YywzxV7cmrAg?startTime=1611706766000'
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Getting Started'
                 link: '/guides/general/getting-started.html'
@@ -93,7 +93,7 @@ weeks:
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/8Ncv07Vbt23GBbixLeQx4UN3LEkHDzepa9VO8p0eSzWYSqH2KdDuyvF4y5WC9FU1.EudkifwU3iunhRx-?startTime=1611880095000'
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Project Euler'
                 icon: 'code'
@@ -117,7 +117,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Learning Git and Github'
                 icon: 'website'
@@ -159,7 +159,7 @@ weeks:
     days:
       - date: 2021-02-02
         sections:
-          - label: 'Content'
+          - label: 'Content (Async)'
             items:
               - text: 'Paths and Files'
                 icon: 'video'
@@ -194,7 +194,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Data Structures'
                 type: *pending
@@ -217,7 +217,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Configuring Eclipse'
                 link: '/guides/eclipse/configuring-eclipse.html'
@@ -247,9 +247,7 @@ weeks:
     days:
       - date: 2021-02-09
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Object Oriented Programming'
                 type: *pending
@@ -269,7 +267,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Object Oriented Programming'
                 type: *pending
@@ -297,7 +295,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Using Branches'
                 icon: 'website'
@@ -332,9 +330,7 @@ weeks:
     days:
       - date: 2021-02-16
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Inheritance'
                 type: *pending
@@ -362,7 +358,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Inheritance'
                 type: *pending
@@ -382,7 +378,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Testing Projects'
                 type: *pending
@@ -404,9 +400,7 @@ weeks:
     days:
       - date: 2021-02-23
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Lambda Expressions'
                 type: *pending
@@ -433,7 +427,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Lambda Expressions'
                 type: *pending
@@ -456,7 +450,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -481,9 +475,7 @@ weeks:
     days:
       - date: 2021-03-02
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Logging and Debugging'
                 type: *pending
@@ -507,7 +499,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Exam Review'
                 type: *pending
@@ -525,7 +517,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -556,7 +548,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Exam 1'
                 icon: 'exam'
@@ -566,7 +558,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Exam 1 Retake'
                 icon: 'exam'
@@ -576,7 +568,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -622,9 +614,7 @@ weeks:
     days:
       - date: 2021-03-23
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Regular Expressions'
                 type: *pending
@@ -643,7 +633,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Software Testing'
                 type: *pending
@@ -662,7 +652,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -688,9 +678,7 @@ weeks:
     days:
       - date: 2021-03-30
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Multithreading Basics'
                 type: *pending
@@ -709,7 +697,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Synchronization'
                 type: *pending
@@ -755,9 +743,7 @@ weeks:
     days:
       - date: 2021-04-06
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Multithreading Revisited'
                 type: *pending
@@ -776,7 +762,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Work Queues'
                 type: *pending
@@ -795,7 +781,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -831,9 +817,7 @@ weeks:
     days:
       - date: 2021-04-13
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Sockets'
                 type: *pending
@@ -855,7 +839,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Servlets'
                 type: *pending
@@ -874,7 +858,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -903,9 +887,7 @@ weeks:
     days:
       - date: 2021-04-20
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Servlets'
                 type: *pending
@@ -924,7 +906,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Sessions'
                 type: *pending
@@ -943,7 +925,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -971,9 +953,7 @@ weeks:
     days:
       - date: 2021-04-27
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'SQL Basics'
                 type: *pending
@@ -992,7 +972,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'SQL Demos'
                 type: *pending
@@ -1011,7 +991,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -1045,7 +1025,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Exam 2'
                 icon: 'exam'
@@ -1055,7 +1035,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Exam 2 Retake'
                 icon: 'exam'
@@ -1065,7 +1045,7 @@ weeks:
         sections:
           - <<: *labs
 
-          - label: 'Lab'
+          - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
                 icon: 'homework'
@@ -1088,9 +1068,7 @@ weeks:
     days:
       - date: 2021-05-11
         sections:
-          - <<: *lectures
-
-          - label: 'Lecture'
+          - label: 'Content (Async)'
             items:
               - text: 'Java Database Connectivity'
                 type: *pending
@@ -1104,7 +1082,7 @@ weeks:
         sections:
           - <<: *lectures
 
-          - label: 'Lecture'
+          - label: 'Lecture (Sync)'
             items:
               - text: 'Search Engine Demo'
                 type: *pending
