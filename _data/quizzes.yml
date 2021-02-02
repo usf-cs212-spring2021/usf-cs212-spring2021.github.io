@@ -9,3 +9,9 @@ paths:
   text: 'Paths and Files'
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7044811'
   date: 2021-02-04
+
+data:
+  <<: *default
+  text: 'Data Structures'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375244'
+  date: 2021-02-04

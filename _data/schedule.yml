@@ -161,10 +161,15 @@ weeks:
         sections:
           - label: 'Content (Async)'
             items:
+              - text: 'Brief Introduction to Asynchronous Content'
+                link: 'https://usfca.zoom.us/rec/share/5gNYwUmk8MXqGmr_kvw4elDQtqddjnZOWGnXXLBv7KHbk9dQi5nLG69ppIvr00iq.KVRLoKd7QldGWjlI?startTime=1612216218000'
+                icon: 'video'
+
               - text: 'Paths and Files'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/SXbeG7fZoLf0vWWG55QgqZO0ozlWGmp7y0c05YS1jiW7dUVwxN3kclZ4V3CpL9k5.hbUIO4xnJGxedMai'
                 more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vSWdQrf9ZxSaBP_6tpW-O7SGkiBPCxQIkefAFWPhUVFXNHOlOWlwGrTaB6KdwKH1QsSORDDRfgx-edG/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+                type: 'bump'
 
               - text: 'DirectoryStreamDemo'
                 icon: 'video'
@@ -214,11 +219,11 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: 'Paths and Files'
-                icon: 'quiz'
+              - file: 'quizzes'
+                name: 'paths'
 
-              - text: 'Data Structures'
-                icon: 'quiz'
+              - file: 'quizzes'
+                name: 'data'
 
           - <<: *deadlines
             items:
@@ -254,13 +259,12 @@ weeks:
               - file: 'attendance'
                 name: 'class2'
 
-              - text: 'Paths and Files'
-                icon: 'quiz'
+              - file: 'quizzes'
+                name: 'paths'
                 type: 'bump'
 
-              - text: 'Data Structures'
-                icon: 'quiz'
-
+              - file: 'quizzes'
+                name: 'data'
 
       - date: 2021-02-05
         sections:
