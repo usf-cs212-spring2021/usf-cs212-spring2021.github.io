@@ -166,18 +166,59 @@ weeks:
                 link: 'https://usfca.zoom.us/rec/share/SXbeG7fZoLf0vWWG55QgqZO0ozlWGmp7y0c05YS1jiW7dUVwxN3kclZ4V3CpL9k5.hbUIO4xnJGxedMai'
                 more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vSWdQrf9ZxSaBP_6tpW-O7SGkiBPCxQIkefAFWPhUVFXNHOlOWlwGrTaB6KdwKH1QsSORDDRfgx-edG/pub?start=false&loop=false&delayms=3000">Slides</a>)'
 
+              - text: 'DirectoryStreamDemo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/kMShAxSdwOn7uWo0pN-0uK7mAmUYjtQX5iQZILlTHrN3ZDPd82PEkHuK8ZiBfukR.YhvYDvRiWVLx_JFT?startTime=1598299849000'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/FilesExceptions/src/main/java/DirectoryStreamDemo.java">Code</a>)'
+
               - text: 'Data Structures'
-                type: *pending
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/GLIzPn66lhC1UpWSCyAd26ZV5icAItj3zqHPcVrmu3ZlLwo35FiPkO7fsHLA0MUO.VZ4qvgGXmww8SMqw?startTime=1598294115000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vQs2p2cjvjlh88sDVybmjGmMfxAZtm2_ehImdMet6UkVzM1ORhtI0Eh_ZkOQCyf66kqfv1yy4bC1cvV/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+                type: 'bump'
+
+              - text: 'Collections Framework'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/3HUSQDQ-NG_DZ9IaI4ZhKhL5pgaMyaJbU00eGcTHkXFPaGxDV3LfMSwv2DZ5tXyk.50aRBX1YjmWELuon?startTime=1598295367000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vRWwVF2nFmbu86I1yCZHXoNTUBTjxcint85Hcholj8wT3LLLNYfUtazORgmTUaQpYUE8SGLslbXJq_h/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+              - text: 'CollectionDemo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/wQM_zCCJUOiAf3YvC9gxG0srmhgWG316EIAHuXfzoJQMl0fusSOQ_dJl4jzyIaYJ.kEZaKSVjbZxDqmfi?startTime=1598301359000'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/DataStructures/src/main/java/CollectionDemo.java">Code</a>)'
+
+              - text: 'MapDemo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/8VGeAmC_i6VSmSade95WZnf6vOV9RXyi784bjeJcj4CiPHkvsZwQGsqkvtjftDVZ.esAteUGNJ9zOFAvn?startTime=1598302552000'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/DataStructures/src/main/java/MapDemo.java">Code</a>)'
+
+          - label: 'Optional Content'
+            dates: ''
+            items:
+              - text: 'FilesExceptions'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/FilesExceptions'
+                icon: 'code'
+
+              - text: 'EliteFileConverter'
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/FilesExceptions/src/main/java/EliteFileConverter.java'
+
+              - text: 'PathDemo'
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/FilesExceptions/src/main/java/PathDemo.java'
+
+              - text: 'DataStructures'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/DataStructures'
+                icon: 'code'
+                type: 'bump'
 
           - <<: *assignments
             items:
               - text: 'Paths and Files'
                 icon: 'quiz'
-                type: *pending
 
               - text: 'Data Structures'
                 icon: 'quiz'
-                type: *pending
 
           - <<: *deadlines
             items:
@@ -212,6 +253,14 @@ weeks:
             items:
               - file: 'attendance'
                 name: 'class2'
+
+              - text: 'Paths and Files'
+                icon: 'quiz'
+                type: 'bump'
+
+              - text: 'Data Structures'
+                icon: 'quiz'
+
 
       - date: 2021-02-05
         sections:
