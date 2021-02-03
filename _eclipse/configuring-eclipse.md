@@ -29,11 +29,11 @@ You will be accessing your private repositories on Github from Eclipse frequentl
       2. Do **NOT** forget to complete the [Add the SSH Key to Github](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) step at the very end!
       {: style="list-style-type: lower-alpha;" }
 
-  3. Follow the Github [Testing Your SSH Connection](https://help.github.com/articles/testing-your-ssh-connection/) guide from a CS lab computer to make sure everything is setup properly.
+  3. Follow the Github [Testing Your SSH Connection](https://help.github.com/articles/testing-your-ssh-connection/) guide from your computer to make sure everything is setup properly.
 
 At this point, you should be able to clone, fetch, and push to your repositories from Eclipse without having to enter a password each time.
 
-*Sometimes*, Eclipse does not know where your SSH keys are located. If you are running into issues, reach out to us on Piazza or office hours. We will help you with the setup.
+*Sometimes*, Eclipse does not know where your SSH keys are located. If you are running into issues, reach out to us on CampusWire or office hours. We will help you with the setup.
 
 ## Compiler Configuration
 
