@@ -243,16 +243,13 @@ weeks:
           - label: 'Lecture (Sync)'
             items:
               - text: 'Data Structures'
-                type: *pending
-
-              - text: 'Iteration and Search'
-                type: *pending
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/DataStructures'
 
           - <<: *assignments
             items:
-              - text: 'Using Maps'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'maps'
 
           - <<: *deadlines
             items:
@@ -343,6 +340,9 @@ weeks:
             items:
               - file: 'attendance'
                 name: 'class3'
+
+              - file: 'quizzes'
+                name: 'maps'
 
       - date: 2021-02-12
         sections:
