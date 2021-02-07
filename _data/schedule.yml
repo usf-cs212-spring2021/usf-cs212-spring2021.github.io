@@ -312,9 +312,12 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: 'Static vs Instance'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'static'
+
+              - file: 'quizzes'
+                name: 'identifier'
+
 
           # - <<: *deadlines
           #   items:
@@ -332,17 +335,11 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: 'Instance vs Identifier'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'mutable1'
 
-              - text: 'Mutability, Part 1'
-                icon: 'quiz'
-                type: *pending
-
-              - text: 'Mutability, Part 2'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'mutable2'
 
           - <<: *deadlines
             items:
@@ -351,6 +348,13 @@ weeks:
 
               - file: 'quizzes'
                 name: 'maps'
+
+              - file: 'quizzes'
+                name: 'static'
+                type: 'bump'
+
+              - file: 'quizzes'
+                name: 'identifier'
 
       - date: 2021-02-12
         sections:
@@ -434,6 +438,13 @@ weeks:
             items:
               - file: 'attendance'
                 name: 'class4'
+
+              - file: 'quizzes'
+                name: 'mutable1'
+
+              - file: 'quizzes'
+                name: 'mutable2'
+
 
       - date: 2021-02-19
         sections:

@@ -21,3 +21,27 @@ maps:
   text: 'Using Maps'
   link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375248'
   date: 2021-02-11
+
+static:
+  <<: *default
+  text: 'Static vs Instance'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375260'
+  date: 2021-02-11
+
+identifier:
+  <<: *default
+  text: 'Instance vs Identifier'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375262'
+  date: 2021-02-11
+
+mutable1:
+  <<: *default
+  text: 'Mutability, Part 1'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375246'
+  date: 2021-02-18
+
+mutable2:
+  <<: *default
+  text: 'Mutability, Part 2'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375266'
+  date: 2021-02-18
