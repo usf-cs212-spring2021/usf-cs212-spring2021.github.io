@@ -254,6 +254,32 @@ weeks:
                 icon: 'code'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/DataStructures'
 
+              - text: '– Nested Map Demo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/DataStructures/src/main/java/NestedMapDemo.java'
+                type: 'em'
+
+              - text: '– Iteration Demo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/DataStructures/src/main/java/IterationDemo.java'
+                type: 'em'
+
+              - text: '– Mutable Set Demo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/DataStructures/src/main/java/MutableSetDemo.java'
+                type: 'em'
+
+          - label: 'Additional Content'
+            dates: ''
+            items:
+              - text: 'Find Demo'
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/DataStructures/src/main/java/FindDemo.java'
+
+              - text: 'Remove Demo'
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/DataStructures/src/main/java/RemoveDemo.java'
+
           - <<: *assignments
             items:
               - file: 'quizzes'
@@ -315,23 +341,23 @@ weeks:
               - text: 'Widget Demo'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/4O00R1qJ06dv3vJamZJeAoL9x-W5jczBUWkLC4vkEsLDsQ5-xQthNuJIMKhRbV41.AZ6aD1hr9P2ZJpkc?startTime=1598985941000'
-                more: '(<a href="">Code</a>)'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/Widget.java">Code 1</a>, <a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/WidgetDemo.java">Code 2</a>)'
                 type: 'bump'
 
               - text: 'Static Demo'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/mXJTDPgo5cpw63TPx140bahKSxjyxu7jVhcnx3Y6Qc3pvEa0ETpY6jviASd_swiP.VLJxxt-O1qmuG76r?startTime=1598909165000'
-                more: '(<a href="">Code</a>)'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/StaticDemo.java">Code</a>)'
 
               - text: 'Object Demo'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/aFXNuwMeL1saDeQyamNjHIapzvqnU3cu-qVGmYnjglXz9n2c6wpoBlvHlA4GxoTJ.TWxcEe6f3FkF6yep?startTime=1598910529000'
-                more: '(<a href="">Code</a>)'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/ObjectDemo.java">Code</a>)'
 
               - text: 'String Demo'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/eAnO46Fj8uacYFxeVF1JQscPONRAPzSNGhEv_fS61zX_t3akzyKwv-1dbQ2mIOCU.ui1a0x9r39jdEH3M?startTime=1598912610000'
-                more: '(<a href="">Code</a>)'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/StringDemo.java">Code</a>)'
 
           - <<: *assignments
             items:
