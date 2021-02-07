@@ -171,7 +171,7 @@ weeks:
                 more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vSWdQrf9ZxSaBP_6tpW-O7SGkiBPCxQIkefAFWPhUVFXNHOlOWlwGrTaB6KdwKH1QsSORDDRfgx-edG/pub?start=false&loop=false&delayms=3000">Slides</a>)'
                 type: 'bump'
 
-              - text: 'DirectoryStreamDemo'
+              - text: 'DirectoryStream Demo'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/kMShAxSdwOn7uWo0pN-0uK7mAmUYjtQX5iQZILlTHrN3ZDPd82PEkHuK8ZiBfukR.YhvYDvRiWVLx_JFT?startTime=1598299849000'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/FilesExceptions/src/main/java/DirectoryStreamDemo.java">Code</a>)'
@@ -187,32 +187,32 @@ weeks:
                 link: 'https://usfca.zoom.us/rec/share/3HUSQDQ-NG_DZ9IaI4ZhKhL5pgaMyaJbU00eGcTHkXFPaGxDV3LfMSwv2DZ5tXyk.50aRBX1YjmWELuon?startTime=1598295367000'
                 more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vRWwVF2nFmbu86I1yCZHXoNTUBTjxcint85Hcholj8wT3LLLNYfUtazORgmTUaQpYUE8SGLslbXJq_h/pub?start=false&loop=false&delayms=3000">Slides</a>)'
 
-              - text: 'CollectionDemo'
+              - text: 'Collection Demo'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/wQM_zCCJUOiAf3YvC9gxG0srmhgWG316EIAHuXfzoJQMl0fusSOQ_dJl4jzyIaYJ.kEZaKSVjbZxDqmfi?startTime=1598301359000'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/DataStructures/src/main/java/CollectionDemo.java">Code</a>)'
 
-              - text: 'MapDemo'
+              - text: 'Map Demo'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/8VGeAmC_i6VSmSade95WZnf6vOV9RXyi784bjeJcj4CiPHkvsZwQGsqkvtjftDVZ.esAteUGNJ9zOFAvn?startTime=1598302552000'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/DataStructures/src/main/java/MapDemo.java">Code</a>)'
 
-          - label: 'Optional Content'
+          - label: 'Additional Content'
             dates: ''
             items:
-              - text: 'FilesExceptions'
+              - text: 'Files and Exceptions'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/FilesExceptions'
                 icon: 'code'
 
-              - text: 'EliteFileConverter'
+              - text: 'Elite File Converter'
                 icon: 'code'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/FilesExceptions/src/main/java/EliteFileConverter.java'
 
-              - text: 'PathDemo'
+              - text: 'Path Demo'
                 icon: 'code'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/FilesExceptions/src/main/java/PathDemo.java'
 
-              - text: 'DataStructures'
+              - text: 'Data Structures'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/DataStructures'
                 icon: 'code'
                 type: 'bump'
@@ -308,7 +308,30 @@ weeks:
           - label: 'Content (Async)'
             items:
               - text: 'Object Oriented Programming'
-                type: *pending
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/SfICRzh0yfEIvDENFwVirdU0Voycrko9Hx0ak_jWNxWoT5Vd_2ymX4wk4rE1v5Gh.8SGOZHnuv-1v2Ugn?startTime=1598903297000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vQFWPY3gNVJAaSfPOZP6r8PdEWHrn6R0epvciFRCakLPmpcdo2q-SF-Blfo4GxSc9DJDskZhk4-lvd-/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+              - text: 'Widget Demo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/4O00R1qJ06dv3vJamZJeAoL9x-W5jczBUWkLC4vkEsLDsQ5-xQthNuJIMKhRbV41.AZ6aD1hr9P2ZJpkc?startTime=1598985941000'
+                more: '(<a href="">Code</a>)'
+                type: 'bump'
+
+              - text: 'Static Demo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/mXJTDPgo5cpw63TPx140bahKSxjyxu7jVhcnx3Y6Qc3pvEa0ETpY6jviASd_swiP.VLJxxt-O1qmuG76r?startTime=1598909165000'
+                more: '(<a href="">Code</a>)'
+
+              - text: 'Object Demo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/aFXNuwMeL1saDeQyamNjHIapzvqnU3cu-qVGmYnjglXz9n2c6wpoBlvHlA4GxoTJ.TWxcEe6f3FkF6yep?startTime=1598910529000'
+                more: '(<a href="">Code</a>)'
+
+              - text: 'String Demo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/eAnO46Fj8uacYFxeVF1JQscPONRAPzSNGhEv_fS61zX_t3akzyKwv-1dbQ2mIOCU.ui1a0x9r39jdEH3M?startTime=1598912610000'
+                more: '(<a href="">Code</a>)'
 
           - <<: *assignments
             items:
@@ -318,12 +341,6 @@ weeks:
               - file: 'quizzes'
                 name: 'identifier'
 
-
-          # - <<: *deadlines
-          #   items:
-          #     - text: 'Pending'
-          #       type: *pending
-
       - date: 2021-02-11
         sections:
           - <<: *lectures
@@ -331,7 +348,25 @@ weeks:
           - label: 'Lecture (Sync)'
             items:
               - text: 'Object Oriented Programming'
-                type: *pending
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/ObjectOrientedProgramming'
+
+              - text: '– Hashcode Demo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/HashCodeDemo.java'
+                type: 'em'
+
+              - text: '– Prefix Map and Demo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/PrefixDemo.java'
+                type: 'em'
+
+          - label: 'Additional Content'
+            dates: ''
+            items:
+              - text: 'Mutability Demo'
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/ObjectOrientedProgramming/src/main/java/MutabilityDemo.java'
 
           - <<: *assignments
             items:
