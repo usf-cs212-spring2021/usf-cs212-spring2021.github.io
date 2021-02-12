@@ -7,10 +7,10 @@ bump: true
 
 assignments:
   - text: 'Project 1 Functionality'
-    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987885'
+    link: 'https://usfca.instructure.com/courses/1597848/assignments/7043801'
 
   - text: 'Project 1 Design'
-    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987886'
+    link: 'https://usfca.instructure.com/courses/1597848/assignments/7043802'
 
 ---
 
@@ -47,9 +47,9 @@ The core functionality of your project must satisfy the following requirements:
 
   - Process command-line arguments to determine the input to process and output to produce. See the [Input](#input) and [Output](#output) sections below for specifics.
 
-  - Create a custom **inverted index** data structure that stores a mapping from a word stem to the file path(s) the word was found, and the position(s) in that file the word is located. The positions should start at 1. *This will require nesting multiple built-in data structures.*
+  - Create a custom **inverted index** data structure that stores a mapping from a word stem to the location(s) the word was found, and the position(s) in that file the word is located. The positions should start at 1. *This will require nesting multiple built-in data structures.*
 
-  - If provided a directory as input, find all files within that directory and all subdirectories and parse each text file found. Any files that end in the `.text` or `.txt` extension (case insensitive) should be considered a text file. If provided a single file as input, only parse that individual file.
+  - If provided a directory as input, find all files within that directory and all subdirectories and parse each text file found. Any files that end in the `.text` or `.txt` extension (case insensitive) should be considered a text file. If provided a single file as input, only parse that individual file (regardless of its extension).
 
       - Use the `UTF-8` character encoding for all file processing, including reading and writing.
 
@@ -59,7 +59,7 @@ The core functionality of your project must satisfy the following requirements:
 
       - Use the regular expression `(?U)\\p{Space}+` to split text into words by whitespace.
 
-      - Use the [SnowballStemmer](https://opennlp.apache.org/docs/1.9.1/apidocs/opennlp-tools/opennlp/tools/stemmer/snowball/SnowballStemmer.html) English stemming algorithm in OpenNLP to stem words.
+      - Use the [SnowballStemmer](https://opennlp.apache.org/docs/1.9.3/apidocs/opennlp-tools/opennlp/tools/stemmer/snowball/SnowballStemmer.html) English stemming algorithm in OpenNLP to stem words.
 
   -  If the appropriate command-line arguments are provided, output the inverted index in pretty [JSON](https://en.wikipedia.org/wiki/JSON) format. See the [Output](#output) section below for specifics.
 
@@ -71,9 +71,9 @@ The functionality of your project will be evaluated with the `Project1Test.java`
 
 Your `main` method must be placed in a class named `Driver`. The `Driver` class should accept the following command-line arguments:
 
-  - `-path path` where the flag `-path` indicates the next argument is a path to either a single file or a directory. If the value is a file, open and process that file regardless of its extension. If the value is a directory, find and process all of the text files (with `.txt` and `.text` extensions) in that directory and its subdirectories.
+  - `-text path` where the flag `-text` indicates the next argument is a path to either a single file or a directory. If the value is a file, open and process that file regardless of its extension. If the value is a directory, find and process all of the text files (with `.txt` and `.text` extensions) in that directory and its subdirectories.
 
-  - `-index path` where the flag `-index` is an *optional* flag that indicates the next argument is the path to use for the inverted index output file. If the `path` argument is not provided, use `index.json` as the default output path. If the `-index` flag is not provided, <strong>do not produce an output file</strong>.
+  - `-index path` where the flag `-index` is an *optional* flag that indicates the next argument is the path to use for the inverted index output file. If the `path` argument is not provided, use `index.json` as the default output path. If the `-index` flag is provided, *always* generate output even if it is empty. If the `-index` flag is not provided, do not produce an output file.
 
 The command-line flag/value pairs may be provided in any order. Do not convert paths to absolute form when processing command-line input!
 
@@ -111,23 +111,23 @@ The project tests account for different path separators (forward slash <code>/</
 The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments. Consider the following example:
 
 ```
-java Driver -path "../../project-tests/SearchEngineTest/input/text/simple/hello.txt"
+java Driver -path "../../project-tests/input/text/simple/hello.txt"
             -index index-text-simple-hello.json
 ```
 
-The above arguments indicate that `Driver` should build an inverted index from the single `hello.txt` file in the `input/text/simple` subdirectory of the Project Test's directory, and output the inverted index as JSON to the `index-simple-hello.json` file in the current working directory.
+The above arguments indicate that `Driver` should build an inverted index from the single `hello.txt` file in the `input/text/simple` subdirectory of the `project-tests` directory, and output the inverted index as JSON to the `index-simple-hello.json` file in the current working directory.
 
 ```
-java Driver -path "../../project-tests/SearchEngineTest/input/text/simple/" -index
+java Driver -path "../../project-tests/input/text/simple/" -index
 ```
 
-The above arguments indicate that `Driver` should build an inverted index from all of the text files found in the `text/simple` subdirectory of the Project Test's directory, and output the inverted index as JSON to the default path `index.json` in the current working directory.
+The above arguments indicate that `Driver` should build an inverted index from all of the text files found in the `text/simple` subdirectory of the `project-tests` directory, and output the inverted index as JSON to the default path `index.json` in the current working directory.
 
 ```
-java Driver -path "../../project-tests/SearchEngineTest/input/text/simple/"
+java Driver -path "../../project-tests/input/text/simple/"
 ```
 
-The above arguments indicate that `Driver` should build an inverted index from all of the HTML files found in the `input/text/simple` subdirectory of the SearchEngineTest's directory, but it should **NOT** produce an output file. It must still build the inverted index however! (This will be useful in the future when we add the ability to search.)
+The above arguments indicate that `Driver` should build an inverted index from all of the HTML files found in the `input/text/simple` subdirectory of the `project-tests` directory, but it should **NOT** produce an output file. It must still build the inverted index however! (This will be useful in the future when we add the ability to search.)
 
 ## Hints
 

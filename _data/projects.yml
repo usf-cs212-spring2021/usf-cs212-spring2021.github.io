@@ -1,6 +1,6 @@
 1f: &default
   text: 'Project 1 Inverted Index'
-  # link: '/guides/projects/project-1.html'
+  link: '/guides/projects/project-1.html'
   date: 2021-03-02
   icon: 'project'
   type: 'has-text-usf-plum'
