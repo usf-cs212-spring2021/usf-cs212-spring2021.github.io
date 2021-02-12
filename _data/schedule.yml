@@ -431,20 +431,28 @@ weeks:
 
           - label: 'Lab (Sync)'
             items:
+              - text: 'Learning Git and Github'
+                icon: 'website'
+                link: '/guides/general/learning-git-and-github.html'
+
               - text: 'Using Branches'
                 icon: 'website'
                 link: '/guides/general/using-branches.html'
 
-              - text: 'Project Setup'
-                type: *pending
+              - text: 'Importing Eclipse Projects from Github'
+                icon: 'website'
+                link: '/guides/eclipse/importing-eclipse-projects-from-github.html'
 
           - <<: *assignments
             items:
+              - file: 'projects'
+                name: '1f'
+
               - file: 'homework'
                 name: 'textfilestemmer'
 
-              - file: 'projects'
-                name: '1f'
+              - file: 'participation'
+                name: 'lecture_setup'
 
           - <<: *deadlines
             items:
@@ -536,6 +544,9 @@ weeks:
 
               - file: 'homework'
                 name: 'textfilestemmer'
+
+              - file: 'participation'
+                name: 'lecture_setup'
 
   - week: 5
     days:
