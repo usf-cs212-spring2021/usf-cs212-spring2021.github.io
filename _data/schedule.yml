@@ -511,23 +511,14 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: 'Keywords'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'keywords'
 
-              - text: 'Collections Revisited'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'collections'
 
-              - text: 'Casting'
-                icon: 'quiz'
-                type: *pending
-
-
-          # - <<: *deadlines
-          #   items:
-          #     - text: 'Pending'
-          #       type: *pending
+              - file: 'quizzes'
+                name: 'casting'
 
       - date: 2021-02-18
         sections:
@@ -551,9 +542,20 @@ weeks:
 
               - file: 'quizzes'
                 name: 'mutable1'
+                type: 'bump'
 
               - file: 'quizzes'
                 name: 'mutable2'
+
+              - file: 'quizzes'
+                name: 'keywords'
+                type: 'bump'
+
+              - file: 'quizzes'
+                name: 'collections'
+
+              - file: 'quizzes'
+                name: 'casting'
 
 
       - date: 2021-02-19
