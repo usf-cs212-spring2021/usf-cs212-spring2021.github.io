@@ -475,7 +475,39 @@ weeks:
           - label: 'Content (Async)'
             items:
               - text: 'Inheritance'
-                type: *pending
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/NsGJXOVvBEYYsbR0HLYHszezcWYqoVniXUmQC1st12kdTvqtL3hEYDjAHIpv_jw.xgzfjbjJG38Q9_Lc?startTime=1599509001000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vTYiJ8wTkXaicJ0a3RPGoasPAM6yAV0GmnqC8kRdrPflSvB79WdEa4cNVtQo39GWdOeCsbsbQbpxjCt/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+              - text: 'Abstract and Interface'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/NVCxnNF3uOYrWs8tkv4kJoMfPREeoRf6gne8slB8fcJNfkqzx3PMspQKXAxu_DOW.yOZ5RrauxKokSpDA?startTime=1599523352000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vQALVukToW62U0vXiRQgJnSaQR_nRiqcNKxHAwVOMBvzuYgV0bro0FALz_zpzwQTEcjKuCCZ3UDLaES/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+              - text: 'Object Class'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/QDRB-Sbon98WRjrusYd46ACnN_yFnMcheJWBt-ljLAuRPFuWdvxiVMCDke5KyVHv.UHrS497g6ZSYW9DG?startTime=1599522091000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vTVIHdg3ejH9I-b2uH5chTRHwgyiik6VoJLsvfTyrXRygtEApvK1jludTR4VZkpiFcS7FynjW0FkLdI/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+              - text: 'Final Keyword'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/a7T7yCXkwffhMICA1XNjFGyNaM7G5ChDtVkMHWjk4dSol26FrdOzHI7a5jttLCBH.0TO88ptMzCkYEC0O?startTime=1599512661000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vT0D9_6t92qy5Pqp6G9xuQQbB4GVzF9L4YIL3ah3ZJdIKxE2p7zJuFT-5HEQ8QbMJl19PUzcTrqkyA-/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+              - text: 'Collections Revisited'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/8R8yaaGoOBpA8qS7Jd6SZ772QMxW8LUe_S-pQ5NYblwKXWjNvZc69uJoxNR8VhhJ.G4dg0jE6bU9syi2y?startTime=1599519792000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vTCxygSvRiZfhr7rEufgFJJvvYWsDnJwPpjhBEAOL3N95Q2-pHNa3b0T1nn_T2QR_eMG71o17Gr0SKb/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+              - text: 'Casting'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/j1_jc5wNwCNjcGd7An7TEXC2ytUi6SZtCfHT9lu6flAP96vUQ1-jmqIwKLXEdzWZ.e1sBdCXEp2d9DUL7?startTime=1599510921000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vSDvCtJkMlGyvw1VV2S1EwW6I_LijGp3EvT3gsJ3JWioOd99qMQ3uxfvsTN8x0wMdM8nliWHwjjw_pY/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+              - text: 'Generic Types'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/bAOZCF2-Cgcdo5j6tsOgYsN6PIrZ6zAYvswQhaxvU1FIgX2I2i2vYdKkvlrLKVGh.U55znxuEWXebl9vt?startTime=1600113358000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vTHPoBlnZm4iJeNDZO79VZza3GRP2aB8RilEWse9oUTRmZn1r671prC_BjuM2fLQGLlsZIzR-wYkCyT/pub?start=false&loop=false&delayms=3000">Slides</a>)'
 
           - <<: *assignments
             items:
@@ -483,13 +515,14 @@ weeks:
                 icon: 'quiz'
                 type: *pending
 
+              - text: 'Collections Revisited'
+                icon: 'quiz'
+                type: *pending
+
               - text: 'Casting'
                 icon: 'quiz'
                 type: *pending
 
-              - text: 'Collections Revisited'
-                icon: 'quiz'
-                type: *pending
 
           # - <<: *deadlines
           #   items:
