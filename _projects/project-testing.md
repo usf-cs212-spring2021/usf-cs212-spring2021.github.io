@@ -3,9 +3,17 @@ title: Project Testing
 navbar: Guides
 layout: guides
 key: 1.2
+bump: true
+
+tags:
+  - text: 'New'
+    type: 'is-primary'
 ---
 
-You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository to determine if your project is meeting the required functionality. The suite of tests for each project are given by the `Project#Test.java` files in the [src]({{ site.data.info.links.github.link }}/project-tests/tree/main/SearchEngineTest/src/test/java) subdirectory. For example, the tests for [Project 1](project-1.html) are provided by the [Project1Test.java]({{ site.data.info.links.github.link }}/project-tests/blob/main/SearchEngineTest/src/test/java/Project1Test.java) file.
+Pending
+
+{% comment %}
+You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository to determine if your project is meeting the required functionality. The suite of tests for each project are given by the `Project#Test.java` files in the [src]({{ site.data.info.links.github.link }}/project-tests/tree/main/src/test/java) subdirectory. For example, the tests for [Project 1](project-1.html) are provided by the [Project1Test.java]({{ site.data.info.links.github.link }}/project-tests/blob/main/src/test/java/Project1Test.java) file.
 
 Your code must pass these tests (using the [remote testing](#testing-remotely) procedure below) both to earn credit for the functionality portion of the project grade, and before every subsequent code review required after that point. For example, you will earn a grade for [Project 1 Functionality](project-1.html) for the first code release that passes the tests. However, to earn a grade for [Project 1 Design](project-1.html), your code will need to pass the tests again before every code review until you pass the design requirements.
 
@@ -17,25 +25,12 @@ The provided tests only examine the final output of your code---you are still re
 You should place your test code in your own project repository, not the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository. **You do not have access to commit and push to the test repository!**
 {: .notification }
 
-## Run Configurations
-
-It is possible to run `Driver.java` directly with your own command-line arguments using "[Run Configurations](http://help.eclipse.org/2020-06/topic/org.eclipse.jdt.doc.user/tasks/tasks-java-local-configuration.htm)" in Eclipse. This is useful for your own debugging, and testing out individual tests.
-
-The tricky part is getting the paths right, since the test files are not in the same project as your code. On a Mac or Linux system, assuming your project repository and the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository are in the same parent folder, you can add the following command-line arguments:
-
-```
--path "../../project-tests/SearchEngineTest/input/text/simple/hello.txt" -index hello.json
-```
-
-![Screenshot]({{ "/images/project-eclipse-run-configuration.png" | relative_url }}){: style="width: calc(1623px * 0.4);"}
-
-The quotation marks are required if there is a space in the path, otherwise they can be omitted. This should generate a file `hello.json` in the "SearchEngine" Eclipse project (in your repository, not the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository). Right-click and select "Refresh" if you do not see the file at first.
-
-On a Windows system, the path separators `/` should be `\` instead. The test code accounts for these differences, but the Eclipse compare view might not.
-
 ## Testing Locally
+{: .page-header }
 
-You should make sure you are passing the [JUnit 5](https://junit.org/junit5/) tests locally before testing your code remotely. I also recommend you run only one test at a time at first, then groups of tests, and then the entire suite of tests only after you know you are passing each group individually. You can do this by right-clicking a test name or test class, and selecting "Run As" &raquo; "JUnit Test" from the menu. You can also manually configure the run configuration as well:
+You should make sure you are passing the [JUnit 5](https://junit.org/junit5/) tests locally before testing your code remotely.
+
+I also recommend you run only one test at a time at first, then groups of tests, and then the entire suite of tests only after you know you are passing each group individually. See the "[Running Individual Tests](http://localhost:4000/guides/homework/homework-testing.html#running-individual-tests)" guide for details. You can also manually configure the run configuration as well:
 
 ![Screenshot]({{ "/images/project-eclipse-junit-run-configuration.png" | relative_url }}){: style="width: calc(1623px * 0.4);"}
 
@@ -51,7 +46,7 @@ Actual File:
 Expected File:
     expected/index-text/index-text-simple-hello.json
 Arguments:
-    -path input/text/simple/hello.txt -index actual/index-text-simple-hello.json
+    -text input/text/simple/hello.txt -index actual/index-text-simple-hello.json
 Message:
     Difference detected on line: 2.
 ```
@@ -68,13 +63,31 @@ Then, the `index-text-simple-hello.json` will (hopefully) show up in the `actual
 To save space, the tests automatically delete your output files if they match the expected output. Only output files for failing tests will be kept.
 {: .notification }
 
+
+### Run Configurations
+
+It is possible to run `Driver.java` directly with your own command-line arguments using "[Run Configurations](http://help.eclipse.org/2020-06/topic/org.eclipse.jdt.doc.user/tasks/tasks-java-local-configuration.htm)" in Eclipse. This is useful for your own debugging, and testing out individual tests.
+
+The tricky part is getting the paths right, since the test files are not in the same project as your code. On a Mac or Linux system, assuming your project repository and the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository are in the same parent folder, you can add the following command-line arguments:
+
+```
+-path "../../project-tests/SearchEngineTest/input/text/simple/hello.txt" -index hello.json
+```
+
+![Screenshot]({{ "/images/project-eclipse-run-configuration.png" | relative_url }}){: style="width: calc(1623px * 0.4);"}
+
+The quotation marks are required if there is a space in the path, otherwise they can be omitted. This should generate a file `hello.json` in the "SearchEngine" Eclipse project (in your repository, not the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository). Right-click and select "Refresh" if you do not see the file at first.
+
+On a Windows system, the path separators `/` should be `\` instead. The test code accounts for these differences, but the Eclipse compare view might not.
+
 ## Testing Remotely
+{: .page-header }
 
 You must test your code remotely before you can earn credit for the functionality of your project and before you can sign up for a code review appointment.
 
 This process begins by creating a release on Github. This will trigger the Github Action that verifies your project functionality.
 
-#### Creating Releases
+### Creating Releases
 
 Creating releases will familiarize you with [**versioning**](https://en.wikipedia.org/wiki/Software_versioning) your code. At this stage, your code will be considered [pre-release](https://en.wikipedia.org/wiki/Software_versioning#Pre-release_versions) versions until you pass the design requirements in code review.
 
@@ -98,7 +111,7 @@ Creating releases will familiarize you with [**versioning**](https://en.wikipedi
 
 Generally, you should not delete releases even if they are not passing tests.
 
-#### Verification Script
+### Verification Script
 
 Once you have created a release, the verification script on Github Actions will automatically trigger.
 
@@ -164,3 +177,4 @@ If the verification action fails with the message, "Your Github Action `verify.y
 The latest version will be included under the "Artifacts" section (see above). Download that file and place it in the `.github/workflows` folder of your repository. You might need to show hidden files on your system to see the `.github` folder.
 
 Push the changes to your repository. Once that is done, click the "Re-run jobs" button near the top right corner (see above). If this fails again, try creating a new release. This should trigger the Github Action to run again with the latest version.
+{% endcomment %}

@@ -8,6 +8,10 @@ blurb: |
   <p>Each project grade is split into two components: functionality (passing tests) and design (passing code review). This guide details both the process for getting credit for project functionality.</p>
 ---
 
+Pending
+
+{% comment %}
+
 This guide assumes you have already [setup your project](project-setup.html) and [tested your project](project-testing.html). This includes making a release of your project that passes the verification process on Github.
 
 ## Eligibility
@@ -103,3 +107,4 @@ Examples of extra credit opportunities include: creating unit tests for one of y
 Extra credit is not meant to be time consuming---especially given that many students that need it have already fallen behind in class.
 
 Extra credit must be pre-approved on Piazza before it will be awarded. To receive credit, make a private post to the "Instructors" group confirming you completed the extra credit with a link to the public post that has the approval.
+{% endcomment %}

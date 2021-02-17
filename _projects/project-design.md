@@ -8,6 +8,10 @@ blurb: |
   <p>Each project grade is split into two components: functionality (passing tests) and design (passing code review). This guide details the process for getting credit for project design.</p>
 ---
 
+Pending
+
+{% comment %}
+
 We use one-on-one code reviews with the instructor to evaluate your project design. We will be looking for the following when reviewing your code:
 
   - Your code should follow proper code style and naming conventions.
@@ -167,3 +171,4 @@ Abuse of the code review process may also result in deductions. For example, ign
 ### Other Considerations
 
 Hey, don't cheat. See the [Project Functionality](project-grading.html) guide if you are concerned about your progress and/or reach out on Piazza.
+{% endcomment %}
