@@ -3,11 +3,6 @@ layout: guides
 navbar: Guides
 title: Homework Testing
 key: 2
-
-tags:
-  - text: 'Updated'
-    type: 'is-primary'
-    
 ---
 
 Every homework comes with a `src` » `test` » `java` directory with JUnit 5 test code. You must pass all of these tests remotely to earn full credit.
