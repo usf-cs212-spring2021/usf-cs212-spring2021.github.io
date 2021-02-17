@@ -10,7 +10,13 @@ tags:
     type: 'is-primary'
 ---
 
-Pending
+You must verify your project is passing the functionality tests to earn the project functionality grade as well as before every code review required to earn your design grade. This guide walks through that testing process.
+
+This guide assumes you have already [setup your project](project-setup.html) in Eclipse.
+
+## Project Test Files
+
+You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository to determine if your project is meeting the required functionality. The suite of tests for each project are given by the `Project#Test.java` files in the [src]({{ site.data.info.links.github.link }}/project-tests/tree/main/src/test/java) subdirectory. For example, the tests for [Project 1](project-1.html) are provided by the [Project1Test.java]({{ site.data.info.links.github.link }}/project-tests/blob/main/src/test/java/Project1Test.java) file.
 
 ## Walkthrough Video
 
@@ -18,8 +24,42 @@ The following video 33 minute video gives an overview of projects, how to test p
 
 <https://usfca.zoom.us/rec/share/eDvBfWphlulSNRnkfA1SHbK3-PKVVJ7qfSrKgUVeF7LOFMYKUCDfu4eNymMxW94B.11aI6blR9502OY7Q?startTime=1613593866000>
 
+
+## Testing Locally
+{: .page-header }
+
+Pending
+
+### Running JUnit Tests
+
+Pending
+
+### Running Driver
+
+Pending
+
+### Running Maven
+
+Pending
+
+## Testing Remotely
+{: .page-header }
+
+Pending
+
+### Creating Releases
+
+Pending
+
+### Verification Action
+
+Pending
+
+### Debugging Failures
+
+Pending
+
 {% comment %}
-You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository to determine if your project is meeting the required functionality. The suite of tests for each project are given by the `Project#Test.java` files in the [src]({{ site.data.info.links.github.link }}/project-tests/tree/main/src/test/java) subdirectory. For example, the tests for [Project 1](project-1.html) are provided by the [Project1Test.java]({{ site.data.info.links.github.link }}/project-tests/blob/main/src/test/java/Project1Test.java) file.
 
 Your code must pass these tests (using the [remote testing](#testing-remotely) procedure below) both to earn credit for the functionality portion of the project grade, and before every subsequent code review required after that point. For example, you will earn a grade for [Project 1 Functionality](project-1.html) for the first code release that passes the tests. However, to earn a grade for [Project 1 Design](project-1.html), your code will need to pass the tests again before every code review until you pass the design requirements.
 
