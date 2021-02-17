@@ -4,6 +4,9 @@ navbar: Guides
 layout: guides
 key: 1.1
 
+tags:
+  - text: 'New'
+    type: 'is-primary'
 ---
 
 The project is broken into two separate Github repositories and Eclipse projects:
@@ -12,21 +15,21 @@ The project is broken into two separate Github repositories and Eclipse projects
 
   - **SearchEngineTest**: This is where the project tests files, and expected output files are located. Everyone shares the same read-only repository. It will start with the [Project 1](project-1.html) test files first and will be updated throughout the semester with new test files for the other projects.
 
+You will reuse these repositories for all of the projects.
+
 When we verify the functionality and review the design of your project, we will only checkout the **SearchEngine** repository each time. This helps avoid having to re-copy the large test files over and over again.
 
 ## Walkthrough Video
 
 You can find a walkthrough video of these steps here:
 
-<https://usfca.zoom.us/rec/share/u4qrR_ZMs2WmPkdykXZvmixtELiqJaXl1kbk9L3HV71vH-gHedRinkMKuwbsv_mc.cwakg9xrPcgSUC4b?startTime=1599623355000>
-
-Use the same password as the other recordings.
+  > Pending
 
 ## Create and Import Projects
 
-Below is a quick summary of the one-time setup needed for the project:
+Below is a quick summary of the **one-time setup** needed for the project:
 
-  1. Visit the [Project 1 Inverted Index](https://usfca.instructure.com/courses/1594619/assignments/6987885) assignment in Canvas and click the Github Classroom link. This will setup a private repository named `project-username` where `username` is your Github username. Unlike homework, you will use this repository the *entire* semester for all of the projects.
+  1. Visit the [Project 1 Inverted Index](https://usfca.instructure.com/courses/1597848/assignments/7043801) assignment in Canvas and click the Github Classroom link. This will setup a private repository named `project-username` where `username` is your Github username. Unlike homework, you will use this repository the *entire* semester for all of the projects.
 
   1. If needed, follow the [Configuring Eclipse](/guides/eclipse/configuring-eclipse.html) guide to setup your compiler and Javadoc settings.
 
@@ -42,7 +45,7 @@ After importing into Eclipse it should look like this:
 
 Important files or directories are highlighted in blue. Your view will not have this highlighting.
 
-Once setup, you do not need to go through these steps again.
+**Once setup, you do not need to go through these steps again.**
 
 ## Verify Setup
 
@@ -52,9 +55,9 @@ Once you have everything imported into Eclipse, try these steps to verify everyt
 
   1. Verify you can make, commit, and push changes to `Driver.java` in the "SearchEngine" project in Eclipse.
 
-  1. Create your first release. Enter `v1.0.0` as the tag version and leave the other fields unchanged. There is an [example release](https://github.com/usf-cs212-fall2020/project-template/releases/tag/v1.0.0) in the `project-template` repository.
+  1. Create your first release. Enter `v1.0.0` as the tag version and leave the other fields unchanged. There is an [example release](https://github.com/usf-cs212-spring2021/project-template/releases/tag/v1.0.0) in the `project-template` repository.
 
-  1. Go to the "Actions" tab and make sure the verification script ran for the `v1.0.0` release. There is an [example action](https://github.com/usf-cs212-fall2020/project-template/actions/runs/245586549) in the `project-template` repository. It *should* fail, since you don't have any code yet.
+  1. Go to the "Actions" tab and make sure the verification script ran for the `v1.0.0` release. There is an [example action](https://github.com/usf-cs212-spring2021/project-template/actions/runs/573987937) in the `project-template` repository. It *should* fail, since you don't have any code yet.
 
 If you are able to complete all of the above, you should be ready to start your project!
 
