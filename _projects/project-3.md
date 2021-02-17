@@ -4,14 +4,18 @@ navbar: Guides
 layout: guides
 key: 2.3
 
-assignments:
-  - text: 'Project 3 Functionality'
-    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987889'
-
-  - text: 'Project 3 Code Review'
-    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987890'
+#assignments:
+#  - text: 'Project 3 Functionality'
+#    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987889'
+#
+#  - text: 'Project 3 Code Review'
+#    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987890'
 
 ---
+
+Pending
+
+{% comment %}
 
 For this project, you will extend your [previous project](project-2.html) to support multithreading. In addition to meeting the previous project requirements, your code must make a thread-safe inverted index, and use a work queue to build and search an inverted index using multiple threads.
 
@@ -92,3 +96,4 @@ It is important to develop the project iteratively. One possible breakdown of ta
   - Lastly, do not start on this project until you understand the multithreading code shown in class. If you are stuck on the code shown in class, PLEASE SEEK HELP. You do not need to figure it out on your own! You can ask the CS tutors, the teacher assistant, or the instructor for help.
 
 The important part will be to test your code as you go. The JUnit tests provided only test the entire project as a whole, not the individual parts. You are responsible for testing the individual parts themselves.
+{% endcomment %}

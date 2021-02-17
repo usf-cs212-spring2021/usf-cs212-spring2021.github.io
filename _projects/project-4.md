@@ -3,20 +3,24 @@ title: Project 4 Final Project
 navbar: Guides
 layout: guides
 key: 2.4
-bump: true
+#bump: true
 
-tags:
-  - text: 'New'
-    type: 'is-primary'
-
-assignments:
-  - text: 'Project 4 Web Crawler'
-    link: 'project-4a.html'
-
-  - text: 'Project 4 Search Engine'
-    link: 'project-4b.html'
+#tags:
+#  - text: 'New'
+#    type: 'is-primary'
+#
+#assignments:
+#  - text: 'Project 4 Web Crawler'
+#    link: 'project-4a.html'
+#
+#  - text: 'Project 4 Search Engine'
+#    link: 'project-4b.html'
 
 ---
+
+Pending
+
+{% comment %}
 
 For this project, you will extend your [previous project](project-3.html) to create a fully functional search engine. This project is split into two main components: (1) a [multithreaded web crawler](project-4a.html) using a work queue to build the index from a seed URL, and (2) a [search engine web interface](project-4b.html) using [embedded Jetty](https://www.eclipse.org/jetty/) and servlets to search that index.
 
@@ -66,3 +70,4 @@ The search engine core and extra functionality will be graded in your final code
 <article class="message is-warning">
   <div class="message-body"><i class="far fa-exclamation-triangle"></i>&nbsp;Regardless of what you implemented, you will NOT earn points for the search engine core functionality if you are not passing all of the web crawler tests, and will NOT earn points for extra functionality if you have not fully implemented the core functionality!</div>
 </article>
+{% endcomment %}

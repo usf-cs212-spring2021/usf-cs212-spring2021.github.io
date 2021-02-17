@@ -4,15 +4,18 @@ navbar: Guides
 layout: guides
 key: 2.2
 
-assignments:
-  - text: 'Project 2 Functionality'
-    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987887'
-
-  - text: 'Project 2 Code Review'
-    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987888'
+#assignments:
+#  - text: 'Project 2 Functionality'
+#    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987887'
+#
+#  - text: 'Project 2 Code Review'
+#    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987888'
 
 ---
 
+Pending
+
+{% comment %}
 For this project, you will extend your [previous project](project-1.html) to support exact search and partial search. In addition to meeting the previous project requirements, your code must be able to track the total number of words found in each text file, parse and stem a query file, generate a sorted list of search results from the inverted index, and support writing those results to a JSON file.
 
 ## Functionality
@@ -242,3 +245,4 @@ The important part will be to test your code as you go. The JUnit tests provided
 <i class="fas fa-info-circle"></i>
 These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
 {: .notification }
+{% endcomment %}
