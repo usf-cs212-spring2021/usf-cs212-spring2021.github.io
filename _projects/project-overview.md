@@ -65,9 +65,9 @@ Instead, please see below.
 
 Each project is dependent on the previous project and design is dependent on functionality. However, there is room to work ahead while you are stuck in the code review process.
 
-You can be working on the functionality and design of two **consecutive** projects at once in **SEPARATE branches**. The project being code reviewed must be in the `main` branch. Consider this diagram:
+You can be working on the functionality and design of two **consecutive projects** at once in **SEPARATE branches**. The project being code reviewed must be in the `main` branch. Consider this diagram:
 
-
+![Screenshot]({{ "/images/project-progression.svg" | relative_url }}){: style="width: 50em;"}
 
 For example, suppose you have project 1 functionality complete. You can work on project 1 design in the `main` branch and project 2 functionality in a `project2` branch simultaneously. However, you cannot work on project 3 functionality until you have passed the design of project 1 and project 2 functionality.
 
