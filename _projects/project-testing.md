@@ -12,6 +12,12 @@ tags:
 
 Pending
 
+## Walkthrough Video
+
+The following video 33 minute video gives an overview of projects, how to test projects locally (starting at 13:53), testing projects remotely (starting at 24:33), and get your first functionality grade (starting at 29:38).
+
+<https://usfca.zoom.us/rec/share/eDvBfWphlulSNRnkfA1SHbK3-PKVVJ7qfSrKgUVeF7LOFMYKUCDfu4eNymMxW94B.11aI6blR9502OY7Q?startTime=1613593866000>
+
 {% comment %}
 You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository to determine if your project is meeting the required functionality. The suite of tests for each project are given by the `Project#Test.java` files in the [src]({{ site.data.info.links.github.link }}/project-tests/tree/main/src/test/java) subdirectory. For example, the tests for [Project 1](project-1.html) are provided by the [Project1Test.java]({{ site.data.info.links.github.link }}/project-tests/blob/main/src/test/java/Project1Test.java) file.
 
