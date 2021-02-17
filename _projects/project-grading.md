@@ -8,103 +8,56 @@ blurb: |
   <p>Each project grade is split into two components: functionality (passing tests) and design (passing code review). This guide details both the process for getting credit for project functionality.</p>
 ---
 
-Pending
-
-{% comment %}
-
 This guide assumes you have already [setup your project](project-setup.html) and [tested your project](project-testing.html). This includes making a release of your project that passes the verification process on Github.
 
 ## Eligibility
-{: .page-header }
 
-Before making a request, you should make sure you are eligible to have your functionality verified:
+Before making a request, make sure your project is eligible to earn the functionality grade:
 
-  - Do you have credit for the functionality of the previous project? You can check your grades on [Canvas]({{ site.data.info.links.canvas.link }}). If you are missing a grade you should already have, please reach out to us on [Piazza]({{ site.data.info.links.piazza.link }})
+  - **Do you have credit for the functionality of the previous project?** You can check your grades on [Canvas]({{ site.data.info.links.canvas.link }}). If you are missing a grade you should already have, please reach out to us on [CampusWire]({{ site.data.info.links.forums.link }})
 
       *For example, if you are on project 3, you must already have a non-zero functionality grade for project 2. If you are on project 1, you can skip this check.*
 
-  - Are you working only 1 project ahead?
+  - **Are you working only 1 project ahead?**
 
       *For example, if you are on project 3, you must already have completed project 1 (both functionality and design) and have a non-zero functionality grade for project 2. If you are on project 1 or 2, you can skip this check.*
 
-  - Do you have a release for this project that passed the verification action on Github? If not, see the [Creating Releases](project-testing.html#creating-releases) section of the testing guide.
+  - **Do you have a release for this project that passed the verification action on Github?** If not, see the [Creating Releases](project-testing.html#creating-releases) section of the testing guide.
 
 If you answered yes to all of the above, you can request to have your functionality grade updated.
 
 ## Requesting Grade
-{: .page-header }
 
-To request an update to your functionality grade, you must create a **project verification issue** on Github.
+**You only need to do this once per project.**
 
-  1. Click the "Issues" tab on Github and click the green "New issue" button.
+After verifying your project is eligible for the functionality grade, follow these steps:
 
-  1. Click the "Get started" button for the "Project Verification Issue" template:
+  1. Browse to your private project repository on Github and click the "Actions" tab.
 
-      ![Screenshot]({{ "/images/verification-issue.png" | relative_url }}){: style="width: 500px;"}
+  2. Click on the "Request Project Grade" action on the side.
 
-  1. Verify the issue is automatically assigned to `josecorella`. Jose is the teacher assistant that will process these issues.
+  3. Click the "Run workflow" button.
 
-  1. Verify the issue has the `verify` label automatically applied. We use this to tell the difference between (functionality) verification and code review requests.
+      a. Enter the project release, e.g. `v1.0.0`, that passed the tests.
 
-  1. Add the project label, either `project1`, `project2`, `project3`, or `project4`, in all lowercase with no spaces. These labels should already exist. We use these labels to track how long it takes to progress on specific projects.
+      b. Enter `f`, `fun`, or `functionality` to indicate you are requesting a functionality grade.
 
-  1. Add the issue to a project [milestone](https://guides.github.com/features/issues/#filtering), either `Project 1`, `Project 2`, `Project 3`, or `Project 4`, with proper capitalization and spacing. You will likely have to create this milestone.
+  4. Wait for the action to finish running. When it is complete, click the "Request Project Grade" link until you see the run details.
 
-  1. Fill in the `[FIELD_NAME]` fields in the issue title and body. Replace the `[` and `]` square bracket symbols. For example, `[FULL_NAME]` might be replaced with `Sophie Engle` instead.
+  5. If the run was successful, click the link to visit the issue that was created. If everything worked properly, the issue should be assigned to a teacher assistant, have the `functionality` and `project#` labels, and belong to the `Project #` milestone (where `#` is a project number). It should also have information about your project release and expected grade.
 
-  1. Check the boxes for the checklist at the bottom of the issue.
+  6. Follow the instructions on the issue. When done, click the "Reopen issue" button.
 
-Save and open the issue. For an example, see the [example issue](https://github.com/usf-cs212-fall2020/project-template/issues/1) in the `project-template` repository.
+  7. Wait 2 business days. If you have not heard a response by then, double check your issue is "Open" and reach out privately on [CampusWire]({{ site.data.info.links.forums.link }}) with a link to your issue asking for a status update.
 
-Within 10 minutes, the github-actions bot should add a comment to the issue. The bot will check for any issues with the issue title, assignees, labels, and milestone. If everything looks good, the bot will also attempt to verify whether the release passed the tests.
+When the issue is closed by the instructor or teacher assistant, verify your grade was updated on Canvas.
 
-If there are any issues, the github-actions bot will close the issue.
-If your issue gets closed by the bot, you must **make the required changes and re-open the issue ASAP** to continue. **You will not get credit for functionality until you do so.**
+*If the run was not successful, the log should state why. If you are unsure how to fix the problem, reach out privately on [CampusWire]({{ site.data.info.links.forums.link }}) with a link to your run asking for help.*
 
-If there are no issues, the issue will remain open for the teacher assistant. The teacher assistant will respond once your grade is updated on Canvas. If you haven't received a response in 48 hours, please post on Piazza.
+## Functionality Deadline
 
-If you do not receive a comment from the bot within 10 minutes, try closing and re-opening the issue. If that still doesn't work, please reach out to us on Piazza with a link to your issue.
+The functionality grade is based on the created date of your **first passing release** on Github. This is *not* when you first passed those tests locally or a commit that passed those tests.
 
-You only need to do this once per project.
-
-### Functionality Grade
-
-Your functionality grade will be based on the **date you created the issue** that passed verification. If the issue date is before the checkpoint deadline, you will earn 100% on the project functionality. If the issue date is after the checkpoint deadline, your grade will be deducted 10% (up to a maximum of 30%) per week.
+There is a **10% late penalty per week** that your project is late. For example, you will earn a 90% functionality grade if the first passing release is 1 day late. You will earn an 80% functionality grade if the first passing release is 8 days late.
 
 See the [Schedule](schedule.html) for the functionality deadlines.
-
-## Other Considerations
-{: .page-header }
-
-Concerned about your grade or falling behind?
-
-Regardless, **don't cheat**. I *often* catch it. It gets messy. There are consequences. You do NOT end up saving time, effort, reputation, or stress. You DO miss one of the few (if not only) one-on-one personalized learning experiences you'll ever get in college.
-
-Instead, please see below.
-
-### Working Ahead
-
-Worried about the deadline schedule and how slow code reviews progress?
-
-You *can* work ahead on the functionality of the next project after passing verification, just **not in the `main` branch** used for the current project and code reviews.
-
-If you want to work ahead, [create a separate branch](/guides/general/using-branches.html) for the next project. You can even create releases from that branch, allowing you to pass functionality for the next project while still undergoing code review for the current project.
-
-However, you have to be comfortable with branching and merging in `git` if you choose this route. It is very easy to cause merge conflicts that can be difficult to resolve.
-
-You **cannot** work more than one project ahead than the project currently under code review. Your efforts at that point are better spent on passing code review for the current project.
-
-<i class="fas fa-exclamation-triangle"></i>
-If your `main` branch includes functionality for the next project, you'll be asked to remove it and reschedule the code review. This could cost you a week, and undo your efforts to work ahead!
-{: .notification }
-
-### Extra Credit
-
-Worried about those project points you missed due to late submissions? You can request extra credit opportunities in a **public post** on Piazza. These opportunities will be specific to the project, can be completed at any time, and are open to all students that missed points on that project.
-
-Examples of extra credit opportunities include: creating unit tests for one of your classes, adding the ability to output compact JSON files, adding a new (but minor) feature, generating the actual Javadoc files for your project, and more.
-
-Extra credit is not meant to be time consuming---especially given that many students that need it have already fallen behind in class.
-
-Extra credit must be pre-approved on Piazza before it will be awarded. To receive credit, make a private post to the "Instructors" group confirming you completed the extra credit with a link to the public post that has the approval.
-{% endcomment %}
