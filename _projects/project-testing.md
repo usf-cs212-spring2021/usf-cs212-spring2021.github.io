@@ -40,16 +40,83 @@ Pending
 
 ### Running Maven
 
-Pending
+Most of the time, if you are passing the tests locally you will also pass them remotely. However, there are slight differences between how the tests are run by Eclipse and how they are run by Github Actions.
+
+If you want to test out the same approach used by Github Actions, you have to use Maven to run the tests instead of the JUnit interface in Eclipse.
+
+<details>
+<p><summary>View Details</summary></p>
+
+<div markdown=1>
+
+Here is a screenshot of the run configuration you must create:
+
+![Screenshot]({{ "/images/eclipse-maven-project-configuration.png" | relative_url }})
+
+Follow these steps to create this run configuration:
+
+1. Go to the "Run" menu in the menubar at the top of Eclipse and select "Run Configurations..." from the dropdown.
+
+1. Click on the "Maven Build" category in the left view pane and click the "New Configuration" button (looks like a blank file with a +).
+
+1. Enter any name you'd like in the "Name:" text box. Under the "Base directory:" text box, click the "Workspace" button and select the "SearchEngine" project.
+
+1. Enter the following into the "Goals:" text box:
+
+    ```
+    clean compile test-compile test
+    ```
+
+    The `clean` goal removes all previously-compiled class files. The `compile` goal compiles all of the main source code in the `main` directory and the `test-compile` goal compiles all of the test source code in the `test` directory of the `project-tests` repository. Finally, the `test` goal runs the JUnit tests found in the `test` directory.
+
+1. Next to the "Parameter Name" list, click the "Add..." button to add a parameter. Enter `test` for the "Name:" text box and `Project#Test*` for the "Value:" textbox, where `#` is the project number. For example, enter `Project1Test*` for Project 1. Click the "OK" button when done.
+
+1. [OPTIONAL] Click the "Add..." button to add another parameter. Enter `excludedGroups` and `none() | !verify` for the name and value. This tells Maven to run all tests except those without tags, or those that don't have the `verify` tag. Or, in other words, it only runs the tests tagged with `verify`, which finishes much faster than running all of the tests. *This can be skipped if you want to run all of the tests regardless.*
+
+1. Ignore the red `SLF4J:` output at the beginning. Look for output similar to:
+
+    ```
+    [INFO] Running Project1Test$A_OutputTest
+
+    Running: actual/index-text.json...
+    Elapsed: 3.085000 seconds
+    [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.336 s - in Project1Test$A_OutputTest
+    ```
+
+    Make sure you always see `Failures: 0`. Otherwise, scroll up in the console output to see which tests failed.
+
+</div>
+</details>
+
+<br/>
+These steps are really only required for fine-grained debugging and can be skipped most of the time.
 
 ## Testing Remotely
 {: .page-header }
 
-Pending
+You must test your code remotely before you can earn credit for the functionality of your project and before you can sign up for a code review appointment.
+
+This process begins by creating a release on Github. This will trigger the Github Action that verifies your project functionality.
 
 ### Creating Releases
 
-Pending
+Creating releases will familiarize you with [**versioning**](https://en.wikipedia.org/wiki/Software_versioning) your code.
+
+  1. After passing all of the tests locally and pushing your latest commits to Github, follow the [Creating Releases](https://help.github.com/articles/creating-releases/) steps to draft a new release of your project code on Github.
+
+  2. You must choose a "tag" or the version number you are going to assign to your code at this stage. Out in the "real world" you will likely use [semantic versioning](https://semver.org/), which we will roughly mimic in class.
+
+      Specifically, you must name your release `v#.#.#` where the first `#` is the project number (1, 2, 3, or 4), the second `#` is the number of code reviews you've had for that project, and the last `#` is the number of patches/fixes you released since the last code review for that project.
+
+      For example, your first release should be `v1.0.0` because it is for project 1, you have not had any code reviews yet, and you have not had any other releases yet. If your code does not pass the tests remotely, then you have to fix your code and re-release your project as `v1.0.1` since you now have 1 prior release. After your first code review, the next release will be `v1.1.0` (notice how the last number reset to 0).
+
+      The release `v2.3.4` means this release is for project 2, you have had 3 code reviews for project 2 so far, and this is the 4th release since your last code review of project 2. (It also means there must be a prior `v2.3.3` release made before this one.)
+
+  4. Click the "Publish release" button. You can leave the title and description blank.
+
+You can see a [sample release]({{ site.data.info.links.github.link }}/project-template/releases) on the template repository.
+
+**Generally, you should not delete releases even if they are not passing tests.**
 
 ### Verification Action
 
