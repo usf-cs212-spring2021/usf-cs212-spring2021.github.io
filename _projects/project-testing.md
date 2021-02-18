@@ -14,29 +14,94 @@ You must verify your project is passing the functionality tests to earn the proj
 
 This guide assumes you have already [setup your project](project-setup.html) in Eclipse.
 
-## Project Test Files
-
-You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository to determine if your project is meeting the required functionality. The suite of tests for each project are given by the `Project#Test.java` files in the [src]({{ site.data.info.links.github.link }}/project-tests/tree/main/src/test/java) subdirectory. For example, the tests for [Project 1](project-1.html) are provided by the [Project1Test.java]({{ site.data.info.links.github.link }}/project-tests/blob/main/src/test/java/Project1Test.java) file.
-
 ## Walkthrough Video
 
 The following video 33 minute video gives an overview of projects, how to test projects locally (starting at 13:53), testing projects remotely (starting at 24:33), and get your first functionality grade (starting at 29:38).
 
 <https://usfca.zoom.us/rec/share/eDvBfWphlulSNRnkfA1SHbK3-PKVVJ7qfSrKgUVeF7LOFMYKUCDfu4eNymMxW94B.11aI6blR9502OY7Q?startTime=1613593866000>
 
-
 ## Testing Locally
 {: .page-header }
 
-Pending
-
-### Running JUnit Tests
-
-Pending
+It is important to work and test the projects iteratively, as well as attempt to pass the tests locally before considering running the tests remotely.
 
 ### Running Driver
 
-Pending
+When you first start, very little template code is provided. The tests provided only test the final output of your project, unlike the homework which has tests for individual methods. It will likely take some time before running the JUnit tests will be helpful.
+
+Instead, you may want to start by running your `Driver` class directly using a Run Configuration and manually inspecting the output.
+
+<details>
+<p><summary>View Details</summary></p>
+
+<div markdown=1>
+
+  1. Go to the "Run" menu in the menubar at the top of Eclipse and select "Run Configurations..." from the dropdown.
+
+  1. Click on the "Java Application" category in the left view pane and click the "New Configuration" button (looks like a blank file with a +).
+
+  1. Enter any name you'd like in the "Name:" text box.
+
+  1. Next to the "Project:" text box, click the "Browse" button and select the "SearchEngine" project.
+
+  1. Next to the "Main class:" text box, click the "" button and select "Driver" from the list. At this point, your setup should look like this:
+
+      ![Screenshot]({{ "/images/eclipse-project-driver-run-main.png" | relative_url }}){: style="width: 600px;"}
+
+  1. Click on the "Arguments" tab. Enter the following into the "Program arguments" text area:
+
+      ```
+      -text input/text/simple/hello.txt -index actual/index-simple-hello.json
+      ```
+
+      ...or if you are on Windows:
+
+      ```
+      -text input\text\simple\hello.txt -index actual\index-simple-hello.json
+      ```
+
+      This will run `Driver` with the same arguments as the first project 1 test.
+
+  1. **This next part is really important!** Remember, all of the test files are in a SEPARATE repository. Change the "Working directory:" setting to the "Other:" choice.
+
+  1. Click the "Workspace..." button and select the "SearchEngineTests" project. At this point, your setup should look like this:
+
+      ![Screenshot]({{ "/images/eclipse-project-driver-run-arguments.png" | relative_url }}){: style="width: 600px;"}
+
+  1. Click the "Apply" and "Run" buttons.
+
+</div>
+</details>
+
+<br/>
+You can keep running this same "Run Configuration" while debugging. If you are failing a specific JUnit test, you can copy/paste the arguments used by the test (provided in the failure output) to debug your code.
+
+### Running JUnit Tests
+
+You must use the [JUnit 5](https://junit.org/junit5/) tests provided with the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository to determine if your project is meeting the required functionality. The suite of tests for each project are given by the `Project#Test.java` files in the [src]({{ site.data.info.links.github.link }}/project-tests/tree/main/src/test/java) subdirectory. For example, the tests for [Project 1](project-1.html) are provided by the [Project1Test.java]({{ site.data.info.links.github.link }}/project-tests/blob/main/src/test/java/Project1Test.java) file.
+
+While you are initially working on the project, **focus on individual tests** or individual groups of tests. There is no need to run all of the tests every time; in fact this can make debugging harder! See the [Homework Testing](/guides/homework/homework-testing.html#running-individual-tests) guide for different ways you can run individual JUnit tests. Here is an example run configuration:
+
+![Screenshot]({{ "/images/project-eclipse-junit-run-configuration.png" | relative_url }}){: style="width: 600px;"}
+
+**Pay attention to the test output.** The output tells you where to find the actual and expected output files and what caused the test to fail. It also tells you the arguments that were passed to your `Driver` class, which is helpful for debugging. The full output, which can be copied to the console for easy copying/pasting using the <img src="{{ "eclipse-copy-junit-output-to-console.png" | prepend: "/images/" | relative_url }}" style="height: 16px; vertical-align: middle;"> button, includes the following text:
+
+```
+Actual File:
+    actual/index-simple-hello.json
+Expected File:
+    expected/index/index-simple/index-simple-hello.json
+Arguments:
+    -text input/text/simple/hello.txt -index actual/index-simple-hello.json
+Message:
+    Difference detected on line: 2.
+```
+
+This gives the actual arguments passed to `Driver` by the test, the actual and expected files being compared, and where the first difference was detected. You can use the [Compare Editor](http://help.eclipse.org/2020-06/topic/org.eclipse.platform.doc.user/reference/ref-25.htm?cp=0_4_4_1_2) in Eclipse to compare the files side-by-side for debugging, or use the [Run Configurations](#run-configurations) in Eclipse to enter the same arguments manually.
+
+<i class="fas fa-exclamation-triangle"></i>
+To save space, the tests automatically delete your output files if they match the expected output. Only output files for failing tests will be kept.
+{: .notification }
 
 ### Running Maven
 
@@ -59,7 +124,9 @@ Follow these steps to create this run configuration:
 
 1. Click on the "Maven Build" category in the left view pane and click the "New Configuration" button (looks like a blank file with a +).
 
-1. Enter any name you'd like in the "Name:" text box. Under the "Base directory:" text box, click the "Workspace" button and select the "SearchEngine" project.
+1. Enter any name you'd like in the "Name:" text box.
+
+1. Under the "Base directory:" text box, click the "Workspace" button and select the "SearchEngine" project.
 
 1. Enter the following into the "Goals:" text box:
 
@@ -127,102 +194,6 @@ Pending
 Pending
 
 {% comment %}
-
-Your code must pass these tests (using the [remote testing](#testing-remotely) procedure below) both to earn credit for the functionality portion of the project grade, and before every subsequent code review required after that point. For example, you will earn a grade for [Project 1 Functionality](project-1.html) for the first code release that passes the tests. However, to earn a grade for [Project 1 Design](project-1.html), your code will need to pass the tests again before every code review until you pass the design requirements.
-
-Each project also includes **additional** tests on top of the previous tests. For example, the project 3 tests still require that your code passes the project 1 and project 2 tests.
-
-The provided tests only examine the final output of your code---you are still responsible for writing your own test code while developing and debugging your project.
-
-<i class="fas fa-exclamation-triangle"></i>
-You should place your test code in your own project repository, not the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository. **You do not have access to commit and push to the test repository!**
-{: .notification }
-
-## Testing Locally
-{: .page-header }
-
-You should make sure you are passing the [JUnit 5](https://junit.org/junit5/) tests locally before testing your code remotely.
-
-I also recommend you run only one test at a time at first, then groups of tests, and then the entire suite of tests only after you know you are passing each group individually. See the "[Running Individual Tests](http://localhost:4000/guides/homework/homework-testing.html#running-individual-tests)" guide for details. You can also manually configure the run configuration as well:
-
-![Screenshot]({{ "/images/project-eclipse-junit-run-configuration.png" | relative_url }}){: style="width: calc(1623px * 0.4);"}
-
-The output of each test provides additional information useful for debugging. For example:
-
-![Screenshot]({{ "/images/project-eclipse-junit-output.png" | relative_url }}){: style="width: calc(1623px * 0.4);"}
-
-The full output, which can be copied to the console for easy copying/pasting using the <img src="{{ "eclipse-copy-junit-output-to-console.png" | prepend: "/images/" | relative_url }}" style="height: 16px; vertical-align: middle;"> button, includes the following text:
-
-```
-Actual File:
-    actual/index-text-simple-hello.json
-Expected File:
-    expected/index-text/index-text-simple-hello.json
-Arguments:
-    -text input/text/simple/hello.txt -index actual/index-text-simple-hello.json
-Message:
-    Difference detected on line: 2.
-```
-
-This gives the actual arguments passed to `Driver` by the test, the actual and expected files being compared, and where the first difference was detected. You can use the [Compare Editor](http://help.eclipse.org/2020-06/topic/org.eclipse.platform.doc.user/reference/ref-25.htm?cp=0_4_4_1_2) in Eclipse to compare the files side-by-side for debugging, or use the [Run Configurations](#run-configurations) in Eclipse to enter the same arguments manually. Just keep in mind the paths need to be updated slightly since your `Driver` class is in a different folder than the project test code. So, for the above example, the appropriate command-line arguments to enter into the `Driver` run configuration would be:
-
-```
--path "../../project-tests/SearchEngineTest/input/text/simple/hello.txt" -index actual/index-text-simple-hello.json
-```
-
-Then, the `index-text-simple-hello.json` will (hopefully) show up in the `actual` subdirectory of your project repository.
-
-<i class="fas fa-exclamation-triangle"></i>
-To save space, the tests automatically delete your output files if they match the expected output. Only output files for failing tests will be kept.
-{: .notification }
-
-
-### Run Configurations
-
-It is possible to run `Driver.java` directly with your own command-line arguments using "[Run Configurations](http://help.eclipse.org/2020-06/topic/org.eclipse.jdt.doc.user/tasks/tasks-java-local-configuration.htm)" in Eclipse. This is useful for your own debugging, and testing out individual tests.
-
-The tricky part is getting the paths right, since the test files are not in the same project as your code. On a Mac or Linux system, assuming your project repository and the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository are in the same parent folder, you can add the following command-line arguments:
-
-```
--path "../../project-tests/SearchEngineTest/input/text/simple/hello.txt" -index hello.json
-```
-
-![Screenshot]({{ "/images/project-eclipse-run-configuration.png" | relative_url }}){: style="width: calc(1623px * 0.4);"}
-
-The quotation marks are required if there is a space in the path, otherwise they can be omitted. This should generate a file `hello.json` in the "SearchEngine" Eclipse project (in your repository, not the [project-tests]({{ site.data.info.links.github.link }}/project-tests) repository). Right-click and select "Refresh" if you do not see the file at first.
-
-On a Windows system, the path separators `/` should be `\` instead. The test code accounts for these differences, but the Eclipse compare view might not.
-
-## Testing Remotely
-{: .page-header }
-
-You must test your code remotely before you can earn credit for the functionality of your project and before you can sign up for a code review appointment.
-
-This process begins by creating a release on Github. This will trigger the Github Action that verifies your project functionality.
-
-### Creating Releases
-
-Creating releases will familiarize you with [**versioning**](https://en.wikipedia.org/wiki/Software_versioning) your code. At this stage, your code will be considered [pre-release](https://en.wikipedia.org/wiki/Software_versioning#Pre-release_versions) versions until you pass the design requirements in code review.
-
-  1. After passing all of the tests locally and pushing your latest commits to Github, follow the [Creating Releases](https://help.github.com/articles/creating-releases/) steps to draft a new release of your project code on Github.
-
-  2. You must choose a "tag" or the version number you are going to assign to your code at this stage. Out in the "real world" you will likely use [semantic versioning](https://semver.org/), which we will roughly mimic in class.
-
-      Specifically, you must name your release `v#.#.#` where the first `#` is the project number (1, 2, 3, or 4), the second `#` is the number of code reviews you've had for that project, and the last `#` is the number of releases you have created since the last code review for that project.
-
-      For example, your first release should be `v1.0.0` because it is for project 1, you have not had any code reviews yet, and you have not had any releases yet. If your code does not pass the tests remotely, then you have to fix your code and re-release your project as `v1.0.1` since you now have 1 prior release. After your first code review, the next release will be `v1.1.0` (notice how the last number reset to 0).
-
-      The release `v2.3.4` means this release is for project 2, you have had 3 code reviews for project 2 so far, and this is the 4th release since your last code review of project 2.
-
-  3. Make sure the "This is a pre-release" checkbox is selected:
-
-      ![Screenshot]({{ "/images/github-pre-release-checkbox.png" | relative_url }}){: style="width: calc(1012px * 0.4);"}
-
-      You will unselect this checkbox for the final release of the project that passes the design requirements in code review.
-
-  4. Click the "Publish release" button. You can leave the title and description blank. You can also leave the binaries blank (this is where we would put executables or our own bundled jar files for production-ready releases). You can see a [sample release]({{ site.data.info.links.github.link }}/project-template/releases) on the template repository.
-
-Generally, you should not delete releases even if they are not passing tests.
 
 ### Verification Script
 
