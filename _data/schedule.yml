@@ -527,13 +527,38 @@ weeks:
           - label: 'Lecture (Sync)'
             items:
               - text: 'Inheritance'
-                type: *pending
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/Inheritance'
+
+              - text: '– Cast Demo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/CastDemo.java'
+                type: 'em'
+
+              - text: '– Shape Demo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/ShapeDemo.java'
+                type: 'em'
+
+              - text: '– Generic Types Demo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/GenericTypesDemo.java'
+                type: 'em'
+
+              - text: '– Gadget Sort Demo'
+                icon: 'nothing'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/GadgetSortDemo.java'
+                type: 'em'
+
+              - text: 'Nested Classes'
+                icon: 'slides'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vSR3uvkP9qohIyzzs7n5CVqgaHVLLEqu4UDHAka1qG9VVpw0y6yt07U0C4htwDRKt1L2oAYNl5EYK_U/pub?start=false&loop=false&delayms=3000'
+                type: 'bump'
 
           - <<: *assignments
             items:
-              - text: 'Nested Classes'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'nested'
 
           - <<: *deadlines
             items:
@@ -564,8 +589,14 @@ weeks:
 
           - label: 'Lab (Sync)'
             items:
-              - text: 'Testing Projects'
-                type: *pending
+              - text: 'Project Setup'
+                link: '/guides/projects/project-setup.html'
+
+              - text: 'Project Grading'
+                link: '/guides/projects/project-overview.html'
+
+              - text: 'Project Testing'
+                link: '/guides/projects/project-testing.html'
 
           - <<: *assignments
             items:
@@ -632,6 +663,9 @@ weeks:
             items:
               - file: 'attendance'
                 name: 'class5'
+
+              - file: 'quizzes'
+                name: 'nested'
 
       - date: 2021-02-26
         sections:
