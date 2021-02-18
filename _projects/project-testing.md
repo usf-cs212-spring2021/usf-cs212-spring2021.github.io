@@ -187,78 +187,62 @@ You can see a [sample release]({{ site.data.info.links.github.link }}/project-te
 
 ### Verification Action
 
-Pending
+Creating or editing a release triggers the "Run Project Tests" action in the "Actions" tab to run automatically. It will have the same title as the release tag:
+
+![Screenshot]({{ "/images/actions-run-project-tests.png" | relative_url }})
+
+To view details, click on the run title. The yellow circle <i class="fas fa-circle has-text-warning"></i> icon indicates the run or step is still in progress and has not yet completed. The red circle <i class="fas fa-times-circle has-text-danger"></i> indicates the run or step failed (either because of setup issues or the tests failed). The green circle <i class="fas fa-check-circle has-text-success"></i> icon indicates the run or step completed and was successful (i.e. all tests passed).
+
+You can see an [example run](https://github.com/usf-cs212-spring2021/project-template/actions/runs/573987937) in the template repository.
 
 ### Debugging Failures
 
-Pending
+If the "Run Project Tests" action failed, you need to debug what went wrong. Details on what happened can be found in the detailed view, and reports and actual output files can be downloaded from the summary view.
 
-{% comment %}
+<i class="fas fa-exclamation-triangle"></i>
+The raw logs are always available, but debug output is only provided when the action fully completes but one or more tests fail.
+{: .notification }
 
-### Verification Script
+###### Run Details
 
-Once you have created a release, the verification script on Github Actions will automatically trigger.
+To see the detailed log of everything that happened, click the "Verification" link under the "Jobs" heading from the "Summary" view.
 
-You can find the results in the "Actions" tab on Github. Click on the release title to go to that run and view details. The first "Verify Project" link will summarize the results, the second will show details on each step in the run.
+Look for the red circle <i class="fas fa-times-circle has-text-danger"></i> icon to figure out which steps failed and click the greater-than <i class="far fa-angle-right"></i> icon to see the step details and the triangle or caret <i class="fas fa-caret-right"></i> icon to open details within a step. You will often have to open the group just above the first error you find for the details.
 
-The action performs these steps:
+If the "Pre Test Project" step failed, the action was not able to setup its virtual machine. This could be an issue with Github Actions or our verification script. Reach out [CampusWire]({{ site.data.info.links.forums.link }}) with a link to your run for help.
 
-  1. It will check if you have the latest version of the verification action. If this fails, you will see an error similar to:
+If the error(s) appear in the "Test Project" step under the "Verification Setup Phase" heading, then your code could not be compiled. This could be related to compile issues that arise when using the `javac` compiler instead of the Eclipse compiler. Again, reach out privately on [CampusWire]({{ site.data.info.links.forums.link }}) with a link directly to the issue in your run log for help.
 
-      "Update your "/verify.yml" file from the attached artifact."  
-      "Your Github Action verify.yml is out of date."
-      {: .has-text-danger }
+If the error(s) appear after the "Verification Testing Phase" heading instead, it is likely that one or more tests failed. Open the "Running verification tests..." and "Running debug tests..." steps for details. This is the scenario illustrated in the [example run log](https://github.com/usf-cs212-spring2021/project-template/runs/1916559403?check_suite_focus=true) in the template repository.
 
-      To fix, see the [Outdated Verification Script](#outdated-verification-script) section below.
-
-  1. It will attempt to parse the version number. If the version number is not in the right format (`v#.#.#`), then it will fail with an error message similar to:
-
-      "The release tag is in an unexpected format."
-      {: .has-text-danger }
-
-      That includes having a *lowercase* `v` at the start! If this happens, you will have to edit the release version or create a new release to continue.
-
-  1. It will attempt to setup the environment for testing. This includes downloading your code, setting up Java, and setting up fresh test files. If this part fails, please post on Piazza with a link to the action run.
-
-  1. It will compile the project and test code. If this step fails, look at the log. Depending on your Eclipse configuration, the `javac` compiler might be using more strict compile settings when it comes to warnings and Javadoc than your system.
-
-  1. It will run the tests associated with the release version. This might take awhile. You can watch as it progresses if you want.
-
-  1. It will generate a test report regardless of whether the tests passed or failed. These report files are available in the "Artifacts" section. See the [Generated Reports](#generated-reports) section below for details.
-
-  1. It will output the result of the tests. If the tests succeed, you will see a message like:
-
-      ![Screenshot]({{ "/images/verify-project-passed.png" | relative_url }}){: style="width: 500px;"}
-
-      If the tests failed, you will need to look at the logs and the reports to debug what happened. We can help as well if you post a link directly to the action run on Piazza!
-
-
-If everything passes and you want credit for passing the functionality, follow the [project grading](project-grading.html) steps to notify the teacher assistant.
+You can also turn to the generated reports and actual output in that case, as discussed next.
 
 ###### Generated Reports
 
-As long as the verification action was able to compile the code, it will generate reports from running the tests (regardless if the tests pass or fail). These can be helpful for debugging. There is an HTML version:
+As long as the "Test Project" step was able to compile and run the code, it will generate reports from running the tests (regardless if the tests pass or fail) in an easier-to-read HTML version:
 
 ![Screenshot]({{ "/images/sample-report.png" | relative_url }}){: style="width: 500px;"}
 
-There are also raw text reports that have additional information, such as:
+You can download these reports from the "Summary" view under the "Artifacts" heading:
 
-```
--------------------------------------------------------------------------------
-Test set: Project1Test$A_IndexOutput
--------------------------------------------------------------------------------
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.001 s - in Project1Test$A_IndexOutput
-```
+![Screenshot]({{ "/images/actions-artifacts.png" | relative_url }})
 
-However, the raw logs will have the most information. You can download those logs from the action run details (click on the second "Verify Project" link).
+You can see an [example report](https://github.com/usf-cs212-spring2021/project-template/actions/runs/573987937) in the template repository.
 
-###### Outdated Verification Script
+###### Actual Output
 
-If the verification action fails with the message, "Your Github Action `verify.yml` is out of date," then you need to push the latest version to your repository before you can continue.
+If the tests failed and generated actual output files, these will be available to download in the "Summary" view under the "Artifacts" heading. These are not included unless files were actually generated.
 
-![Screenshot]({{ "/images/verify-action-outdated.png" | relative_url }}){: style="width: 500px;"}
+###### Checking Warnings
 
-The latest version will be included under the "Artifacts" section (see above). Download that file and place it in the `.github/workflows` folder of your repository. You might need to show hidden files on your system to see the `.github` folder.
+It is possible something went wrong with the Github Actions script itself. That is sometimes indicated by warnings. These might appear in the "Annotations" section:
 
-Push the changes to your repository. Once that is done, click the "Re-run jobs" button near the top right corner (see above). If this fails again, try creating a new release. This should trigger the Github Action to run again with the latest version.
-{% endcomment %}
+![Screenshot]({{ "/images/actions-annotations.png" | relative_url }})
+
+And in the detailed run log:
+
+![Screenshot]({{ "/images/actions-run-log-warnings.png" | relative_url }})
+
+Most of the time, these can be ignored. For example, the warnings above happen anytime the test repository or required Maven plugins change. They are only problematic if they show up in other situations as well. Sometimes, Github Actions also automatically adds warnings to indicate an pending change to their infrastructure.
+
+If you are ever in doubt, do not hesitate to post on [CampusWire]({{ site.data.info.links.forums.link }}) with a link to the warning.
