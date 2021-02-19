@@ -522,7 +522,15 @@ weeks:
 
       - date: 2021-02-18
         sections:
-          - <<: *lectures
+          - <<: *recordings
+            items:
+              - text: 'CS 212-01 Recording'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/OqLs6XXYaEmRTZlOONJnygd4BbOAin4mqPrAyvieyi1vpxy-IeCs5wJxVdi8AgpJ.ANbPJjNiVVqytafd?startTime=1613680254000'
+
+              - text: 'CS 212-02 Recording'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/2GXHwU5w2rWnJSg2PD2XRUPNIe1KLnVyT_lKBWLEt_RxcF08O2UCLAymA_6pehDD.mf4xj0y7gwocg-QN?startTime=1613694219000'
 
           - label: 'Lecture (Sync)'
             items:
@@ -548,7 +556,7 @@ weeks:
               - text: '– Gadget Sort Demo'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/GadgetSortDemo.java'
-                type: 'em'
+                type: 'em strike'
 
               - text: 'Nested Classes'
                 icon: 'slides'
