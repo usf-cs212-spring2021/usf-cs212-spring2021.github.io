@@ -556,7 +556,7 @@ weeks:
               - text: '– Gadget Sort Demo'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/GadgetSortDemo.java'
-                type: 'em strike'
+                type: 'em strike`'
 
               - text: 'Nested Classes'
                 icon: 'slides'
