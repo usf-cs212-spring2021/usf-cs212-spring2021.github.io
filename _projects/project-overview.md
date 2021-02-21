@@ -79,6 +79,8 @@ Worried about those project points you missed due to late submissions? You can m
 
 Below are some options and the projects they apply. For example, “Projects 2+” means the extra credit can be completed for either Projects 2, 3, or 4. Once completed for one project, it cannot be completed for another.
 
+  - **5 points, Project 1+:** Run the [PMD Source Code Analyzer](https://pmd.github.io/) on your code with the default settings and address as many of the violations as possible. Static source code analysis tends to have high false positive rates (generating many unnecessary violations); you may choose to ignore several violations as long as you are prepared to justify that choice during code review.
+
   - **5 points, Project 1+:** Update and polish all of your Java documentation, then use the `javadoc` tool to generate a documentation website. Place the generated html in a docs subfolder in your main branch. Ask the instructor or TA to enable Github Pages for your repository so that your documentation is viewable as a website.
 
   - **5 points, Project 1+:** Reduce the duplicate logic in your Driver class for outputting data to a JSON file using lambda expressions, such that Code Climate no longer complains about (most of) this code. This can be done in multiple different ways—ask the instructor for suggestions specific to your implementation.
