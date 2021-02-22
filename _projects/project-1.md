@@ -108,26 +108,28 @@ The project tests account for different path separators (forward slash <code>/</
 
 ## Examples
 
-The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments. Consider the following example:
+The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments that can be passed to your `Driver` class via a "Run Configuration" in Eclipse, assuming you followed the [Running Driver](/guides/projects/project-testing.html#running-driver) guide to setup the working directory to the `project-tests` directory.
+
+Consider the following example:
 
 ```
-java Driver -path "../../project-tests/input/text/simple/hello.txt"
-            -index index-text-simple-hello.json
+-text "input/text/simple/hello.txt"
+-index "actual/index-simple-hello.json"
 ```
 
-The above arguments indicate that `Driver` should build an inverted index from the single `hello.txt` file in the `input/text/simple` subdirectory of the `project-tests` directory, and output the inverted index as JSON to the `index-simple-hello.json` file in the current working directory.
+The above arguments indicate that `Driver` should build an inverted index from the single `hello.txt` file in the `input/text/simple` subdirectory of the current working directory, and output the inverted index as JSON to the `index-simple-hello.json` file in the `actual` subdirectory.
 
 ```
-java Driver -path "../../project-tests/input/text/simple/" -index
+-text "input/text/simple/" -index
 ```
 
-The above arguments indicate that `Driver` should build an inverted index from all of the text files found in the `text/simple` subdirectory of the `project-tests` directory, and output the inverted index as JSON to the default path `index.json` in the current working directory.
+The above arguments indicate that `Driver` should build an inverted index from all of the text files found in the `text/simple` subdirectory of the current working directory, and output the inverted index as JSON to the default path `index.json` in the current working directory.
 
 ```
-java Driver -path "../../project-tests/input/text/simple/"
+-text "input/text/simple/"
 ```
 
-The above arguments indicate that `Driver` should build an inverted index from all of the HTML files found in the `input/text/simple` subdirectory of the `project-tests` directory, but it should **NOT** produce an output file. It must still build the inverted index however! (This will be useful in the future when we add the ability to search.)
+The above arguments indicate that `Driver` should build an inverted index from all of the text files found in the `input/text/simple` subdirectory of the current working directory, but it should **NOT** produce an output file. It must still build the inverted index however! (This will be useful in the future when we add the ability to search.)
 
 ## Hints
 
