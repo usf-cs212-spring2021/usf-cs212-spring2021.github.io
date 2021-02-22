@@ -672,8 +672,7 @@ weeks:
               - text: 'Euler Problem 1 with Streams'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/SJObR32OSWXzoWyoe-HrzXoQZ0FqAjOHBjGTgJ207TmSALUMvaRZHAjTE3Gf0bf1.ns31uTGy4rCD5AYq?startTime=1600720918000'
-                more: '(<a href="">Code</a>)'
-
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/StreamPipelines/src/main/java/Problem1Revisited.java">Code</a>)'
 
           - <<: *assignments
             items:
@@ -687,10 +686,12 @@ weeks:
           - label: 'Lecture (Sync)'
             items:
               - text: 'Lambda Expressions'
-                type: *pending
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/LambdaExpressions'
 
               - text: 'Stream Pipelines'
-                type: *pending
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/StreamPipelines'
 
           - <<: *assignments
             items:
