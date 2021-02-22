@@ -4,18 +4,18 @@ navbar: Guides
 layout: guides
 key: 2.2
 
-#assignments:
-#  - text: 'Project 2 Functionality'
-#    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987887'
-#
-#  - text: 'Project 2 Code Review'
-#    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987888'
+assignments:
+- text: 'Project 2 Functionality'
+  link: 'https://usfca.instructure.com/courses/1597848/assignments/7043803'
 
+- text: 'Project 2 Design'
+  link: 'https://usfca.instructure.com/courses/1597848/assignments/7043804'
+
+  tags:
+    - text: 'Updated'
+      type: 'is-primary'
 ---
 
-Pending
-
-{% comment %}
 For this project, you will extend your [previous project](project-1.html) to support exact search and partial search. In addition to meeting the previous project requirements, your code must be able to track the total number of words found in each text file, parse and stem a query file, generate a sorted list of search results from the inverted index, and support writing those results to a JSON file.
 
 ## Functionality
@@ -26,9 +26,9 @@ The core functionality of your project must satisfy the following requirements:
 
   - Process additional command-line parameters to determine whether to search the inverted index and whether to produce additional JSON ouput. See the [Input](#input) section for specifics.
 
-  - Parse a query file line-by-line into a normalized and optimized multiple word query matching the processing used to build the inverted index. See the [Query Parsing](#query-parsing) section for specifics.
-
   - Modify how input text files are processed to *also* track the total word count of that file when storing it in the inverted index. See the [Word Count](#word-count) section for specifics.
+
+  - Parse a query file line-by-line into a normalized and optimized multiple-word queries matching the processing used to build the inverted index. See the [Query Parsing](#query-parsing) section for specifics.
 
   - Efficiently return exact search results from your inverted index, such that any word stem in your inverted index that exactly matches a query word is returned.
 
@@ -37,6 +37,57 @@ The core functionality of your project must satisfy the following requirements:
   - Sort the search results using a simple term frequency metric to determine the most "useful" search results to output first. See the [Result Sorting](#result-sorting) section for specifics.
 
 The functionality of your project will be evaluated with the `Project2Test.java` group of JUnit tests.
+
+## Word Count
+
+Before you can calculate search results, you need to know how many word stems were stored in your inverted index for each text file.
+
+**Avoid opening up any file more than once!** You should store this information alongside the inverted index, as the files are first processed.
+
+These word counts will be output to file using the same pretty JSON format as the inverted index. Here is the expected output for the word count of all the text files associated with this project:
+
+```json
+{
+	"input/text/guten/1400-0.txt": 187368,
+	"input/text/guten/2701-0.txt": 215398,
+	"input/text/guten/50468-0.txt": 10969,
+	"input/text/guten/pg1322.txt": 124370,
+	"input/text/guten/pg1661.txt": 107396,
+	"input/text/guten/pg22577.txt": 63630,
+	"input/text/guten/pg37134.txt": 16696,
+	"input/text/rfcs/rfc3629.txt": 4294,
+	"input/text/rfcs/rfc475.txt": 3228,
+	"input/text/rfcs/rfc5646.txt": 27075,
+	"input/text/rfcs/rfc6805.txt": 9785,
+	"input/text/rfcs/rfc6838.txt": 9367,
+	"input/text/rfcs/rfc7231.txt": 28811,
+	"input/text/simple/.txt/hidden.txt": 1,
+	"input/text/simple/a/b/c/d/subdir.txt": 1,
+	"input/text/simple/animals.text": 11,
+	"input/text/simple/animals_copy.text": 11,
+	"input/text/simple/animals_double.text": 22,
+	"input/text/simple/capital_extension.TXT": 1,
+	"input/text/simple/capitals.txt": 4,
+	"input/text/simple/digits.tXt": 2,
+	"input/text/simple/dir.txt/findme.Txt": 17,
+	"input/text/simple/hello.txt": 6,
+	"input/text/simple/position.teXt": 20,
+	"input/text/simple/symbols.txt": 10,
+	"input/text/simple/words.tExT": 36,
+	"input/text/stems/stem-in.txt": 22275,
+	"input/text/stems/stem-out.txt": 22275
+}
+```
+
+...and for the stand-alone `sentences.md` file:
+
+```json
+{
+	"input/text/simple/sentences.md": 77
+}
+```
+
+You can also find this output in the [`expected/counts`](https://github.com/usf-cs212-spring2021/project-tests/tree/main/expected/counts) subdirectory in the `project-tests` repository.
 
 ## Query Parsing
 
@@ -68,53 +119,6 @@ Search queries will be provided in a text file with one multi-word search query 
 
 At this stage, the normalized words from the original query line can be used by your inverted index data structure to generate search results and to produce the expected JSON file output.
 
-## Word Count
-
-Before you can calculate search results, you need to know how many word stems were stored in your inverted index for each text file. You should store this information alongside the inverted index, as the files are first processed. **Avoid opening up any file more than once!**
-
-These word counts will be output to file using the same pretty JSON format as the inverted index. Here is the expected output for the word count of all the text files associated with this project:
-
-```json
-{
-	"input/text/guten/1400-0.txt": 187368,
-	"input/text/guten/50468-0.txt": 10969,
-	"input/text/guten/pg1228.txt": 157344,
-	"input/text/guten/pg1322.txt": 124370,
-	"input/text/guten/pg1661.txt": 107396,
-	"input/text/guten/pg22577.txt": 63630,
-	"input/text/guten/pg37134.txt": 16696,
-	"input/text/rfcs/rfc3629.txt": 4294,
-	"input/text/rfcs/rfc475.txt": 3228,
-	"input/text/rfcs/rfc5646.txt": 27075,
-	"input/text/rfcs/rfc6805.txt": 9785,
-	"input/text/rfcs/rfc6838.txt": 9367,
-	"input/text/rfcs/rfc7231.txt": 28811,
-	"input/text/simple/.txt/hidden.txt": 1,
-	"input/text/simple/a/b/c/d/subdir.txt": 1,
-	"input/text/simple/animals.text": 11,
-	"input/text/simple/animals_copy.text": 11,
-	"input/text/simple/animals_double.text": 22,
-	"input/text/simple/capital_extension.TXT": 1,
-	"input/text/simple/capitals.txt": 4,
-	"input/text/simple/digits.txt": 2,
-	"input/text/simple/dir.txt/findme.Txt": 17,
-	"input/text/simple/hello.txt": 6,
-	"input/text/simple/position.teXt": 20,
-	"input/text/simple/symbols.txt": 10,
-	"input/text/simple/words.tExT": 24
-}
-```
-
-...and for the stand-alone `sentences.md` file:
-
-```json
-{
-	"input/text/simple/sentences.md": 77
-}
-```
-
-You can also find this output in the [`SearchEngineTest/expected/counts`](https://github.com/usf-cs212-fall2020/project-tests/tree/main/SearchEngineTest/expected/counts) subdirectory in the `project-tests` repository.
-
 ## Result Sorting
 
 Search engines rank their search results such that the most useful results are provided first. For example, [PageRank](https://en.wikipedia.org/wiki/PageRank) is the well-known algorithm initially used by Google to rank results by estimating the importance of a website by its incoming links.
@@ -123,9 +127,9 @@ When returning search results, your code must also return the results in sorted 
 
   - **Total Words:** The total number of word stems in each text file. For example, there are 6 word stems in the `hello.txt` text file. You should already have this information from the [word count](#word-count) calculated alongside your inverted index.
 
-  - **Total Matches:** The total number of times any of the matching query words appear in the text file. For **exact search**, this is the number of times the exact word stems appear. For example, the exact word stem `perfor` appears in the file `words.tExT` a total of 2 times. For **partial search**, this is the number of times a word stem *starts with* one of the query words. For example, a word stem *starts with* `perfor` in the file `words.tExT` a total of 11 times.
+  - **Total Matches:** The total number of times any of the matching query words appear in the text file. For **exact search**, this is the number of times the exact word stems appear. For example, the exact word stem `perfor` appears in the file `words.tExT` a [total of 2](https://github.com/usf-cs212-spring2021/project-tests/blob/e8a75032922b1f83f3b315c9bd94624b7bc76867/expected/index/index-simple/index-simple-words.json#L27-L32) times. For **partial search**, this is the number of times a word stem *starts with* one of the query words. For example, a word stem *starts with* `perfor` in the file `words.tExT` a [total of 11](https://github.com/usf-cs212-spring2021/project-tests/blob/e8a75032922b1f83f3b315c9bd94624b7bc76867/expected/index/index-simple/index-simple-words.json#L27-L49) times.
 
-      For a query with multiple words, your code should consider all query words that appear at a location. For example, for an exact search of the multiple word query `[narwhal, tarsier]`, the word stem `narwhal` appears 1 time and the word `tarsier` appears 1 time in the file `animals.text`. Therefore, the number of times any of the matching query words appear in the text file is 1 + 1 = 2 times total.
+      For a query with multiple words, your code should consider all query words that appear at a location. For example, for an exact search of the multiple word query `[loris, okapi]`, the word stem `lori` (from `loris`) [appears 3 times](https://github.com/usf-cs212-spring2021/project-tests/blob/e8a75032922b1f83f3b315c9bd94624b7bc76867/expected/index/index-simple/index-simple-animals.json#L12-L18) and the word `okapi` [appears 2 times](https://github.com/usf-cs212-spring2021/project-tests/blob/e8a75032922b1f83f3b315c9bd94624b7bc76867/expected/index/index-simple/index-simple-animals.json#L29-L34) in the file `animals.text`. Therefore, the number of times any of the matching query words appear in the text file is 3 + 2 = 5 times total.
 
 With this information you can calculate the **score** of the search result as the percent of words in the file that match the query. This is calculated by dividing the total matches by the total words:
 
@@ -141,9 +145,9 @@ Then, when sorting the search results, compare the results as follows:
 
   3. **Location:** If two search results have the same score and count, then compare by the location (case-insensitive) instead (i.e. sort alphabetically ignoring case by path).
 
-You can use [Double.compare(...)](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Double.html#compare(double,double)), [Integer.compare(...)](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Integer.html#compare(int,int)), and [String.compareToIgnoreCase(...)](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#compareToIgnoreCase(java.lang.String)) for these comparisons and the built-in sort methods in Java.
+You can use [Double.compare(...)](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Double.html#compare(double,double)), [Integer.compare(...)](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Integer.html#compare(int,int)), and [String.compareToIgnoreCase(...)](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#compareToIgnoreCase(java.lang.String)) for these comparisons and the built-in sort methods in Java.
 
-See the [partial search results](https://github.com/usf-cs212-fall2020/project-tests/blob/main/SearchEngineTest/expected/search/partial/search-partial-simple.json) for [`ant perf`](https://github.com/usf-cs212-fall2020/project-tests/blob/main/SearchEngineTest/expected/search/partial/search-partial-simple.json#L2-L13) for an example of results sorted by score, the results for [`lori`](https://github.com/usf-cs212-fall2020/project-tests/blob/main/SearchEngineTest/expected/search/partial/search-partial-simple.json#L42-L58) for an example of results with the same score and thus sorted by count, and finally the results for [`capybara hidden`](https://github.com/usf-cs212-fall2020/project-tests/blob/main/SearchEngineTest/expected/search/partial/search-partial-simple.json#L14-L25) for an example of results with the same score and same count and thus sorted alphabetically by location.
+See the [partial search results](https://github.com/usf-cs212-spring2021/project-tests/blob/main/expected/search/search-partial/search-partial-simple.json) for [`ant perf`](https://github.com/usf-cs212-spring2021/project-tests/blob/e8a75032922b1f83f3b315c9bd94624b7bc76867/expected/search/search-partial/search-partial-simple.json#L2-L13) for an example of results sorted by score, the results for [`lori`](https://github.com/usf-cs212-spring2021/project-tests/blob/e8a75032922b1f83f3b315c9bd94624b7bc76867/expected/search/search-partial/search-partial-simple.json#L42-L58) for an example of results with the same score and thus sorted by count, and finally the results for [`capybara hidden`](https://github.com/usf-cs212-spring2021/project-tests/blob/e8a75032922b1f83f3b315c9bd94624b7bc76867/expected/search/search-partial/search-partial-simple.json#L14-L25) for an example of results with the same score and same count and thus sorted alphabetically by location.
 
 <i class="fas fa-exclamation-triangle"></i>
 If you calculate the score using `float` instead of `double` objects, or sort using `Path` instead of `String` objects, you may not get the expected results!
@@ -155,7 +159,7 @@ Your main method must be placed in a class named `Driver`. The `Driver` class sh
 
   - `-counts filepath` where `-counts` is an *optional* flag that indicates the next argument is the path to use to output all of the locations and their word count. If the `filepath` argument is not provided, use `counts.json` as the default output filename. If the `-counts` flag is not provided, do not produce an output file of locations.
 
-  - `-queries filepath` where `-queries` indicates the next argument is a path to a text file of queries to be used for search. If this flag is not provided, then no search should be performed. In this case, your code should behave exactly the same as the previous project.
+  - `-query filepath` where `-query` indicates the next argument is a path to a text file of queries to be used for search. If this flag is not provided, then no search should be performed. In this case, your code should behave exactly the same as the previous project.
 
   - `-exact` where `-exact` is an *optional* flag that indicates all search operations performed should be **exact** search. If the flag is NOT present, any search operations should use **partial** search instead.
 
@@ -171,7 +175,7 @@ The output of your inverted index should be the same from the [previous project]
 
 The search results should be output as a JSON array of JSON objects, where each object represents a single line from the original query file (e.g. one search). The query objects should have two keys, `queries` and `results` such that:
 
-  - The key `queries` should have a quoted text value that is the parsed and sorted query words [joined together](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html#join(java.lang.CharSequence,java.lang.Iterable)) by a space. For example, if the parsed query words are `[capybara, hidden, observ]` then the text output should be `"capybara hidden observ"`.
+  - The key `queries` should have a quoted text value that is the parsed and sorted query words [joined together](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#join(java.lang.CharSequence,java.lang.Iterable)) by a space. For example, if the parsed query words are `[capybara, hidden, observ]` then the text output should be `"capybara hidden observ"`.
 
   - The key `results` should be an array of nested JSON objects, one per search result. Each individual search result should have, in order, these keys:
 
@@ -196,29 +200,31 @@ System.out.println(formatted);
 The use of spaces, newline characters, and spaces are the same as before for "pretty" JSON output. Here is an example output *snippet* of a single search query with a single search result:
 
 ```json
-  "observ perfor": [
-    {
-      "where": "text/simple/words.tExT",
-      "count": 13,
-      "score": 0.54166667
-    }
-  ],
+	"observ perfor": [
+		{
+			"where": "input/text/simple/words.tExT",
+			"count": 13,
+			"score": 0.36111111
+		}
+	],
 ```
 
-You can also find this output in the [`expected/search/exact/search-exact-simple.json`](https://github.com/usf-cs212-fall2020/project-tests/blob/main/SearchEngineTest/expected/search/exact/search-exact-simple.json#L49-L55) file in the `project-tests` repository. See the other expected output files for more examples.
+You can also find this output in the [`expected/search/search-exact/search-exact-simple.json`](https://github.com/usf-cs212-spring2021/project-tests/blob/e8a75032922b1f83f3b315c9bd94624b7bc76867/expected/search/search-exact/search-exact-simple.json#L49-L55) file in the `project-tests` repository. See the other expected output files for more examples.
 
 ## Examples
 
-The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments. Consider the following example:
+The following are a few examples (non-comprehensive) to illustrate the usage of the command-line arguments that can be passed to your `Driver` class via a "Run Configuration" in Eclipse, assuming you followed the [Running Driver](/guides/projects/project-testing.html#running-driver) guide to setup the working directory to the `project-tests` directory.
+
+Consider the following example:
 
 ```
-java Driver -path "../../project-tests/SearchEngineTest/input/text/simple/"
-            -query "../../project-tests/SearchEngineTest/input/query/simple.txt"
-            -results search-exact-simple.json
-            -exact
+-text "input/text/simple/"
+-query "input/query/simple.txt"
+-results actual/search-exact-simple.json
+-exact
 ```
 
-This is functionally equivalent to the [Project2Test](https://github.com/usf-cs212-fall2020/project-tests/blob/main/SearchEngineTest/src/test/java/Project2Test.java#L62-L69) &raquo; [SearchOutputTest](https://github.com/usf-cs212-fall2020/project-tests/blob/main/SearchEngineTest/src/test/java/SearchOutputTest.java) &raquo; [ExactSearchTest](https://github.com/usf-cs212-fall2020/project-tests/blob/main/SearchEngineTest/src/test/java/SearchOutputTest.java#L58) &raquo; [testSimpleDirectory](https://github.com/usf-cs212-fall2020/project-tests/blob/main/SearchEngineTest/src/test/java/SearchOutputTest.java#L66-L75) test. It will create the inverted index from the `input/text/simple/` input subdirectory, perform an **exact** search of the queries in the `input/query/simple.txt` query input file, and output the search results to `search-exact-simple.json`.
+This is functionally equivalent to the [testSimpleDirectory](https://github.com/usf-cs212-spring2021/project-tests/blob/e8a75032922b1f83f3b315c9bd94624b7bc76867/src/test/java/Project2Test.java#L123-L132) test. It will create the inverted index from the `input/text/simple/` input subdirectory, perform an **exact** search of the queries in the `input/query/simple.txt` query input file, and output the search results to `search-exact-simple.json`.
 
 ## Hints
 
@@ -226,12 +232,12 @@ It is important to develop the project iteratively. One possible breakdown of ta
 
   - Add the ability to parse query files. Compare your parsed queries to those in the expected output files. For example, the line `performer performers` should become `perform` after being parsed, cleaned, stemmed, sorted, and discarding duplicates.
 
-  - Create a class that stores a single search result and implements the [Comparable](https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Comparable.html) interface. You will need data members for each of the sort criteria, including the location, total word count of the location, and number of times the query occurs at that location.
+  - Create a class that stores a single search result and implements the [Comparable](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/Comparable.html) interface. You will need data members for each of the sort criteria, including the location, total word count of the location, and number of times the query occurs at that location.
 
   - Add an exact search method to your inverted index data structure that takes already parsed words from a single line of the query file, and returns a sorted list of search results. Output the results to the console for debugging.
 
       <i class="fas fa-exclamation-triangle"></i>
-      Use lists and <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Collections.html#sort(java.util.List)">Collections.sort(List)</a> to sort search results, not a <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/TreeSet.html">TreeSet</a> data structure. Custom mutable objects do not behave well when used in sets or as keys in maps.
+      Use lists and <a href="https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/Collections.html#sort(java.util.List)">Collections.sort(List)</a> to sort search results, not a <a href="https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/TreeSet.html">TreeSet</a> data structure. Custom mutable objects do not behave well when used in sets or as keys in maps.
       {: .notification .is-warning }
 
   - Add the ability to output the search results to JSON file. Make sure the exact search results match the expected output.
@@ -245,4 +251,3 @@ The important part will be to test your code as you go. The JUnit tests provided
 <i class="fas fa-info-circle"></i>
 These hints may or may not be useful depending on your approach. Do not be overly concerned if you do not find these hints helpful for your approach for this project.
 {: .notification }
-{% endcomment %}
