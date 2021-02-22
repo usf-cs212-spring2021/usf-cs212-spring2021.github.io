@@ -115,8 +115,6 @@ weeks:
 
       - date: 2021-01-29
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Learning Git and Github'
@@ -131,10 +129,6 @@ weeks:
                 type: 'bump'
                 icon: 'website'
                 link: '/guides/homework/homework-setup.html'
-
-              # - text: 'Homework Testing'
-              #   icon: 'website'
-              #   link: '/guides/homework/homework-testing.html'
 
           - <<: *assignments
             items:
@@ -299,8 +293,6 @@ weeks:
 
       - date: 2021-02-05
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Configuring Eclipse'
@@ -427,8 +419,6 @@ weeks:
 
       - date: 2021-02-12
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Learning Git and Github'
@@ -593,8 +583,6 @@ weeks:
 
       - date: 2021-02-19
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Project Setup'
