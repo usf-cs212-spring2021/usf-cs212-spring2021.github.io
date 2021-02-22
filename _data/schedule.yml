@@ -541,12 +541,12 @@ weeks:
               - text: '– Generic Types Demo'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/GenericTypesDemo.java'
-                type: 'em'
+                type: 'em strike'
 
               - text: '– Gadget Sort Demo'
                 icon: 'nothing'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/GadgetSortDemo.java'
-                type: 'em strike`'
+                type: 'em strike'
 
               - text: 'Nested Classes'
                 icon: 'slides'
@@ -587,12 +587,15 @@ weeks:
             items:
               - text: 'Project Setup'
                 link: '/guides/projects/project-setup.html'
+                icon: 'website'
 
               - text: 'Project Grading'
                 link: '/guides/projects/project-overview.html'
+                icon: 'website'
 
               - text: 'Project Testing'
                 link: '/guides/projects/project-testing.html'
+                icon: 'website'
 
           - <<: *assignments
             items:
@@ -616,26 +619,66 @@ weeks:
         sections:
           - label: 'Content (Async)'
             items:
+              - text: 'Gadget Sort Demo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/zyhYhHmNbZoaXC3kqsGGYrKyygAMxtc8RC0Lu75iWCQlixZmXcpVNIpIsgnJ_Trg.BLBeByE5wZaujW2z?startTime=1600117106000'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/tree/main/Inheritance">Code</a>)'
+
+              - text: '– Gadget'
+                icon: 'nothing'
+                type: 'em'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/Gadget.java'
+
+              - text: '– GadgetComparator'
+                icon: 'nothing'
+                type: 'em'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/GadgetComparator.java'
+
+              - text: '– GadgetSortDemo'
+                icon: 'nothing'
+                type: 'em'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/GadgetSortDemo.java'
+
+              - text: 'Brief Java History'
+                icon: 'video'
+                type: 'bump'
+                link: 'https://usfca.zoom.us/rec/share/9VoFjdoJBHLeFuKcP0f05KWtuESfjmmTIsIHScB7en0FAE_T0W-YH8o51BAif2GX.MdWlgBtXbgduwClc?startTime=1600126198000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vQBUQLdRuW8s9cEJ93Erl9ctvlfmVL9Ojn6G3hOTwTz-jkm6hUOtpnJESv6FyTVb404wDIVNgU6wkf8/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
               - text: 'Lambda Expressions'
-                type: *pending
+                icon: 'video'
+                type: 'bump'
+                link: 'https://usfca.zoom.us/rec/share/uhNCZ8ABY6xOgkUd8dNxgL-tcvrbT_lbXHkUz28-qeKe2Dz_wXyeqSk6GtTJlzUm.vECO_0RNPv8CKEwf?startTime=1600133508000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vQwGnrZB_C2pOsFpt23gU3ZccNxvkIrYQaQS2Gcrgnof1xFeGz_V-l05ML3xXB8FvSBp7HwnEr56jdJ/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+              - text: 'Stream Basics'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/ff_XpeRvKx4YRr0aqb3CiQd3eeMXs9JB-whW3CSSOYP6g0AM1avV2NLTnuBzgm0.oZ9XK6lNUCzXHi2x?startTime=1600717632000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vTmc5g0qWRyAcCv6-zbn9aAH6yo-XKtI8wGhrAM98HqP33c3nV4gVdJ5DkiEG72K0Kz8cHf-6rVQxmw/pub?start=false&loop=false&delayms=3000">Slides</a>)'
 
               - text: 'Stream Pipelines'
-                type: *pending
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/PvIf3PPaCWnmV6yQgSc69F7mzVanrlDlcKTNlFb4SfETC3KjXGCzfMyw9lul7Lok.VGPeibZ4YsSHtnMX?startTime=1600718947000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vStukH-FTxnQi8rO9M-A7CBxr3f2FXUlEamXBkvp0zohNHsRepmDOtreDK_0hkXAhLQ98vK3cZZy2O9/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+
+          - label: 'Additional Content'
+            dates: ''
+            items:
+              - text: 'Generic Types Demo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/FWw2HDU-v5L0cPh8yWuAjvm5MzE2lfwaJZV5G4GCdRD-fMbf7I8FszoSFoa-Lm1D.je4SzpYfF3ISQzVq?startTime=1600115045000'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/Inheritance/src/main/java/GenericTypesDemo.java">Code</a>)'
+
+              - text: 'Euler Problem 1 with Streams'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/SJObR32OSWXzoWyoe-HrzXoQZ0FqAjOHBjGTgJ207TmSALUMvaRZHAjTE3Gf0bf1.ns31uTGy4rCD5AYq?startTime=1600720918000'
+                more: '(<a href="">Code</a>)'
+
 
           - <<: *assignments
             items:
-              - text: 'Java Features'
-                icon: 'quiz'
-                type: *pending
-
-              - text: 'Lambda Expressions'
-                icon: 'quiz'
-                type: *pending
-
-          # - <<: *deadlines
-          #   items:
-          #     - text: 'Pending'
-          #       type: *pending
+              - file: 'quizzes'
+                name: 'history'
 
       - date: 2021-02-25
         sections:
@@ -651,9 +694,11 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: 'Stream Pipelines'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'lambda'
+
+              - file: 'quizzes'
+                name: 'stream'
 
           - <<: *deadlines
             items:
@@ -662,6 +707,9 @@ weeks:
 
               - file: 'quizzes'
                 name: 'nested'
+
+              - file: 'quizzes'
+                name: 'history'
 
       - date: 2021-02-26
         sections:
@@ -729,6 +777,13 @@ weeks:
             items:
               - file: 'attendance'
                 name: 'class6'
+
+              - file: 'quizzes'
+                name: 'lambda'
+
+              - file: 'quizzes'
+                name: 'stream'
+
 
       - date: 2021-03-05
         sections:
