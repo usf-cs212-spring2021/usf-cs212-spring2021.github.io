@@ -68,4 +68,22 @@ nested:
   <<: *default
   text: 'Nested Classes'
   link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375253'
-  date: 2021-02-26
+  date: 2021-02-25
+
+history:
+  <<: *default
+  text: 'Java Features'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375259'
+  date: 2021-02-25
+
+lambda:
+  <<: *default
+  text: 'Lambda Expressions'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375267'
+  date: 2021-03-04
+
+stream:
+  <<: *default
+  text: 'Stream Pipelines'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375264'
+  date: 2021-03-04
