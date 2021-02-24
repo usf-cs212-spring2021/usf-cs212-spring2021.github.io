@@ -732,6 +732,12 @@ weeks:
               - file: 'participation'
                 name: 'project_setup'
 
+              - file: 'participation'
+                name: 'forum_post'
+
+              - file: 'participation'
+                name: 'forum_response'
+
           - <<: *deadlines
             items:
               - file: 'attendance'
@@ -1387,11 +1393,11 @@ weeks:
               - text: 'End of Semester Survey'
                 type: *pending
 
-              - text: 'Forum Post'
-                type: *pending
+              - file: 'participation'
+                name: 'forum_post'
 
-              - text: 'Forum Response'
-                type: *pending
+              - file: 'participation'
+                name: 'forum_response'
 
   - text: 'Finals'
     days:

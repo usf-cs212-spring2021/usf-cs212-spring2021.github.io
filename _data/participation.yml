@@ -27,3 +27,15 @@ project_setup:
   text: 'Project Setup'
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7040990'
   date: 2021-03-05
+
+forum_post:
+  <<: *default
+  text: 'Forum Post'
+  link: 'https://usfca.instructure.com/courses/1597848/assignments/7040991'
+  date: 2021-05-14
+
+forum_response:
+  <<: *default
+  text: 'Forum Response'
+  link: 'https://usfca.instructure.com/courses/1597848/assignments/7040992'
+  date: 2021-05-14
