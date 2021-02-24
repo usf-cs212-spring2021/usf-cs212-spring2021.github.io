@@ -21,3 +21,9 @@ lecture_setup:
   text: 'Lecture Setup'
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7060771'
   date: 2021-02-19
+
+project_setup:
+  <<: *default
+  text: 'Project Setup'
+  link: 'https://usfca.instructure.com/courses/1597848/assignments/7040990'
+  date: 2021-03-05

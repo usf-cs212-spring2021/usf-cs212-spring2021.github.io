@@ -729,6 +729,9 @@ weeks:
               - file: 'homework'
                 name: 'textfilefinder'
 
+              - file: 'participation'
+                name: 'project_setup'
+
           - <<: *deadlines
             items:
               - file: 'attendance'
@@ -814,6 +817,9 @@ weeks:
 
               - file: 'homework'
                 name: 'textfilefinder'
+
+              - file: 'participation'
+                name: 'project_setup'
 
   - week: 7
     days:
