@@ -75,12 +75,13 @@ streams:
     link: 'https://usfca.zoom.us/j/89780452727'
     info: 'livestreams of lab for CS 212L-02'
 
-  # reviews:
-  #   name: 'Code Reviews'
-  #   icon: 'far fa-laptop-code'
-  #   room: '964 3839 3933'
-  #   link: 'https://usfca.zoom.us/j/96438393933'
-  #   info: 'one-on-one project code reviews'
+  reviews:
+    name: 'Code Reviews'
+    icon: 'far fa-laptop-code'
+    room: '964 3839 3933'
+    link: 'https://usfca.zoom.us/j/96438393933'
+    info: 'one-on-one project code reviews'
+    line: true
 
   instructor:
     name: 'Office Hours (Sophie)'
