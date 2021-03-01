@@ -7,13 +7,13 @@ key: 1.0
 
 There are four major programming projects:
 
-  1. **[Project 1 Inverted Index](project-1.md):** Focuses on creating the underlying data structure required for the search engine and how to build that data structure from text files.
+  1. **[Project 1 Inverted Index](project-1.html):** Focuses on creating the underlying data structure required for the search engine and how to build that data structure from text files.
 
-  2. **[Project 2 Partial Search](project-2.md):** Focuses on the search algorithm to be utilized by the search engine.
+  2. **[Project 2 Partial Search](project-2.html):** Focuses on the search algorithm to be utilized by the search engine.
 
-  3. **[Project 3 Multithreading](project-3.md):** Focuses on improving the efficiency of building and searching using multithreading.
+  3. **[Project 3 Multithreading](project-3.html):** Focuses on improving the efficiency of building and searching using multithreading.
 
-  4. **[Project 4 Search Engine](project-4.md):** Focuses on building and searching through web pages and a web server instead of text files and command-line arguments.
+  4. **[Project 4 Search Engine](project-4.html):** Focuses on building and searching through web pages and a web server instead of text files and command-line arguments.
 
 Each project is dependent on the previous. For example, you cannot work on an efficient search algorithm for project 2 until you have a well-designed underlying data structure from project 1.
 
