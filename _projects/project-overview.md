@@ -3,10 +3,6 @@ title: Project Grading
 navbar: Guides
 layout: guides
 key: 1.0
-
-tags:
-  - text: 'New'
-    type: 'is-primary'
 ---
 
 There are four major programming projects:

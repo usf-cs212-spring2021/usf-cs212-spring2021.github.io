@@ -11,6 +11,7 @@ blurb: |
 This guide assumes you have already [setup your project](project-setup.html) and [tested your project](project-testing.html). This includes making a release of your project that passes the verification process on Github.
 
 ## Eligibility
+{: .page-header }
 
 Before making a request, make sure your project is eligible to earn the functionality grade:
 
@@ -27,6 +28,7 @@ Before making a request, make sure your project is eligible to earn the function
 If you answered yes to all of the above, you can request to have your functionality grade updated.
 
 ## Requesting Grade
+{: .page-header }
 
 **You only need to do this once per project.**
 
@@ -54,7 +56,8 @@ When the issue is closed by the instructor or teacher assistant, verify your gra
 
 *If the run was not successful, the log should state why. If you are unsure how to fix the problem, reach out privately on [CampusWire]({{ site.data.info.links.forums.link }}) with a link to your run asking for help.*
 
-## Functionality Deadline
+## Functionality Grading
+{: .page-header }
 
 The functionality grade is based on the created date of your **first passing release** on Github. This is *not* when you first passed those tests locally or a commit that passed those tests.
 

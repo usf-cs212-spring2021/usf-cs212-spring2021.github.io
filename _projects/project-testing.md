@@ -5,9 +5,6 @@ layout: guides
 key: 1.2
 bump: true
 
-tags:
-  - text: 'New'
-    type: 'is-primary'
 ---
 
 You must verify your project is passing the functionality tests to earn the project functionality grade as well as before every code review required to earn your design grade. This guide walks through that testing process.
