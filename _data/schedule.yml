@@ -794,13 +794,11 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: 'Logging'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'asserts'
 
-              - text: 'Assertions'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'logging'
 
           - <<: *deadlines
             items:
@@ -816,10 +814,6 @@ weeks:
               - text: 'Exam Review'
                 type: *pending
 
-          # - <<: *assignments
-          #   items:
-
-
           - <<: *deadlines
             items:
               - file: 'attendance'
@@ -831,6 +825,11 @@ weeks:
               - file: 'quizzes'
                 name: 'stream'
 
+              - file: 'quizzes'
+                name: 'asserts'
+
+              - file: 'quizzes'
+                name: 'logging'
 
       - date: 2021-03-05
         sections:
