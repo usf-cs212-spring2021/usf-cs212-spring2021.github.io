@@ -812,7 +812,8 @@ weeks:
           - label: 'Lecture (Sync)'
             items:
               - text: 'Exam Review'
-                type: *pending
+                icon: 'website'
+                link: '/guides/exam-1.html'
 
           - <<: *deadlines
             items:

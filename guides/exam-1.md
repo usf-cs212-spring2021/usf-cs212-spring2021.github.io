@@ -3,208 +3,224 @@ title: Exam 1 Review
 navbar: Guides
 layout: default
 
-
 resources:
   code:
     - text: 'Files and Exceptions'
       slug: 'file'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/FilesExceptions'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/FilesExceptions'
 
     - text: 'Data Structures'
       slug: 'data'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/DataStructures'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/DataStructures'
 
     - text: 'Object Oriented Programming'
       slug: 'object'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/ObjectOrientedProgramming'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/ObjectOrientedProgramming'
 
     - text: 'Inheritance'
       slug: 'inheritance'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/Inheritance'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/Inheritance'
 
     - text: 'Lambda Expressions'
       slug: 'lambda'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/LambdaExpressions'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/LambdaExpressions'
 
     - text: 'Stream Pipelines'
       slug: 'stream'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/StreamPipelines'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/StreamPipelines'
+
+    - text: 'Debugging'
+      slug: 'debug'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/Debugging'
 
   # link practice quizzes here!
   quizzes:
     - text: 'Paths and Files'
       slug: 'file'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366218'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378619'
 
     - text: 'Data Structures'
       slug: 'data'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366210'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378617'
 
     - text: 'Using Maps'
       slug: 'data'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366212'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378620'
 
     - text: 'Static vs Instance'
       slug: 'object'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366209'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378613'
 
     - text: 'Instance vs Identifier'
       slug: 'object'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366215'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378611'
 
     - text: 'Mutability, Part 1'
       slug: 'object'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366222'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378612'
 
     - text: 'Mutability, Part 2'
       slug: 'object'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366219'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378622'
 
     - text: 'Collections Revisited'
       slug: 'inheritance'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366216'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378616'
 
     - text: 'Keywords'
       slug: 'inheritance'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366211'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378621'
 
     - text: 'Nested Classes'
       slug: 'inheritance'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366213'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378624'
 
     - text: 'Casting'
       slug: 'inheritance'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366217'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378615'
 
     - text: 'Java Features'
       slug: 'lambda'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366220'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378625'
 
     - text: 'Lambda Expressions'
       slug: 'lambda'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366221'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378610'
 
-    - text: 'Streams'
+    - text: 'Stream Pipelines'
       slug: 'stream'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2366214'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378623'
+
+    - text: 'Assert Statements'
+      slug: 'debug'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378614'
+
+    - text: 'Logging'
+      slug: 'debug'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2378618'
 
   homework:
     - text: 'ArgumentMap'
       slug: 'object'
-      link: 'https://github.com/usf-cs212-fall2020/homework-ArgumentMap-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-ArgumentMap-template'
 
     - text: 'ArgumentMap'
       slug: 'data'
-      link: 'https://github.com/usf-cs212-fall2020/homework-ArgumentMap-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-ArgumentMap-template'
 
     - text: 'SimpleJsonWriter'
       slug: 'data'
-      link: 'https://github.com/usf-cs212-fall2020/homework-SimpleJsonWriter-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-SimpleJsonWriter-template'
 
     - text: 'TextFileStemmer'
-      link: 'https://github.com/usf-cs212-fall2020/homework-TextFileStemmer-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-TextFileStemmer-template'
       slug: 'file'
 
     - text: 'TextFileStemmer'
-      link: 'https://github.com/usf-cs212-fall2020/homework-TextFileStemmer-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-TextFileStemmer-template'
       slug: 'object'
 
     - text: 'TextFileIndex'
       slug: 'object'
-      link: 'https://github.com/usf-cs212-fall2020/homework-TextFileIndex-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-TextFileIndex-template'
 
     - text: 'TextFileIndex'
       slug: 'data'
-      link: 'https://github.com/usf-cs212-fall2020/homework-TextFileIndex-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-TextFileIndex-template'
 
     - text: 'TextFileIndex'
       slug: 'inheritance'
-      link: 'https://github.com/usf-cs212-fall2020/homework-TextFileIndex-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-TextFileIndex-template'
 
     - text: 'TextFileFinder'
       slug: 'lambda'
-      link: 'https://github.com/usf-cs212-fall2020/homework-TextFileFinder-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-TextFileFinder-template'
 
     - text: 'TextFileFinder'
       slug: 'stream'
-      link: 'https://github.com/usf-cs212-fall2020/homework-TextFileFinder-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-TextFileFinder-template'
 
     - text: 'TextFileFinder'
       slug: 'file'
-      link: 'https://github.com/usf-cs212-fall2020/homework-TextFileFinder-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-TextFileFinder-template'
 
   slides:
     - text: 'Exceptions'
       slug: 'file'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ9O8lagJ1nfU7a0_TP3myuw5gE1DTQn3bo6dkShBStLiDnKTG7DfHZo9T6L5JYgKsKW_D6hkxvN3dy/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTF2m0Za8HCOfMzMYNNZEApWiJxnpr6sFvbQQ0F-MtfpnwYyTS5M5-oM6sbt3Q5manwDYf_4zP4S0og/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Paths and Files'
       slug: 'file'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vR4muxa7N0mdswKrt2M1_ec38GMvktWPROVIPwqFEoFntBQZLKAZxxe-n5fjBDqPi9UWYHptmuo-NaV/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vSWdQrf9ZxSaBP_6tpW-O7SGkiBPCxQIkefAFWPhUVFXNHOlOWlwGrTaB6KdwKH1QsSORDDRfgx-edG/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Basic Types'
       slug: 'data'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vSlmirCTp0N-DSy-wXDxY4dPrukCVevF_7SF9z3XPEr7LI6o3kUlQKI-TO1wCbHVNj4xoGqdpPmofkj/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQs2p2cjvjlh88sDVybmjGmMfxAZtm2_ehImdMet6UkVzM1ORhtI0Eh_ZkOQCyf66kqfv1yy4bC1cvV/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Collections Framework'
       slug: 'data'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQLEEqWnSNKyveuyhTDhw-2me8xy3Mf78cGsqDhUDIWXgFlr_2UIjz6YbXj2zu0qWVk7ImuExxaFd3t/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRWwVF2nFmbu86I1yCZHXoNTUBTjxcint85Hcholj8wT3LLLNYfUtazORgmTUaQpYUE8SGLslbXJq_h/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Terminology'
       slug: 'object'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTBTFRnSUWBU0LGVsBuJWhkE3hAvDPTwVb9YmCFmYWKj2n_P4LfILnEb7MTqNUikqEIAJ_eN98ILA2L/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQFWPY3gNVJAaSfPOZP6r8PdEWHrn6R0epvciFRCakLPmpcdo2q-SF-Blfo4GxSc9DJDskZhk4-lvd-/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Relationships'
       slug: 'inheritance'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRXMjoGijTyzIhE9b9eAumFCWhSoaSt4vNkgw8C7iW7ipU0j5yrNhy_GUX3eoPhtoJyOY1pMoYM6NmL/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTYiJ8wTkXaicJ0a3RPGoasPAM6yAV0GmnqC8kRdrPflSvB79WdEa4cNVtQo39GWdOeCsbsbQbpxjCt/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Abstract Classes and Interfaces'
       slug: 'inheritance'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vR9VPazQo4HvtbOFqkuZXaAfABXH6tONhQU8lhK2PA1KHgvtLG9LTLgo5zc6P7PDXSw-3pCVhQfO3Cf/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQALVukToW62U0vXiRQgJnSaQR_nRiqcNKxHAwVOMBvzuYgV0bro0FALz_zpzwQTEcjKuCCZ3UDLaES/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Object Class'
       slug: 'inheritance'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRpa4YoGGEdY-0J6au4DbviOM5OAVglFLqCu8uRRuSTQE_PsV3CHk_Gu272__xyPglnl5lBUaHSZZHb/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTVIHdg3ejH9I-b2uH5chTRHwgyiik6VoJLsvfTyrXRygtEApvK1jludTR4VZkpiFcS7FynjW0FkLdI/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Final Keyword'
       slug: 'inheritance'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTod_L2MMgjoTuvQTp9QZWOtlwfOJXnhGSX6e9VM2FvDuxRSKcd9_BYEwMHMc9VheszlN9SRETgSapa/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vT0D9_6t92qy5Pqp6G9xuQQbB4GVzF9L4YIL3ah3ZJdIKxE2p7zJuFT-5HEQ8QbMJl19PUzcTrqkyA-/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Collections Revisited'
       slug: 'inheritance'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTCd-FZ8uJ4PHvrL_cxqUv-31Khz2oKkffWLux64w3wWiB-oDWndO3Hu7qaWYy1tOLiFIYjhy5915O9/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTCxygSvRiZfhr7rEufgFJJvvYWsDnJwPpjhBEAOL3N95Q2-pHNa3b0T1nn_T2QR_eMG71o17Gr0SKb/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Casting'
       slug: 'inheritance'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTAHr90z-dzSHJaNCkwEXIeW_fjbzb_kdY7Upztiajk035Hurj-eeD3ks8sII6PQRoOGtEAkGcGlnoW/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vSDvCtJkMlGyvw1VV2S1EwW6I_LijGp3EvT3gsJ3JWioOd99qMQ3uxfvsTN8x0wMdM8nliWHwjjw_pY/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Nested Classes'
       slug: 'inheritance'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTKar__z2oMKYiiUF_6G0jV06Pda5eF4M89focz-2QJGMYSN102712eUR8neFdlB96UdFl8GBaNQ0Dn/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vSR3uvkP9qohIyzzs7n5CVqgaHVLLEqu4UDHAka1qG9VVpw0y6yt07U0C4htwDRKt1L2oAYNl5EYK_U/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Generics'
       slug: 'inheritance'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vR3emcaoJyzOHdttpErEIDB8JcYhsnqCzzdxVxR5hs2yc7Ej62Z37aywR7hxRdJfcI8R4Ie6YVlHG0Z/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTHPoBlnZm4iJeNDZO79VZza3GRP2aB8RilEWse9oUTRmZn1r671prC_BjuM2fLQGLlsZIzR-wYkCyT/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Java History'
       slug: 'lambda'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRCN2ryK2qkn4u8UA_71VWhpFiRvKXsV9MtyVnKx49H8_AMYoks1396bAnEjOHhHReoee36Btcrifeg/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQBUQLdRuW8s9cEJ93Erl9ctvlfmVL9Ojn6G3hOTwTz-jkm6hUOtpnJESv6FyTVb404wDIVNgU6wkf8/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Lambda Expressions'
       slug: 'lambda'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTYZahVMTRTY4iCzX2a7sATAH034hkFNUPSI8Og-mfNN12ff-Se5v9dTk_0Ti4mZ6XKjjH99--NBDGa/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQwGnrZB_C2pOsFpt23gU3ZccNxvkIrYQaQS2Gcrgnof1xFeGz_V-l05ML3xXB8FvSBp7HwnEr56jdJ/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Basics'
       slug: 'stream'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQD1FPd4zMLyJO_TQbE1GM_uPe7EJEUEe1LtYXMeyAxzLYxiHnqktrfdGpy1IB2SM2iHP4C9YvVq-IQ/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTmc5g0qWRyAcCv6-zbn9aAH6yo-XKtI8wGhrAM98HqP33c3nV4gVdJ5DkiEG72K0Kz8cHf-6rVQxmw/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Pipelines'
       slug: 'stream'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vS_fCBKBno20id01RNqaMuYn1nj4AG0V4UqgkYWqUJ0I0v_lVjtujUFF22At6R6w121qTz979ooZbBt/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vStukH-FTxnQi8rO9M-A7CBxr3f2FXUlEamXBkvp0zohNHsRepmDOtreDK_0hkXAhLQ98vK3cZZy2O9/pub?start=false&loop=false&delayms=3000'
 
-    - text: 'Motivation'
-      slug: 'testing'
-      link: 'https://drive.google.com/open?id=0BxYofk0iB_upN09pQTBXbmxveGM'
+    - text: 'Assertions'
+      slug: 'debug'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vTl6LC2VscLhK2W6pmh_-EaL3_I1_Zx8tK5qrWGBueNmX-QoRda08cAc03_dgLZPn6p7eZzujLyhuPo/pub?start=false&loop=false&delayms=3000'
+
+    - text: 'Logging'
+      slug: 'debug'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRDxdHjmrgM4ceVlPFpI1a2wLSJRNw5i4L0n_ihet9T0D1RMtjrDsUL15P4eubiB0fgXa-Usg8cVZvX/pub?start=false&loop=false&delayms=3000'
+
 ---
 
 This guide will discuss the logistics and possible topics for exam 1. See the [Syllabus](../syllabus.html) for details on the exam pass requirement.
@@ -216,7 +232,15 @@ See below for how the exam will be conducted remotely. Generally speaking, expec
 
 ### Remote Format
 
-The exam will be conducted using Canvas as a single, large quiz. It will *not* use Lockdown Browser. You will *not* see your scores or answers after completing the exam until the retake begins.
+The exam will be split into two components: (1) the primary exam conducted within Canvas and (2) a short coding section conducted using Github Classroom. To complete the exam, students must have access to:
+
+| Resource | Login Account | Details |
+|:-----------------|:--------------|:--------|
+| [Canvas](https://usfca.instructure.com/courses/1597848) | Login using your USF account. | Used to conduct the exam. Will include the necessary Github Classroom link for the coding section. |
+| [Github](https://github.com/usf-cs212-spring2021) | Login using your Github account linked to this class. | Used for the coding section. A Github Classroom link will be provided in Canvas that will setup the necessary Github repository. Only code committed and pushed to this repository before the deadline will be used. |
+| Eclipse | N/A | Used to import, run, commit, and push code for the coding section. Other IDEs may be used at the students' risk. Students should verify all of the relevant lecture code is runnable from within their IDE! |
+
+The Canvas portion will *not* use Lockdown Browser. You will *not* see your scores or answers after completing the exam until the retake begins.
 
 The exam will be locked with a password. You must join the lecture Zoom livestream to receive instructions and the exam password at the start of lecture time. If you have questions during the exam, you can ask questions privately in chat or raise your hand on the Zoom. If you raise your hand on Zoom, you will be placed in a private breakout room to ask your question and share your screen if needed.
 
@@ -250,9 +274,9 @@ The exam is open book, with the exception that you **cannot** ask anyone else (s
 
 I recommend preparing to access to the following official Java documentation during the exam:
 
-  - [Java 14 API](https://docs.oracle.com/en/java/javase/14/docs/api/index.html)
-  - [Java SE 14 Language Specification](https://docs.oracle.com/javase/specs/jls/se14/html/index.html)
-  - [Java SE 14 Documentation Center](https://docs.oracle.com/en/java/javase/14/)
+  - [Java 15 API](https://docs.oracle.com/en/java/javase/15/docs/api/index.html)
+  - [Java SE 15 Language Specification](https://docs.oracle.com/javase/specs/jls/se15/html/index.html)
+  - [Java SE 15 Documentation Center](https://docs.oracle.com/en/java/javase/15/)
   - [Java Tutorials](https://docs.oracle.com/javase/tutorial/)
   - [Java Glossary](https://docs.oracle.com/javase/tutorial/information/glossary.html)
 
@@ -273,7 +297,7 @@ I will provide more context for each of the above points during the exam review.
 
 Students may receive [exam accommodations](https://myusf.usfca.edu/sds/exam-accommodations), such as additional testing time, through [Student Disability Services](https://myusf.usfca.edu/sds/exam-accommodations). I must receive a notification for accommodation from [SDS](https://myusf.usfca.edu/sds) approximately <strong>one week</strong> before the exam itself.
 
-Contact me on Piazza to schedule a specific time to take the exam and retake. In most cases, you will start the exam with your section and have additional time past the end of lecture time. I will try my best to actively monitor Piazza for any exam questions after lecture time ends, but will not be available to answer questions live on Zoom.
+Contact me on CampusWire to schedule a specific time to take the exam and retake. In most cases, you will start the exam with your section and have additional time past the end of lecture time. I will try my best to actively monitor CampusWire for any exam questions after lecture time ends, but might not be available to answer questions live on Zoom.
 
 ## Exam Retake
 {: .page-header }
@@ -399,3 +423,7 @@ The following are some example topics that you may want to make sure you underst
 - You should understand how to create and use **streams** and stream pipelines, and the differences between a stream and a collection.
 
 - You should understand terminology with respect to stream operations, including **intermediate** versus **terminal** operations, **lazy** versus **eager** operations, and what it means for an operation to be **non-interfering**, **stateless**, and without **side-effects**.
+
+- You should understand how to use **assertions** in Java using the `assert` keyword, and where it is (or is not) appropriate to use.
+
+- You should understand how to **configure and use Log4j2** for logging and debugging. If given a configuration file, you should be able to determine where log messages will go (file or console), which level log messages will be output (all, info, debug, etc.), and in what format.
