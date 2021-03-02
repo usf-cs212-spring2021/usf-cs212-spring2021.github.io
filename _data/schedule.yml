@@ -760,8 +760,37 @@ weeks:
         sections:
           - label: 'Content (Async)'
             items:
-              - text: 'Logging and Debugging'
-                type: *pending
+              - text: 'Stream Demo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/LQIzdLmSARnAEdl3mPQ4Ym_993zxSfMYze6_AEVlyNXm9re1poC-YQonsnD5-BU-.nT8bQ5vMEuFzcaEB?startTime=1600722040000'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/StreamPipelines/src/main/java/StreamDemo.java">Code</a>)'
+
+              - text: 'Infinite Stream Demo'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/pnLR7CNnJqCJvE_ErBJQDfeJ_jbPl8Q7adQbAviCzXDQm_GyUNIYLIxPdTk3ZjbX.3rproGsQ0Wl2c8Ut?startTime=1600724319000'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/StreamPipelines/src/main/java/InfiniteStreamDemo.java">Code</a>)'
+
+              - text: 'Text File Parser'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/etH9qBLCYaqX0p8JPrCFUPn4P47Mn8GdGJWZjrSoQ8oloxVTEMCmZCRwXxAIKm4f.85A1_fkDLCv5l_XI?startTime=1600726733000'
+                type: 'bump'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/LambdaExpressions/src/main/java/TextFileParser.java">Code</a>)'
+
+              - text: 'Text File Streamer'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/KlcSNa5WpmQ9sOBfOo_oW8F2cxR3L7iXNk89hPTascGW4KmqhvOsM9yHrapKrIXH.984GrtNsqlYWKIBQ?startTime=1600728111000'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/StreamPipelines/src/main/java/TextFileStreamer.java">Code</a>)'
+
+              - text: 'Assertions'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/zE8NgYcccrCbSO3A3ZFopjZScpD1uztiYKdy2l5KoIg280wuyGdmjQfrLLREFjrW.gd5VDL-M2-lAce_a?startTime=1614645969000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vTl6LC2VscLhK2W6pmh_-EaL3_I1_Zx8tK5qrWGBueNmX-QoRda08cAc03_dgLZPn6p7eZzujLyhuPo/pub?start=false&loop=false&delayms=3000">Slides</a>)'
+                type: 'bump'
+
+              - text: 'Logging'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/JeVvAEsJBdRxyHkf08H2Xv-shUoUxARR8Am0Wq86OuX15iP0Pfur00O_x0H04OuU.AKoAHIFt2xRmz6Wl?startTime=1614644404000'
+                more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vRDxdHjmrgM4ceVlPFpI1a2wLSJRNw5i4L0n_ihet9T0D1RMtjrDsUL15P4eubiB0fgXa-Usg8cVZvX/pub?start=false&loop=false&delayms=3000">Slides</a>)'
 
           - <<: *assignments
             items:
