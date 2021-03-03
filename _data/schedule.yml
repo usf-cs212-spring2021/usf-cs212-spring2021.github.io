@@ -811,9 +811,14 @@ weeks:
 
           - label: 'Lecture (Sync)'
             items:
+              - text: 'Debugging'
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/Debugging'
+
               - text: 'Exam Review'
                 icon: 'website'
                 link: '/guides/exam-1.html'
+                type: 'bump'
 
           - <<: *deadlines
             items:
