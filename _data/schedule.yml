@@ -807,7 +807,15 @@ weeks:
 
       - date: 2021-03-04
         sections:
-          - <<: *lectures
+          - <<: *recordings
+            items:
+              - text: 'CS 212-01 Recording'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/ruWtOARx0idClbWiDPqqigdcXh0ROEbdB2LnGZyhIr_frew_6qd5wN_oZ7wmMCkZ.8kPgmRKqKqsy1oYM?startTime=1614889714000'
+
+              - text: 'CS 212-02 Recording'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/_CwQYhQ1QikUDb0wymKh7UzmVRqIa7iKOgSni1fgh9K6YA0CZ6a3EvA33A39TfCX.LXsq1lg5w_Z19IUf?startTime=1614903731000'
 
           - label: 'Lecture (Sync)'
             items:
