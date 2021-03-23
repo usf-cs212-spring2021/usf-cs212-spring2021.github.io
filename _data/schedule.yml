@@ -722,8 +722,6 @@ weeks:
 
       - date: 2021-02-26
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
@@ -847,8 +845,6 @@ weeks:
 
       - date: 2021-03-05
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
@@ -881,8 +877,6 @@ weeks:
     days:
       - date: 2021-03-09
         sections:
-          - <<: *lectures
-
           - label: 'Lecture (Sync)'
             items:
               - text: 'Exam 1'
@@ -891,8 +885,6 @@ weeks:
 
       - date: 2021-03-11
         sections:
-          - <<: *lectures
-
           - label: 'Lecture (Sync)'
             items:
               - text: 'Exam 1 Retake'
@@ -901,8 +893,6 @@ weeks:
 
       - date: 2021-03-12
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
