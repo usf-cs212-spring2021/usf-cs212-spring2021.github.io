@@ -105,3 +105,9 @@ regex:
   text: 'Regex Basics'
   link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375254'
   date: 2021-03-25
+
+testing:
+  <<: *default
+  text: 'Unit Testing'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375251'
+  date: 2021-04-01
