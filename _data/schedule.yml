@@ -992,23 +992,32 @@ weeks:
               - file: 'quizzes'
                 name: 'regex'
 
-          # - <<: *deadlines
-          #   items:
-
-
       - date: 2021-03-25
         sections:
           - <<: *lectures
 
           - label: 'Lecture (Sync)'
             items:
-              - text: 'Software Testing'
-                type: *pending
+              - text: 'Software Testing Motivation'
+                icon: 'slides'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vQAJY-5gfBjG9UDKp5OimRyUkBJUDGPrh8Yv0irOAjkziuEd2GAGd-LZMe-b10Ea2ZTDkODP2wRvH86/pub?start=false&loop=false&delayms=3000'
 
-          # - <<: *assignments
-          #   items:
-          #     - text: 'Pending'
-          #       type: *pending
+              - text: 'Software Testing Introduction'
+                icon: 'slides'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vSEWbAT6OdoZqRKGWNRAp-3gc9tobdkDL6BgGdVHFZ-QZrgA9M1pIr6lRqFPXM-0yGX6_rjpTMsD4hO/pub?start=false&loop=false&delayms=3000'
+
+              - text: 'Unit Testing'
+                icon: 'slides'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vRQXsc0bxAfHAHGJlNrooOOoo5o8LaDVXcS7GR1lPNbOC5Vo7ULn0MFg-wP10RkY6O9Dc5I1Zek6W8O/pub?start=false&loop=false&delayms=3000'
+                type: 'bump'
+
+              - text: 'Unit Testing'
+                icon: 'code'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'testing'
 
           - <<: *deadlines
             items:
@@ -1081,6 +1090,9 @@ weeks:
             items:
               - file: 'attendance'
                 name: 'class10'
+
+              - file: 'quizzes'
+                name: 'testing'
 
               - text: 'Easter Break @ 4pm'
                 date: 2021-04-01
