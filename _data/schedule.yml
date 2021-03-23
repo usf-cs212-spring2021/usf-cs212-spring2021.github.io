@@ -942,13 +942,55 @@ weeks:
           - label: 'Content (Async)'
             items:
               - text: 'Regular Expressions'
-                type: *pending
+                icon: 'video'
+                link: 'https://youtube.com/playlist?list=PLm6V-0HXZmF0-si4t072pEON5BNVyss2g'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/tree/main/RegularExpressions">Code</a>)'
+
+              - text: '– Character Classes'
+                icon: 'nothing'
+                type: 'em'
+                link: 'https://youtu.be/-wgTnQjqwWA'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/RegularExpressions/src/main/java/RegexClasses.java">Code</a>)'
+
+              - text: '– Quantifiers'
+                icon: 'nothing'
+                type: 'em'
+                link: 'https://youtu.be/IuoVnikCmWI'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/RegularExpressions/src/main/java/RegexQuantifiers.java">Code</a>)'
+
+              - text: '– Word Parsing'
+                icon: 'nothing'
+                type: 'em'
+                link: 'https://youtu.be/w9c3YZ7-Csc'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/RegularExpressions/src/main/java/RegexWordParsing.java">Code</a>)'
+
+          - label: 'Additional Content'
+            dates: ''
+            items:
+              - text: 'Learning Regular Expressions'
+                link: 'https://www.linkedin.com/learning/learning-regular-expressions-2/'
+                icon: 'website'
+
+              - text: 'Linkedin Learning Mini-Course'
+                icon: 'nothing'
+
+              - text: 'Login via MyUSF Required'
+                icon: 'nothing'
+                type: 'em'
+
+              - text: 'Regular Expressions'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/RegularExpressions'
+                icon: 'code'
+                type: 'bump'
+
+              - text: 'Includes Extra Code Demos'
+                icon: 'nothing'
+                type: 'em'
 
           - <<: *assignments
             items:
-              - text: 'Regex Basics'
-                icon: 'quiz'
-                type: *pending
+              - file: 'quizzes'
+                name: 'regex'
 
           # - <<: *deadlines
           #   items:
@@ -972,6 +1014,9 @@ weeks:
             items:
               - file: 'attendance'
                 name: 'class9'
+
+              - file: 'quizzes'
+                name: 'regex'
 
       - date: 2021-03-26
         sections:

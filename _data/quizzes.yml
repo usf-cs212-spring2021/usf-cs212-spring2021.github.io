@@ -99,3 +99,9 @@ logging:
   text: 'Logging'
   link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375249'
   date: 2021-03-04
+
+regex:
+  <<: *default
+  text: 'Regex Basics'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375254'
+  date: 2021-03-25
