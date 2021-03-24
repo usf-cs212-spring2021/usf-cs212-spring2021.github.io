@@ -39,3 +39,9 @@ forum_response:
   text: 'Forum Response'
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7040992'
   date: 2021-05-14
+
+midterm_survey:
+  <<: *default
+  text: 'Midterm Survey'
+  link: 'https://usfca.instructure.com/courses/1597848/assignments/7068377'
+  date: 2021-04-09

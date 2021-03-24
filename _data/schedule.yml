@@ -1019,6 +1019,9 @@ weeks:
               - file: 'quizzes'
                 name: 'testing'
 
+              - file: 'participation'
+                name: 'midterm_survey'
+
           - <<: *deadlines
             items:
               - file: 'attendance'
@@ -1183,6 +1186,9 @@ weeks:
 
               - file: 'homework'
                 name: 'readwritelock'
+
+              - file: 'participation'
+                name: 'midterm_survey'
 
               - text: 'PROJECT CUTOFF'
                 link: '/syllabus.html#pass-requirements'
