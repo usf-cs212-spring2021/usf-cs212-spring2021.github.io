@@ -1013,6 +1013,7 @@ weeks:
 
               - text: 'Unit Testing'
                 icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/UnitTesting'
 
           - <<: *assignments
             items:
