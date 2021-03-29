@@ -1083,7 +1083,7 @@ weeks:
               - text: 'Thread State Demo'
                 icon: 'video'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/MultithreadingBasics/src/main/java/ThreadStateDemo.java">Code</a>)'
-                # link: ''
+                link: 'https://usfca.zoom.us/rec/share/hkAZYeS33ASFvYQXZ7HmRgKcvosK0e__81pw16JKtImodjomhD4vbajE2LhYKPIO.xX8cmrxCNkJ7XdRm?startTime=1617060254000'
 
               - text: 'Synchronization'
                 icon: 'video'
