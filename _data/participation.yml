@@ -45,3 +45,9 @@ midterm_survey:
   text: 'Midterm Survey'
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7068377'
   date: 2021-04-09
+
+thread_demos:
+  <<: *default
+  text: 'Thread Demos'
+  link: 'https://usfca.instructure.com/courses/1597848/discussion_topics/7985259'
+  date: 2021-04-01
