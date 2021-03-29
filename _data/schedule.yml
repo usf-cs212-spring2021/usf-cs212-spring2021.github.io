@@ -1072,12 +1072,12 @@ weeks:
               - text: 'Multithreading Introduction'
                 icon: 'video'
                 more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vRrRkRVuDVZaGydjXy6XTmTjzMTyVk8jja4PflamxOGsExzDDUCcW6t0nZPLGRVRKGUTVBXw7qzJjcU/pub?start=false&loop=false&delayms=3000">Slides</a>)'
-                # link: ''
+                link: 'https://usfca.zoom.us/rec/share/9N3388g5_aETARjvAuACzyRsZkOBwJ_ytz8L3ucQTcEvLKjmNTJDrUnQj3IBUX2H.TJjVNNGdank-zWl7?startTime=1617051255000'
 
               - text: 'Thread Lifecycle'
                 icon: 'video'
                 more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vQ5DJPlVAbo6e_iTb4JLX4lRpAfniR3H4eH7Jw_jEB4KjoyJV8P8r0CA_qiC7K2z0PIjATQQvpFYqVa/pub?start=false&loop=false&delayms=3000">Slides</a>)'
-                # link: ''
+                link: 'https://usfca.zoom.us/rec/share/a_TzsNWHbK5gZOhE4y52-B-BpVZciYgAn1Qw5ljayK_x5NSoMUYehspxlSA-pCCr.7u2mn9G0tpTJc-4E?startTime=1617052548000'
                 type: 'bump'
 
               - text: 'Thread State Demo'
