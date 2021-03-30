@@ -1094,7 +1094,7 @@ weeks:
               - text: 'Thread Liveness'
                 icon: 'video'
                 more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vQ4w24Xsq1CYnqfIca57e5OeFYoDXBSmhxe7zkkGwwweg2lyzNdUE-bsj7KBFOecGss83y5PpUkJiX6/pub?start=false&loop=false&delayms=3000">Slides</a>)'
-                # link: ''
+                link: 'https://usfca.zoom.us/rec/share/7YuqDynJX70KbNHwWlCL2w5FuEatZHfBES2aESHLsuaydvlCpFPSQjLY8MzR0d0j.SwApKP3ZN3Vb9tMt?startTime=1617062334000'
 
               - text: 'Random Array Total'
                 icon: 'video'
