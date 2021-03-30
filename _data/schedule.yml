@@ -1108,7 +1108,7 @@ weeks:
               - text: 'Bounded Buffer'
                 icon: 'video'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/tree/main/MultithreadingBasics/src/main/java">Code</a>)'
-                # link: ''
+                link: 'https://usfca.zoom.us/rec/share/FLzftf5BaarDB-i600cKSyVjC5MsahHft4vfvmTLZHZLJ_n4gzccHQAwzB7Kndkp.HPYGRchBWXXnd4bZ?startTime=1617068942000'
 
           - <<: *assignments
             items:
