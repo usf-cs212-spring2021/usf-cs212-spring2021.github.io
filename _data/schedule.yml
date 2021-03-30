@@ -1088,7 +1088,7 @@ weeks:
               - text: 'Synchronization'
                 icon: 'video'
                 more: '(<a href="https://docs.google.com/presentation/d/e/2PACX-1vQGJzZJ503qi2UeNjc0Q9EfGvs2zQu21v7XBxkQw7qz-dT7uLuLM9AlC7LACwXWXDRZEUG0Q4ITBCRz/pub?start=false&loop=false&delayms=3000">Slides</a>)'
-                # link: ''
+                link: 'https://usfca.zoom.us/rec/share/O7lXx4fwbSPdrp86aysc_GSmJ3UokaL3fmgSJ2cB024EpW9qW0R4lekqpFxXtFzN.GuGyCD8XI4XqFGOi?startTime=1617061024000'
                 type: 'bump'
 
               - text: 'Thread Liveness'
