@@ -118,7 +118,7 @@ threads:
   link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375256'
   date: 2021-04-01
 
-locks:
+synchronization:
   <<: *default
   text: 'Synchronization'
   link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375252'
