@@ -1137,12 +1137,22 @@ weeks:
           - label: 'Lecture (Sync)'
             items:
               - text: 'Synchronization'
-                type: *pending
+                icon: 'slides'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vQGJzZJ503qi2UeNjc0Q9EfGvs2zQu21v7XBxkQw7qz-dT7uLuLM9AlC7LACwXWXDRZEUG0Q4ITBCRz/pub?start=false&loop=false&delayms=3000'
 
-          # - <<: *assignments
-          #   items:
-          #     - text: 'Pending'
-          #       type: *pending
+              - text: 'Custom Locks'
+                icon: 'slides'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vQwvO5g8udwm1r59se8aby8hdv_auhzny98h0dsJB1TmN7sbeGk5EfMd3kx4w9qSz-mOCpvk1cMFVSu/pub?start=false&loop=false&delayms=3000'
+
+              - text: 'Synchronization'
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/MultithreadingSynchronization'
+                type: 'bump'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'synchronization'
 
           - <<: *deadlines
             items:
@@ -1223,6 +1233,9 @@ weeks:
               - file: 'attendance'
                 name: 'class11'
 
+              - file: 'quizzes'
+                name: 'synchronization'
+                
       - date: 2021-04-09
         sections:
           - <<: *labs
