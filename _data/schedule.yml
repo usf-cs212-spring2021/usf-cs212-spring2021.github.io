@@ -1125,14 +1125,11 @@ weeks:
 
       - date: 2021-04-01
         sections:
-          - label: 'Livestream'
-            dates: false
+          - <<: *recordings
             items:
-            - text: 'CS 212-01 Lecture'
-              zoom: 'lecture1'
-
-            - text: 'CS 212-02 CANCELLED'
-              icon: 'stream'
+              - text: 'CS 212-01 Recording'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/2zZRWwa4emblW1jHerFpZjsD3EzjBPv85IYj9vtBH-xCzlNyl7DaLn5OQWJ6YM5S.B9Pp4-y-oaNi7nCQ?startTime=1617305120000'
 
           - label: 'Lecture (Sync)'
             items:
@@ -1235,7 +1232,7 @@ weeks:
 
               - file: 'quizzes'
                 name: 'synchronization'
-                
+
       - date: 2021-04-09
         sections:
           - <<: *labs
