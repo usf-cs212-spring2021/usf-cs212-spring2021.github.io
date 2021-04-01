@@ -1255,9 +1255,6 @@ weeks:
               - file: 'attendance'
                 name: 'other11'
 
-              - file: 'homework'
-                name: 'readwritelock'
-
               - file: 'participation'
                 name: 'midterm_survey'
 
@@ -1335,6 +1332,9 @@ weeks:
             items:
               - file: 'attendance'
                 name: 'other12'
+
+              - file: 'homework'
+                name: 'readwritelock'
 
               - file: 'homework'
                 name: 'primefinder'
