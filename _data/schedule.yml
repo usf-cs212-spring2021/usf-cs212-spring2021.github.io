@@ -1233,7 +1233,7 @@ weeks:
 
               - text: 'WorkQueue Implementation'
                 icon: 'video'
-                link: ''
+                link: 'https://usfca.zoom.us/rec/share/4f-07UxG98baM2C9Ii6ZEZbLoHsg3CU8lXZ4_qsLUUV1BKnAldkifIuC6r_1Nl9z.gf76sWSsZZYa6EU1?startTime=1617568670000'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/MultithreadingWorkQueues/src/main/java/WorkQueue.java">Code</a>)'
 
           - <<: *assignments
