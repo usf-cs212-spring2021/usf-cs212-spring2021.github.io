@@ -51,3 +51,9 @@ thread_demos:
   text: 'Thread Demos'
   link: 'https://usfca.instructure.com/courses/1597848/discussion_topics/7985259'
   date: 2021-04-01
+
+indexedset:
+  <<: *default
+  text: 'IndexedSet Demo'
+  link: 'https://usfca.instructure.com/courses/1597848/discussion_topics/7985259'
+  date: 2021-04-08

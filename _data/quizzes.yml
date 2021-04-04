@@ -123,3 +123,9 @@ synchronization:
   text: 'Synchronization'
   link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375252'
   date: 2021-04-08
+
+queues:
+  <<: *default
+  text: 'Work Queues'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375241'
+  date: 2021-04-08
