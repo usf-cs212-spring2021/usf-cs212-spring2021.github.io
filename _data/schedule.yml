@@ -1257,18 +1257,21 @@ weeks:
 
       - date: 2021-04-08
         sections:
-          - <<: *lectures
+          - <<: *recordings
+            items:
+              - text: 'CS 212-01 Recording'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/qmPdQMONk4mWRm0I-_O70KNmDQj4aTcerHrHjZ348Xs5R0IZrlmyEmwsZiSaSmPx.c62LTw-m0mTkDcXf?startTime=1617911238000'
+
+              - text: 'CS 212-02 Recording'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/Ia77rNqZTDGKQtqIPVofB4UZGwK0kWNYrs_CYiUqwUfbvqHGf3-jxhtufPNzc8zq.1W1mMCKwCEJFxFyO?startTime=1617924921000'
 
           - label: 'Lecture (Sync)'
             items:
               - text: 'Work Queues'
                 icon: 'code'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/MultithreadingWorkQueues'
-
-          # - <<: *assignments
-          #   items:
-          #     - text: 'Pending'
-          #       type: *pending
 
           - <<: *deadlines
             items:
