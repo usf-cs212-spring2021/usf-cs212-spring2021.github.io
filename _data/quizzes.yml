@@ -129,3 +129,21 @@ queues:
   text: 'Work Queues'
   link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375241'
   date: 2021-04-08
+
+web:
+  <<: *default
+  text: 'Web Basics'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375247'
+  date: 2021-04-16
+
+http:
+  <<: *default
+  text: 'HTTP Basics'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375243'
+  date: 2021-04-16
+
+dynamic:
+  <<: *default
+  text: 'Dynamic Pages'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375250'
+  date: 2021-04-16

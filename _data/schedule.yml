@@ -1289,8 +1289,6 @@ weeks:
 
       - date: 2021-04-09
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
@@ -1361,10 +1359,16 @@ weeks:
                 link: 'https://usfca.zoom.us/rec/share/Wyz0fYTQ9nhbRwKo4RGHPtXe0qoeajWjigf62FXt0YIgjXs4N7j-nUYdDktXO4Op.aAeZgIqggNu9H8q6?startTime=1618256152000'
                 more: '(<a href="">Slides</a>)'
 
-          # - <<: *assignments
-          #   items:
-          #     - text: 'Pending'
-          #       type: *pending
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'web'
+
+              - file: 'quizzes'
+                name: 'http'
+
+              - file: 'quizzes'
+                name: 'dynamic'
 
           - <<: *deadlines
             items:
@@ -1412,23 +1416,37 @@ weeks:
                 icon: 'project'
 
           - <<: *assignments
+            dates: false
             items:
               - file: 'homework'
                 name: 'htmlfetcher'
 
           - <<: *deadlines
+            dates: true
             items:
               - file: 'attendance'
                 name: 'other12'
 
               - file: 'homework'
                 name: 'readwritelock'
+                type: 'bump'
 
               - file: 'homework'
                 name: 'primefinder'
 
+              - file: 'quizzes'
+                name: 'web'
+                type: 'bump'
+
+              - file: 'quizzes'
+                name: 'http'
+
+              - file: 'quizzes'
+                name: 'dynamic'
+
               - file: 'projects'
                 name: '2d'
+                type: 'bump'
 
   - week: 13
     days:
