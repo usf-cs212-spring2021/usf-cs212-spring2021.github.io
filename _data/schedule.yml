@@ -1325,22 +1325,22 @@ weeks:
               - text: 'Web Basics'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/R6JAy6yeUX1HDcc9AuwzDUIgRl2k20EM6BJh7xG_Bj3spGd3mwXVRHmNR1OdjYly.6hnGcwNrNIEjYB6R?startTime=1618250941000'
-                more: '(<a href="">Slides</a>)'
+                more: '(<a href="https://drive.google.com/file/d/0BxYofk0iB_upNTVsMXdsa1F2bzg/view">Slides</a>)'
 
               - text: 'URL Basics'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/h0XU9Ohx2J_ntsNq9T1wosuqvijI1Z67M9mNZsDn0T70DBSvOAk7fi2tBCzMsQ1l.QiK8NQkeGTR5NS7B?startTime=1618251523000'
-                more: '(<a href="">Slides</a>)'
+                more: '(<a href="https://drive.google.com/file/d/0BxYofk0iB_upMUxuOWRuaUVIalU/view">Slides</a>)'
 
               - text: 'HTTP Basics'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/UnGivEOummsf-emznUqN1WBOYQB1oq66wgYJWuuWTXfo872o948uZn2fSqaxOUJm.TC4mBc1BQJGXWXUX?startTime=1618251946000'
-                more: '(<a href="">Slides</a>)'
+                more: '(<a href="https://drive.google.com/file/d/0BxYofk0iB_upTEhpWEw0TE9WSDA/view">Slides</a>)'
 
               - text: 'HTML Basics'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/3vywUCPEoPDRGoprd5TKjHx6AX534v8YJy1voGq6RYkmXItTx-sA7JOlKT61dOr9.maiwTdbST6n_8ZNL?startTime=1618252604000'
-                more: '(<a href="">Slides</a>)'
+                more: '(<a href="https://drive.google.com/file/d/0BxYofk0iB_updW1qdnJEOXlMcTg/view">Slides</a>)'
 
               - text: 'Simple Sockets'
                 icon: 'video'
@@ -1352,12 +1352,12 @@ weeks:
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/kSlCxgT1jZ3paNa0nVDRcNgywXD8woySt_yBz2KNM-ukE_BmBID8xFZ2anlJOVFP.flMGDBwc1lsbNgCW?startTime=1618255589000'
                 type: 'bump'
-                more: '(<a href="">Slides</a>)'
+                more: '(<a href="https://drive.google.com/open?id=0BxYofk0iB_upY1ozdHk5VVYycUE">Slides</a>)'
 
               - text: 'Jetty and Servlets'
                 icon: 'video'
                 link: 'https://usfca.zoom.us/rec/share/Wyz0fYTQ9nhbRwKo4RGHPtXe0qoeajWjigf62FXt0YIgjXs4N7j-nUYdDktXO4Op.aAeZgIqggNu9H8q6?startTime=1618256152000'
-                more: '(<a href="">Slides</a>)'
+                more: '(<a href="https://drive.google.com/open?id=0BxYofk0iB_upZFFPWUZocmdtLWM">Slides</a>)'
 
           - <<: *assignments
             items:
@@ -1391,11 +1391,6 @@ weeks:
               - text: 'Servlet Basics'
                 icon: 'code'
                 link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/ServletBasics'
-
-          # - <<: *assignments
-          #   items:
-          #     - text: 'Pending'
-          #       type: *pending
 
           - <<: *deadlines
             items:
