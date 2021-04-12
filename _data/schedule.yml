@@ -1324,8 +1324,42 @@ weeks:
         sections:
           - label: 'Content (Async)'
             items:
-              - text: 'Sockets'
-                type: *pending
+              - text: 'Web Basics'
+                icon: 'video'
+                link: ''
+                more: '(<a href="">Slides</a>)'
+
+              - text: 'URL Basics'
+                icon: 'video'
+                link: ''
+                more: '(<a href="">Slides</a>)'
+
+              - text: 'HTTP Basics'
+                icon: 'video'
+                link: ''
+                more: '(<a href="">Slides</a>)'
+
+              - text: 'HTML Basics'
+                icon: 'video'
+                link: ''
+                more: '(<a href="">Slides</a>)'
+
+              - text: 'Simple Sockets'
+                icon: 'video'
+                link: ''
+                type: 'bump'
+                more: '(<a href="">Code</a>)'
+
+              - text: 'Dynamic Webpages'
+                icon: 'video'
+                link: ''
+                type: 'bump'
+                more: '(<a href="">Slides</a>)'
+
+              - text: 'Jetty and Servlets'
+                icon: 'video'
+                link: ''
+                more: '(<a href="">Slides</a>)'
 
           # - <<: *assignments
           #   items:
