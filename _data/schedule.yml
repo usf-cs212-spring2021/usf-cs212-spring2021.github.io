@@ -1348,7 +1348,7 @@ weeks:
                 icon: 'video'
                 link: ''
                 type: 'bump'
-                more: '(<a href="">Code</a>)'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/tree/main/Sockets">Code</a>)'
 
               - text: 'Dynamic Webpages'
                 icon: 'video'
@@ -1380,8 +1380,13 @@ weeks:
 
           - label: 'Lecture (Sync)'
             items:
-              - text: 'Servlets'
-                type: *pending
+              - text: 'Sockets'
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/Sockets'
+
+              - text: 'Servlet Basics'
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/ServletBasics'
 
           # - <<: *assignments
           #   items:
