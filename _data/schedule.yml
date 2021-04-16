@@ -1414,7 +1414,7 @@ weeks:
             dates: false
             items:
               - file: 'homework'
-                name: 'htmlfetcher'
+                name: 'htmlcleaner'
 
           - <<: *deadlines
             dates: true
@@ -1496,7 +1496,7 @@ weeks:
           - <<: *assignments
             items:
               - file: 'homework'
-                name: 'htmlcleaner'
+                name: 'htmlfetcher'
 
               - file: 'projects'
                 name: '4f'
@@ -1507,7 +1507,7 @@ weeks:
                 name: 'other13'
 
               - file: 'homework'
-                name: 'htmlfetcher'
+                name: 'htmlcleaner'
 
   - week: 14
     days:
@@ -1577,7 +1577,7 @@ weeks:
                 name: 'other14'
 
               - file: 'homework'
-                name: 'htmlcleaner'
+                name: 'htmlfetcher'
 
   - week: 15
     days:
