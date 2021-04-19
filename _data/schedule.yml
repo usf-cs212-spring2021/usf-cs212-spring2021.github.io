@@ -1471,16 +1471,17 @@ weeks:
                 icon: 'video'
                 type: 'bump'
 
-              - text: '– Introduction'
+              - text: '– Message Server'
                 icon: 'nothing'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ServletData/src/main/java/MessageServer.java">Code</a>)'
 
-              - text: '– Basic Servlet'
+              - text: '– Message Servlet'
                 icon: 'nothing'
-                more: '(<a href="">Code</a>)'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ServletData/src/main/java/MessageServlet.java">Code</a>)'
 
               - text: '– Bulma Servlet'
                 icon: 'nothing'
-                more: '(<a href="">Code</a>)'
+                more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ServletData/src/main/java/BulmaMessageServlet.java">Code</a>)'
 
           - <<: *assignments
             items:
