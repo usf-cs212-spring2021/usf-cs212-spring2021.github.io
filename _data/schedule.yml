@@ -1468,6 +1468,7 @@ weeks:
               - text: 'Context Server'
                 icon: 'video'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ServletBasics/src/main/java/ContextServer.java">Code</a>)'
+                link: 'https://usfca.zoom.us/rec/share/w6wIyQcWz4M5Y2ntQNpD8swuZVS9SKuf0YgtoNgVJWFRZnqTziJH86UVBu3qXHs3.A4D50oFcYNGYjweC?startTime=1618857370000'
 
               - text: 'Message Server (3 Parts)'
                 icon: 'video'
@@ -1476,14 +1477,17 @@ weeks:
               - text: '– Message Server'
                 icon: 'nothing'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ServletData/src/main/java/MessageServer.java">Code</a>)'
+                link: 'https://usfca.zoom.us/rec/share/nCqhBxLCY5n5umE9Co62L5KzRPuTjnTInriCWH6S8L9IeKbqnHSIgzHYH4w9j5Ex.a9doRN-_CI6JD9MJ?startTime=1618858758000'
 
               - text: '– Message Servlet'
                 icon: 'nothing'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ServletData/src/main/java/MessageServlet.java">Code</a>)'
+                link: 'https://usfca.zoom.us/rec/share/IQWYSL2CzGz2CVQ7tPlz7Zv8ZWbgXp-yrpRgkgWK0eWkd7nIZLax42BHkHXe2ezt.tEAg1lsX6lQ278ny?startTime=1618859903000'
 
               - text: '– Bulma Servlet'
                 icon: 'nothing'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ServletData/src/main/java/BulmaMessageServlet.java">Code</a>)'
+                link: 'https://usfca.zoom.us/rec/share/F9C5hrJivKibN5jbVqIe6KpSC7FHB3rCNuQT6JFVE9VPF7y7YQxoaeVtn0My9skt.IukaPEVMQY3KKShx?startTime=1618861583000'
 
           - <<: *assignments
             items:
