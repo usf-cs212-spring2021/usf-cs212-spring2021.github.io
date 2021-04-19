@@ -5,14 +5,18 @@ layout: guides
 key: 2.6
 
 tags:
-  - text: 'New'
-    type: 'is-primary'
+  - text: 'Pending'
+    type: 'is-light'
 
 assignments:
   - text: 'Project 4 Search Engine'
-    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987892'
+    link: 'https://usfca.instructure.com/courses/1597848/assignments/7043816'
 
 ---
+
+Pending
+
+{% comment %}
 
 For this project, you will extend your [previous project](project-4a.html) to include a [search engine web interface](project-4b.html) using [embedded Jetty](https://www.eclipse.org/jetty/) and servlets to search that index.
 
@@ -143,3 +147,5 @@ The majority of the output for this project will be in the form of HTTP response
 ## Testing
 
 No tests will be provided for this project. Instead, you will demonstrate your search engine functionality to the instructor during your final code review appointment during finals week.
+
+{% endcomment %}

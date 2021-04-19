@@ -5,14 +5,18 @@ layout: guides
 key: 2.5
 
 tags:
-  - text: 'New'
-    type: 'is-primary'
+  - text: 'Pending'
+    type: 'is-light'
 
 assignments:
   - text: 'Project 4 Web Crawler'
-    link: 'https://usfca.instructure.com/courses/1594619/assignments/6987891'
+    link: 'https://usfca.instructure.com/courses/1597848/assignments/7043815'
 
 ---
+
+Pending
+
+{% comment %}
 
 For this project, you will extend your [previous project](project-3.html) to create a multithreaded web crawler using a work queue that builds the inverted index from a seed URL.
 
@@ -103,3 +107,5 @@ It is important to develop the project iteratively. One possible breakdown of ta
   - Outside of the relevant homework and lecture classes, there is likely only one new class (a web crawler class) required for this project. However, you must be careful to properly multithread and synchronize in this class!
 
 The important part will be to test your code as you go. The JUnit tests provided only test the entire project as a whole, not the individual parts. You are responsible for testing the individual parts themselves.
+
+{% endcomment %}

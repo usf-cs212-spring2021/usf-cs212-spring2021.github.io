@@ -3,18 +3,18 @@ title: Project 4 Final Project
 navbar: Guides
 layout: guides
 key: 2.4
-#bump: true
+bump: true
 
-#tags:
-#  - text: 'New'
-#    type: 'is-primary'
-#
-#assignments:
-#  - text: 'Project 4 Web Crawler'
-#    link: 'project-4a.html'
-#
-#  - text: 'Project 4 Search Engine'
-#    link: 'project-4b.html'
+tags:
+  - text: 'Pending'
+    type: 'is-light'
+
+assignments:
+  - text: 'Project 4 Web Crawler'
+    link: 'project-4a.html'
+
+  - text: 'Project 4 Search Engine'
+    link: 'project-4b.html'
 
 ---
 

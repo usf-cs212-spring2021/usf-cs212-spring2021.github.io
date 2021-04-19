@@ -6,10 +6,14 @@ key: 3.0
 bump: true
 
 tags:
-  - text: 'New'
-    type: 'is-primary'
+  - text: 'Pending'
+    type: 'is-light'
 
 ---
+
+Pending
+
+{% comment %}
 
 Instead of a final exam, you will have a final code review during finals week. Here are some details regarding how your final code reviews will be handled.
 
@@ -148,3 +152,5 @@ Final code reviews are conducted during finals week from Monday December 7 to Th
 **Everyone should sign up for an appointment regardless of how much progress on projects they have made.** You do not need to have an approved Github pull request to sign up for your final code review appointment.
 
 You may sign up for an appointment using the Canvas scheduler. Look for "Final Code Review" on the calendar. **Treat your appointment like a final exam**; if you miss it you do not get another opportunity and receive a 0 for any incomplete project grades.
+
+{% endcomment %}
