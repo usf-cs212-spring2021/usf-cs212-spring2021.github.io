@@ -1458,10 +1458,12 @@ weeks:
               - text: 'Simple File Server'
                 icon: 'video'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ServletBasics/src/main/java/SimpleFileServer.java">Code</a>)'
+                link: 'https://usfca.zoom.us/rec/share/o1Rt2cm609brotJ8dEqkU93ST2gy6t-wg0CZ7qy00v8yLiO9K4-CoIO6a2LBRFTT.SmAh8-CniA958P2N?startTime=1618856130000'
 
               - text: 'Gallery Server'
                 icon: 'video'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/ServletBasics/src/main/java/GalleryServer.java">Code</a>)'
+                link: 'https://usfca.zoom.us/rec/share/6yq8dIbuRumPpw9ZZ-79Hz70XL2gvNvBasOkpQPEemQO0Z6HbrPR9jgS8MpgRqxh.4dLyPjNMwKJOChpu?startTime=1618856795000'
 
               - text: 'Context Server'
                 icon: 'video'
