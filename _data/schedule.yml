@@ -1487,11 +1487,11 @@ weeks:
 
           - <<: *assignments
             items:
-              - text: 'Servlet Contexts'
-                type: *pending
+              - file: 'quizzes'
+                name: 'contexts'
 
-              - text: 'Message Board'
-                type: *pending
+              - file: 'participation'
+                name: 'message_server'
 
           - <<: *deadlines
             items:
@@ -1542,8 +1542,15 @@ weeks:
               - file: 'attendance'
                 name: 'other13'
 
+              - file: 'quizzes'
+                name: 'contexts'
+
+              - file: 'participation'
+                name: 'message_server'
+
               - file: 'homework'
                 name: 'htmlcleaner'
+                type: 'bump'
 
   - week: 14
     days:
