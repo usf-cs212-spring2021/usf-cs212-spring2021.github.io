@@ -10,10 +10,6 @@ assignments:
 
 - text: 'Project 2 Design'
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7043804'
-
-tags:
-  - text: 'Updated'
-    type: 'is-primary'
 ---
 
 For this project, you will extend your [previous project](project-1.html) to support exact search and partial search. In addition to meeting the previous project requirements, your code must be able to track the total number of words found in each text file, parse and stem a query file, generate a sorted list of search results from the inverted index, and support writing those results to a JSON file.
