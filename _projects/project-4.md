@@ -6,7 +6,7 @@ key: 2.4
 bump: true
 
 tags:
-  - text: 'New'
+  - text: 'Updated'
     type: 'is-primary'
 
 assignments:

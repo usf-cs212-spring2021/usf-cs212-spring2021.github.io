@@ -14,7 +14,38 @@ assignments:
 
 ---
 
+For this project, you will extend your [previous project](project-4a.html) to include a [search engine web interface](project-4b.html) using [embedded Jetty](https://www.eclipse.org/jetty/) and servlets to search that index. You fully must pass the [web crawler functionality](project-4a.html) to be eligible to earn credit for this project.
+
+**This writeup is for the search engine functionality only.** See the general [Project 4 Writeup](project-4.html) for more details.
+
+## Functionality
+
 Pending
+
+## Extra Credit
+
+Pending
+
+## Input
+
+Your main method must be placed in a class named `Driver`. The `Driver` class should accept the following **additional** command-line arguments:
+
+  - `-server port` where `-server` indicates a search engine web server should be launched and the next argument `port` is the port the web server should use to accept socket connections. Use `8080` as the default value if it is not provided.
+
+    If the `-server` flag is provided, your code should enable multithreading with the default number of worker threads even if the `-threads` flag is not provided.
+
+The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order you should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
+
+Your code should support all of the command-line arguments from the [previous project](project-4a.html) as well.
+
+## Output
+
+The majority of the output for this project will be in the form of HTTP responses to a browser. Only output the inverted index or search results to a file if the necessary flags are provided.
+
+## Testing
+
+No tests will be provided for this project. Instead, you will demonstrate your search engine functionality to the instructor during your final code review appointment during finals week.
+
 
 {% comment %}
 
@@ -128,24 +159,16 @@ While there are many ways to lose points, the total possible deduction is capped
 
 You may complete extra functionality to earn extra credit in the project category. See the primary [Project 4](project-4.html) writeup for details.
 
-## Input
+### Extra Credit
 
-Your main method must be placed in a class named `Driver`. The `Driver` class should accept the following **additional** command-line arguments:
+Students may complete additional functionality for the [search engine](project-4b.html) as extra credit. There is no cap on how much extra credit you can earn for this specific project, however the overall project category grade will be capped to 110% at the end of the semester.
 
-  - `-server port` where `-server` indicates a search engine web server should be launched and the next argument `port` is the port the web server should use to accept socket connections. Use `8080` as the default value if it is not provided.
+For example, suppose you lost 10% because you submitted project 1 functionality late and completed 130% worth of extra credit on the search engine project. Instead of earning 130% &ndash; 10% = 120% in the project category, your overall project category grade will be capped to 110% instead. This is a great way to make up missed points from late submissions, as well as boost your score if you struggled in the other grade categories.
 
-    If the `-server` flag is provided, your code should enable multithreading with the default number of worker threads even if the `-threads` flag is not provided.
+The search engine core and extra functionality will be graded in your final code review appointment during finals week. See the <a href="project-4a.html">web crawler</a> and <a href="project-4b.html">search engine</a> writeups for more functionality details.
 
-The command-line flag/value pairs may be provided in any order, and the order provided is not the same as the order you should perform the operations (i.e. always build the index before performing search, even if the flags are provided in the other order).
-
-Your code should support all of the command-line arguments from the [previous project](project-4a.html) as well.
-
-## Output
-
-The majority of the output for this project will be in the form of HTTP responses to a browser. Only output the inverted index or search results to a file if the necessary flags are provided.
-
-## Testing
-
-No tests will be provided for this project. Instead, you will demonstrate your search engine functionality to the instructor during your final code review appointment during finals week.
+<article class="message is-warning">
+  <div class="message-body"><i class="far fa-exclamation-triangle"></i>&nbsp;Regardless of what you implemented, you will NOT earn points for the search engine core functionality if you are not passing all of the web crawler tests, and will NOT earn points for extra functionality if you have not fully implemented the core functionality!</div>
+</article>
 
 {% endcomment %}

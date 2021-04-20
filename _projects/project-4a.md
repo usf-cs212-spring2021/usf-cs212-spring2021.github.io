@@ -5,8 +5,8 @@ layout: guides
 key: 2.5
 
 tags:
-  - text: 'Pending'
-    type: 'is-light'
+  - text: 'New'
+    type: 'is-primary'
 
 assignments:
   - text: 'Project 4 Web Crawler'
@@ -14,11 +14,7 @@ assignments:
 
 ---
 
-Pending
-
-{% comment %}
-
-For this project, you will extend your [previous project](project-3.html) to create a multithreaded web crawler using a work queue that builds the inverted index from a seed URL.
+For this project, you will extend your [previous project](project-3.html) to create a multithreaded web crawler using a work queue that builds the inverted index from a seed URL. You fully must pass the functionality of [project 3](project-3.html) to be eligible to earn credit for this project.
 
 **This writeup is for the web crawler functionality only.** See the general [Project 4 Writeup](project-4.html) for more details.
 
@@ -32,9 +28,9 @@ The core functionality of your project must satisfy the following requirements:
 
   - Support the same output capability as before. See the [Output](#output) section for specifics.
 
-  - Add support to build the inverted index from a seed URL instead of a directory using a web crawler. The web crawler must be multithreaded using a work queue such that each URL that must be crawled is handled by a single worker thread.
+  - Add support to build the inverted index from a seed URL instead of a directory using a web crawler. The web crawler must be efficiently multithreaded using a work queue such that all of the work associated with crawling a single URL is handled by a single worker thread.
 
-  - To avoid a infinite crawl, the web crawler should parse up to a fixed limit of unique URLs as specified by a command-line argument. If the argument is missing, the crawler should parse only the provided link by default.
+  - To avoid a infinite crawl, the web crawler should parse up to a fixed limit of unique URLs (including the seed URL) as specified by a command-line argument. If the argument is missing, the crawler should parse only the provided link by default.
 
   - The web crawler must download webpages over HTTP or HTTPS when crawling as follows:
 
@@ -50,17 +46,19 @@ The core functionality of your project must satisfy the following requirements:
 
   - Convert all processed URLs to a consistent absolute form (remove fragments, convert relative URLs to absolute URLs, etc.) and do not process the same URL more than once. For example, if you already processed <https://www.cs.usfca.edu/~cs212/guten/1400-h/1400-h.htm> and encounter <https://www.cs.usfca.edu/~cs212/guten/1400-h/1400-h.htm#link2HCH0020>, you should not re-process this URL and it should not count towards the total.
 
-  - Use a breadth-first approach to crawling URLs. For example, suppose the seed URL has 49 or more URLs on the page. The first 49 URLs on the seed page (plus the seed URL itself) should be a part of the crawl. *If you use the work queue correctly, then crawling will automatically be breadth-first.*
+  - Use a breadth-first approach to crawling URLs. For example, suppose the maximum limit is 50 URLs and seed URL has 49 or more URLs on the page. The first 49 URLs on the seed page (plus the seed URL itself) should be a part of the crawl. *If you use the work queue correctly, then crawling will automatically be breadth-first.*
 
   - For each normalized unique URL that must be crawled (up until the limit):
 
-    - Each worker thread should be responsible for parsing a single link.
+    - Each task to be run by a worker thread should be responsible for parsing a single link.
 
-    - Remove any HTML block elements that should not be considered for parsing links, including the `head`, `style`, `script`, `noscript`, and `svg` elements.
+    - Remove any HTML comments and block elements that should not be considered for parsing links, including the `head`, `style`, `script`, `noscript`, and `svg` elements.
 
     - Parse all of the URLs remaining on the page and add to the queue of URLs to process as appropriate. (You must do this before you remove the other HTML tags.)
 
-    - Remove all of the remaining HTML tags and entities.
+    - Remove all of the remaining HTML tags.
+
+    - Convert any HTML 4 entities to their Unicode symbol and remove any other HTML entities found that could not be converted.
 
     - Clean, parse, and stem the resulting text to populate the inverted index in the same way plain text files were handled in previous projects.
 
@@ -72,9 +70,9 @@ The functionality of your project will be evaluated with various JUnit tests. Pl
 
 Your main method must be placed in a class named `Driver`. The `Driver` class should accept the following **additional** command-line arguments:
 
-  - `-url seed` where `-url` indicates the next argument `seed` is the seed URL your web crawler should initially crawl to build the inverted index.
+  - `-html seed` where `-html` indicates the next argument `seed` is the seed URL your web crawler should initially crawl to build the inverted index.
 
-      If the `-url` flag is provided, your code should **enable multithreading** with the default number of worker threads even if the `-threads` flag is not provided.
+      If the `-html` flag is provided, your code should **enable multithreading** with the default number of worker threads even if the `-threads` flag is not provided.
 
   - `-max total` where `-max` is an *optional* flag that indicates the next argument `total` is the total number of URLs to crawl (including the seed URL) when building the index. Use `1` as the default limit if this flag is not provided or is not provided with a valid value.
 
@@ -102,10 +100,16 @@ It is important to develop the project iteratively. One possible breakdown of ta
 
   - Get `log4j2` working and start adding debug messages in your code. Once you are certain a class is working, disable debug messages for that class in your `log4j2.xml` file.
 
-  - Several homework assignments are directly useful for this project, but you will need to make them work together. Specifically, use your [`HtmlFetcher`](https://github.com/usf-cs212-fall2020/homework-HtmlFetcher-template) to download HTML, parts of your [`HtmlCleaner`](https://github.com/usf-cs212-fall2020/homework-HtmlCleaner-template) to remove block elements from that HTML, your [`LinkParser`](https://github.com/usf-cs212-fall2020/homework-LinkParser-template) to parse out all of the remaining links, and finally the [`HtmlCleaner`](https://github.com/usf-cs212-fall2020/homework-HtmlCleaner-template) again to strip out the remaining HTML. From there, your [`TextFileStemmer`](https://github.com/usf-cs212-fall2020/homework-TextFileStemmer-template) homework might have method you could use for stemming the remaining text into words and adding to your inverted index.
+  - You must have an efficient approach to multithreading to pass all of the tests. You should wait until you have at least one project 3 code review and are able to pass those runtime tests before starting this project.
+
+  - Several homework assignments are directly useful for this project, but you will need to make them work together. Specifically:
+
+      - Use your [`HtmlFetcher`](https://github.com/usf-cs212-spring2021/homework-HtmlFetcher-template) to follow redirects and download HTML over a socket.
+
+      - Use your [`HtmlCleaner`](https://github.com/usf-cs212-spring2021/homework-HtmlCleaner-template) to process the HTML. You need to be careful about how much HTML content is removed before links are parsed.
+
+      - Use your [`LinkParser`](https://github.com/usf-cs212-spring2021/homework-LinkParser-template) to parse out the links from the HTML.
 
   - Outside of the relevant homework and lecture classes, there is likely only one new class (a web crawler class) required for this project. However, you must be careful to properly multithread and synchronize in this class!
 
 The important part will be to test your code as you go. The JUnit tests provided only test the entire project as a whole, not the individual parts. You are responsible for testing the individual parts themselves.
-
-{% endcomment %}
