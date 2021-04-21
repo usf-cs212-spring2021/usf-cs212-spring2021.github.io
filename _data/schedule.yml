@@ -1513,7 +1513,8 @@ weeks:
                 link: '/guides/projects/final-review.html'
 
               - text: 'Sessions'
-                type: *pending
+                icon: 'code'
+                link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/Sessions'
 
           # - <<: *assignments
           #   items:
