@@ -1570,13 +1570,49 @@ weeks:
         sections:
           - label: 'Content (Async)'
             items:
-              - text: 'SQL Basics'
-                type: *pending
+              - text: 'Relational Databases'
+                icon: 'video'
+                more: '(<a href="https://drive.google.com/open?id=0BxYofk0iB_upQkdxdlZCOUZSYm8">Slides</a>)'
 
-          # - <<: *assignments
-          #   items:
-          #     - text: 'Pending'
-          #       type: *pending
+              - text: 'Structured Query Language'
+                icon: 'video'
+                more: '(<a href="https://drive.google.com/open?id=0BxYofk0iB_upblRyQ09qU1ExQkE">Slides</a>)'
+
+              - text: 'SQL Introduction'
+                icon: 'video'
+                type: 'bump'
+
+              - text: '– Getting Started'
+                icon: 'nothing'
+                more: '(<a href="/guides/sql/sql-intro-started.html">Guide</a>)'
+
+              - text: '– Joining Data'
+                icon: 'nothing'
+                more: '(<a href="/guides/sql/sql-intro-joining.html">Guide</a>)'
+
+              - text: '– Enforcing Relationships'
+                icon: 'nothing'
+                more: '(<a href="/guides/sql/sql-intro-enforcing.html">Guide</a>)'
+
+              - text: 'Database Accounts'
+                icon: 'website'
+                link: 'https://usfca.instructure.com/courses/1597848/pages/database-accounts'
+                type: 'bump'
+
+              - text: 'Using CS Lab Computers'
+                icon: 'website'
+                link: '/guides/general/using-cs-lab-computers.html'
+
+          - <<: *assignments
+            items:
+              - file: 'quizzes'
+                name: 'joins'
+
+              - file: 'quizzes'
+                name: 'groups'
+
+              - file: 'participation'
+                name: 'sql_discussion'
 
           # - <<: *deadlines
           #   items:
@@ -1589,8 +1625,16 @@ weeks:
 
           - label: 'Lecture (Sync)'
             items:
-              - text: 'SQL Demos'
-                type: *pending
+              - text: 'Database Accounts'
+                icon: 'website'
+                link: 'https://usfca.instructure.com/courses/1597848/pages/database-accounts'
+
+              - text: 'SQL Faculty Demo'
+                icon: 'website'
+                link: '/guides/sql/sql-demo-intro.html'
+
+              - text: Exam 2 Review
+                type: ['bump', *pending]
 
           # - <<: *assignments
           #   items:
@@ -1614,9 +1658,9 @@ weeks:
               - text: 'Project Help'
                 icon: 'project'
 
-              - text: 'Exam Review'
-                icon: 'pending'
-                type: ['bump', *pending]
+              # - text: 'Exam Review'
+              #   icon: 'pending'
+              #   type: ['bump', *pending]
 
           - <<: *assignments
             items:
@@ -1634,6 +1678,16 @@ weeks:
               - file: 'homework'
                 name: 'htmlfetcher'
 
+              - file: 'quizzes'
+                name: 'joins'
+                type: 'bump'
+
+              - file: 'quizzes'
+                name: 'groups'
+
+              - file: 'participation'
+                name: 'sql_discussion'
+                
   - week: 15
     days:
       - date: 2021-05-04

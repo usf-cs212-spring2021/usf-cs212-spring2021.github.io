@@ -63,4 +63,9 @@ message_server:
   text: 'MessageServer Demo'
   link: 'https://usfca.instructure.com/courses/1597848/discussion_topics/7990327'
   date: 2021-04-23
-  
+
+sql_discussion:
+  <<: *default
+  text: 'SQL Discussion'
+  link: 'https://usfca.instructure.com/courses/1597848/discussion_topics/7991385'
+  date: 2021-04-30

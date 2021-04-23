@@ -153,3 +153,15 @@ contexts:
   text: 'Servlet Contexts'
   link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375245'
   date: 2021-04-23
+
+joins:
+  <<: *default
+  text: 'SQL Joins'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375268'
+  date: 2021-04-30
+
+groups:
+  <<: *default
+  text: 'SQL Groups'
+  link: 'https://usfca.instructure.com/courses/1597848/quizzes/2375242'
+  date: 2021-04-30
