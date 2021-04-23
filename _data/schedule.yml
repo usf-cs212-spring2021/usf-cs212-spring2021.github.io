@@ -1634,7 +1634,9 @@ weeks:
                 link: '/guides/sql/sql-demo-intro.html'
 
               - text: Exam 2 Review
-                type: ['bump', *pending]
+                icon: 'website'
+                type: 'bump'
+                link: '/guides/exam-2.html'
 
           # - <<: *assignments
           #   items:
@@ -1687,7 +1689,7 @@ weeks:
 
               - file: 'participation'
                 name: 'sql_discussion'
-                
+
   - week: 15
     days:
       - date: 2021-05-04
