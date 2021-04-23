@@ -7,163 +7,148 @@ resources:
   code:
     - text: 'Regular Expressions'
       slug: 'regex'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/RegularExpressions'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/RegularExpressions'
 
-    - text: 'Debugging'
-      slug: 'debug'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/Debugging'
+    - text: 'Software Testing'
+      slug: 'testing'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/UnitTesting'
 
     - text: 'Multithreading Basics'
       slug: 'threads'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/MultithreadingBasics'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/MultithreadingBasics'
 
     - text: 'Synchronization'
       slug: 'locks'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/MultithreadingSynchronization'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/MultithreadingSynchronization'
 
     - text: 'Work Queues'
       slug: 'queues'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/MultithreadingWorkQueues'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/MultithreadingWorkQueues'
 
     - text: 'HTTP, Sockets'
       slug: 'sockets'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/Sockets'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/Sockets'
 
     - text: 'Servlet Basics'
       slug: 'servlets'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/ServletBasics'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/ServletBasics'
 
     - text: 'Servlet Data'
       slug: 'data'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/ServletData'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/ServletData'
 
     - text: 'Sessions'
       slug: 'sessions'
-      link: 'https://github.com/usf-cs212-fall2020/lectures/tree/main/Sessions'
+      link: 'https://github.com/usf-cs212-spring2021/lectures/tree/main/Sessions'
 
     - text: 'SQL'
       slug: 'sql'
-      link: 'https://usf-cs212-fall2020.github.io/guides/sql/'
+      link: 'https://usf-cs212-spring2021.github.io/guides/sql/'
 
   # link practice quizzes here!
   quizzes:
     - text: 'Regex Basics'
       slug: 'regex'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368987'
 
-    - text: 'Assert Statements'
-      slug: 'debug'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368980'
-
-    - text: 'Logging'
-      slug: 'debug'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368982'
+    - text: 'Unit Testing'
+      slug: 'testing'
 
     - text: 'Thread Basics'
       slug: 'threads'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368984'
 
     - text: 'Synchronization'
       slug: 'locks'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368978'
 
     - text: 'Work Queues'
       slug: 'queues'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368989'
 
     - text: 'Web Basics'
       slug: 'sockets'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368986'
 
     - text: 'HTTP Basics'
       slug: 'sockets'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368985'
 
     - text: 'Dynamic Pages'
       slug: 'servlets'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368979'
 
     - text: 'Servlet Context'
       slug: 'data'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368981'
 
     - text: 'SQL Joins'
       slug: 'sql'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368983'
 
     - text: 'SQL Grouping'
       slug: 'sql'
-      link: 'https://usfca.instructure.com/courses/1594619/quizzes/2368988'
 
   homework:
-    - text: 'LoggingSetup'
-      slug: 'debug'
-      link: 'https://github.com/usf-cs212-fall2020/homework-LoggingSetup-template'
+    - text: 'LinkParser'
+      link: 'https://github.com/usf-cs212-spring2021/homework-LinkParser-template'
+      slug: 'regex'
+
+    - text: 'LinkParser'
+      link: 'https://github.com/usf-cs212-spring2021/homework-LinkParser-template'
+      slug: 'sockets'
 
     - text: 'ReadWriteLock'
       slug: 'locks'
-      link: 'https://github.com/usf-cs212-fall2020/homework-ReadWriteLock-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-ReadWriteLock-template'
 
     - text: 'PrimeFinder'
       slug: 'queues'
-      link: 'https://github.com/usf-cs212-fall2020/homework-PrimeFinder-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-PrimeFinder-template'
 
-    - text: 'LinkParser'
-      link: 'https://github.com/usf-cs212-fall2020/homework-LinkParser-template'
+    - text: 'HtmlCleaner'
       slug: 'regex'
+      link: 'https://github.com/usf-cs212-spring2021/homework-HtmlCleaner-template'
 
-    - text: 'LinkParser'
-      link: 'https://github.com/usf-cs212-fall2020/homework-LinkParser-template'
+    - text: 'HtmlCleaner'
       slug: 'sockets'
+      link: 'https://github.com/usf-cs212-spring2021/homework-HtmlCleaner-template'
 
     - text: 'HtmlFetcher'
-      link: 'https://github.com/usf-cs212-fall2020/homework-HtmlFetcher-template'
+      link: 'https://github.com/usf-cs212-spring2021/homework-HtmlFetcher-template'
       slug: 'sockets'
-
-    - text: 'HtmlCleaner'
-      slug: 'regex'
-      link: 'https://github.com/usf-cs212-fall2020/homework-HtmlCleaner-template'
-
-    - text: 'HtmlCleaner'
-      slug: 'sockets'
-      link: 'https://github.com/usf-cs212-fall2020/homework-HtmlCleaner-template'
 
   slides:
-    - text: 'Assertions'
-      slug: 'debug'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQLZuIGjcv7uS70ksf_1mgvrQleLkcNcmlyd5uDU5OOWbzKb4VAbMJwPpNR6RLvMeN3tbKyUh6vifBC/pub?start=false&loop=false&delayms=3000'
+    - text: 'Testing Motivation'
+      slug: 'testing'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQAJY-5gfBjG9UDKp5OimRyUkBJUDGPrh8Yv0irOAjkziuEd2GAGd-LZMe-b10Ea2ZTDkODP2wRvH86/pub?start=false&loop=false&delayms=3000'
 
-    - text: 'Logging'
-      slug: 'debug'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRILLDXMyJUyh2Ismcj_vFxn5Niz6l2aWrczI4hoZS9N-mW8VnY1bXS22A9PEjQ92HGhsczUr3eZMUE/pub?start=false&loop=false&delayms=3000'
+    - text: 'Software Testing'
+      slug: 'testing'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vSEWbAT6OdoZqRKGWNRAp-3gc9tobdkDL6BgGdVHFZ-QZrgA9M1pIr6lRqFPXM-0yGX6_rjpTMsD4hO/pub?start=false&loop=false&delayms=3000'
+
+    - text: 'Unit Testing'
+      slug: 'testing'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRQXsc0bxAfHAHGJlNrooOOoo5o8LaDVXcS7GR1lPNbOC5Vo7ULn0MFg-wP10RkY6O9Dc5I1Zek6W8O/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Multithreading Basics'
       slug: 'threads'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vS8ND2vrfpyQRmHkPTbaD1J0FJmcuTJ9Fz2hRMXXthKZCQG-TFiSDL_BzKZP_triwmlyHnbPuOvQreR/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRrRkRVuDVZaGydjXy6XTmTjzMTyVk8jja4PflamxOGsExzDDUCcW6t0nZPLGRVRKGUTVBXw7qzJjcU/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Thread Lifecycle'
       slug: 'threads'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ4htqxS-iKhPZIf_Z9oak0MiEYiZm3rRczVdMpLaFDi0Pf4FWCgdmCKCTFEAfZs6mg2nWOZ9-NWGyE/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ5DJPlVAbo6e_iTb4JLX4lRpAfniR3H4eH7Jw_jEB4KjoyJV8P8r0CA_qiC7K2z0PIjATQQvpFYqVa/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Liveness'
       slug: 'threads'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vT8s8_xfa2GXOUKbQ0BgiMcu4kv53oUKqDI2oPoqVEmc-ei3doKVZbd3mGfFWZxwpCWGz_2UrOxWVkb/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQ4w24Xsq1CYnqfIca57e5OeFYoDXBSmhxe7zkkGwwweg2lyzNdUE-bsj7KBFOecGss83y5PpUkJiX6/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Synchronization'
       slug: 'locks'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vSmLbpqA5l9aUbVmzca1YzKCV7TqKKbxN0DxSOEG1ynRFxkJLxhUoLexExYxC9hcEL-IShXZaGEEW85/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQGJzZJ503qi2UeNjc0Q9EfGvs2zQu21v7XBxkQw7qz-dT7uLuLM9AlC7LACwXWXDRZEUG0Q4ITBCRz/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Custom Locks'
       slug: 'locks'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQoYj1qXLVA-T_ialT92k57JjdZco9lxpos2iBLZ0XqaaVcqCXDyMueiE4aCJ1N_yilZvlangOlANYE/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQwvO5g8udwm1r59se8aby8hdv_auhzny98h0dsJB1TmN7sbeGk5EfMd3kx4w9qSz-mOCpvk1cMFVSu/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Volatile Keyword'
       slug: 'queues'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vT_oaCxYE96J-6QVRIzouWGEA5POWE1z2ONTRfvk7HoZocjTle4_U9Kj9A2P3bUKnzPt_ZLfqmB6-SE/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vRJkU2kBezfFIDyu6qVNR1r_rHvMjpHFM35ZK82RC5iZYjLuVWHu8bzgLgH7svgm6m2GoDjm03APVUr/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Thread Pools and Work Queues'
       slug: 'queues'
-      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQFW-o5-YNRauzCiaEtqsKQzBS22MvvQNBKEFU7b8IGPtyj5g4bCYQTu9lvVgF29wKMlwyVQjF9WV3o/pub?start=false&loop=false&delayms=3000'
+      link: 'https://docs.google.com/presentation/d/e/2PACX-1vQkpNDvL5f36Vy7YnvnLzHZp4D6xGd9mLUyMedNsixGd2YvzalYdeczlpC_ccsx4nINAkO-AfwFuJbO/pub?start=false&loop=false&delayms=3000'
 
     - text: 'Web Basics'
       slug: 'sockets'
@@ -199,7 +184,7 @@ resources:
 
 ---
 
-This guide will discuss the logistics and possible topics for exam 1. See the [Syllabus](../syllabus.html) for details on the exam pass requirement.
+This guide will discuss the logistics and possible topics for exam 2. See the [Syllabus](../syllabus.html) for details on the exam pass requirement.
 
 ## Exam Logistics
 {: .page-header}
@@ -213,9 +198,9 @@ The exam will be split into two components: (1) the primary exam conducted withi
 | Resource | Login Account | Details |
 |:-----------------|:--------------|:--------|
 | [Canvas](https://usfca.instructure.com/courses/1594619) | Login using your USF account. | Used to conduct the exam. Will include the necessary Github Classroom link for the coding section. |
-| [Github](https://github.com/usf-cs212-fall2020) | Login using your Github account linked to this class. | Used for the coding section. A Github Classroom link will be provided in Canvas that will setup the necessary Github repository. Only code committed and pushed to this repository before the deadline will be used. |
+| [Github](https://github.com/usf-cs212-spring2021) | Login using your Github account linked to this class. | Used for the coding section. A Github Classroom link will be provided in Canvas that will setup the necessary Github repository. Only code committed and pushed to this repository before the deadline will be used. |
 | Eclipse | N/A | Used to import, run, commit, and push code for the coding section. Other IDEs may be used at the students' risk. Students should verify all of the relevant lecture code is runnable from within their IDE! |
-| Terminal | Login to CS lab network using USF CS account and the SQL database using the assigned [database account](https://usfca.instructure.com/courses/1594619/pages/database-accounts). | Helpful to answer SQL questions for the exam on Canvas. The exam will include copy/paste snippets to setup the relevant tables, but these will ONLY work on the CS lab network. |
+| Terminal | Login to CS lab network using USF CS account and the SQL database using the assigned [database account](https://usfca.instructure.com/courses/1597848/pages/database-accounts). | Helpful to answer SQL questions for the exam on Canvas. The exam will include copy/paste snippets to setup the relevant tables, but these will ONLY work on the CS lab network. |
 
 You will *not* see your answers after completing the exam until the retake begins. You will, however, be able to see your estimated score on both Canvas and Github.
 
@@ -229,16 +214,16 @@ The exam is open book. You must answer each question from your understanding of 
 
 I recommend preparing to access to the following official Java documentation during the exam:
 
-  - [Java 14 API](https://docs.oracle.com/en/java/javase/14/docs/api/index.html)
-  - [Java SE 14 Language Specification](https://docs.oracle.com/javase/specs/jls/se14/html/index.html)
-  - [Java SE 14 Documentation Center](https://docs.oracle.com/en/java/javase/14/)
-  - [Java Tutorials](https://docs.oracle.com/javase/tutorial/)
+  - [Java 15 API](https://docs.oracle.com/en/java/javase/15/docs/api/index.html)
+  - [Java SE 15 Language Specification](https://docs.oracle.com/javase/specs/jls/se15/html/index.html)
+  - [Java SE 15 Documentation Center](https://docs.oracle.com/en/java/javase/15/)
+  - [Java Tutorials](https://docs.oracle.com/javase/tutorial/) (including the [Regex](https://docs.oracle.com/javase/tutorial/essential/regex/) tutorial)
   - [Java Glossary](https://docs.oracle.com/javase/tutorial/information/glossary.html)
 
 I also recommend the following official documentation from the third-party libraries we use in class:
 
-  - [Apache Log4j2](https://logging.apache.org/log4j/2.x/)
-  - [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)
+  - [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) and [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) MDN Web Docs
+  - [JUnit](https://junit.org/junit5/)
   - [Apache Commons Text](https://commons.apache.org/proper/commons-text/)
   - [Jetty](https://www.eclipse.org/jetty/)
   - [MariaDB](https://mariadb.com/docs/reference/cs10.3/) or [MySQL](https://dev.mysql.com/doc/refman/5.7/en/)
@@ -284,12 +269,12 @@ I will seek the maximum penalty (an F letter grade for the entire course, not ju
 
 Students may receive [exam accommodations](https://myusf.usfca.edu/sds/exam-accommodations), such as additional testing time, through [Student Disability Services](https://myusf.usfca.edu/sds/exam-accommodations). I must receive a notification for accommodation from [SDS](https://myusf.usfca.edu/sds) approximately <strong>one week</strong> before the exam itself.
 
-Contact me on Piazza to schedule a specific time to take the exam and retake. In most cases, you will start the exam with your section and have additional time past the end of lecture time. I will try my best to actively monitor Piazza for any exam questions after lecture time ends, but will not be available to answer questions live on Zoom.
+Contact me on CampusWire to schedule a specific time to take the exam and retake. In most cases, you will start the exam with your section and have additional time past the end of lecture time. I will try my best to actively monitor CampusWire for any exam questions after lecture time ends, but will not be available to answer questions live on Zoom.
 
 ## Exam Retake
 {: .page-header }
 
-You will have an opportunity to retake the entire exam during the next class period. The final exam score will be the *average* of the original and retake scores. **It is impossible to earn a lower score due to the retake process.** If your retake score is lower than your original score, your original score will be used instead of an average.
+You will have an opportunity to retake the entire exam during the next class period. The final exam score will be the *average* of the original and retake scores. If your synchronous retake score is lower than your original score, it will be not be included in the average calculation.
 
 The retake is conducted exactly the same as the original exam with a couple of exceptions:
 
@@ -298,6 +283,8 @@ The retake is conducted exactly the same as the original exam with a couple of e
   2. The instructor will provide hints in the Zoom livestream on the hardest questions. You must be on the livestream to receive these hints.
 
 The exam retake is optional. If you are happy with your current exam score and received a C or above letter grade, you can skip the retake process. Your original exam score will be used instead.
+
+There will also be an asynchronous retake opportunity with infinite retakes that will be available for at least a week after the synchronous retake.
 
 ## Exam Topics
 {: .page-header }
@@ -373,9 +360,7 @@ The following are some example topics that you may want to make sure you underst
 
   - You should understand the different ways to use the **`?` character** in a regular expression. For example: `(?i)` to turn on the `i` flag, `(?:i)` to create a non-capturing group that matches the `i` character, `[?!]` to create a character class that matches the `?` and `!` characters, `i?` to match the `i` character 0 or 1 times (greedy), and `i+?` to match the `i` character 1 or more times (reluctant).
 
-  - You should understand how to use **assertions** in Java using the `assert` keyword, and where it is (or is not) appropriate to use.
-
-  - You should understand how to **configure and use Log4j2** for logging and debugging. If given a configuration file, you should be able to determine where log messages will go (file or console), which level log messages will be output (all, info, debug, etc.), and in what format.
+  - You should understand how to interpret JUnit test classes, and create your own basic JUnit tests. This includes understanding the `@Test`, `@Nested`, `@BeforeEach`, `@AfterEach`, and `@ParameterizedTest` annotations and the methods in the `org.junit.jupiter.api.Assertions` package.
 
   - You should understand the **pros and cons to multithreading**, and when to use multithreading.
 
