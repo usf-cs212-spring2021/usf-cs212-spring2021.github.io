@@ -49,36 +49,47 @@ resources:
   quizzes:
     - text: 'Regex Basics'
       slug: 'regex'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380727'
 
     - text: 'Unit Testing'
       slug: 'testing'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380734'
 
     - text: 'Thread Basics'
       slug: 'threads'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380735'
 
     - text: 'Synchronization'
       slug: 'locks'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380726'
 
     - text: 'Work Queues'
       slug: 'queues'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380733'
 
     - text: 'Web Basics'
       slug: 'sockets'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380731'
 
     - text: 'HTTP Basics'
       slug: 'sockets'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380730'
 
     - text: 'Dynamic Pages'
       slug: 'servlets'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380732'
 
     - text: 'Servlet Context'
       slug: 'data'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380728'
 
     - text: 'SQL Joins'
       slug: 'sql'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380725'
 
     - text: 'SQL Grouping'
       slug: 'sql'
+      link: 'https://usfca.instructure.com/courses/1597848/quizzes/2380729'
 
   homework:
     - text: 'LinkParser'
