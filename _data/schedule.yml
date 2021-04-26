@@ -1573,10 +1573,12 @@ weeks:
               - text: 'Relational Databases'
                 icon: 'video'
                 more: '(<a href="https://drive.google.com/open?id=0BxYofk0iB_upQkdxdlZCOUZSYm8">Slides</a>)'
+                link: 'https://usfca.zoom.us/rec/share/93_AT1kHFBjt3-JXbl0iPTJVAMqCcWbprdp58s43F8XGJtmrQ2la6VKngGjdVN8T.iIKlUc2hY9Au_qxd?startTime=1619455891000'
 
               - text: 'Structured Query Language'
                 icon: 'video'
                 more: '(<a href="https://drive.google.com/open?id=0BxYofk0iB_upblRyQ09qU1ExQkE">Slides</a>)'
+                link: 'https://usfca.zoom.us/rec/share/22PPhMnMfEHUlTBoKxYn680DuPXSgT5oMtNkGDSuCuQKy2HhLB0h98ge_oI0B-jy.YXcVYTQDWis80l2g?startTime=1619458948000'
 
               - text: 'SQL Introduction'
                 icon: 'video'
@@ -1585,14 +1587,17 @@ weeks:
               - text: '– Getting Started'
                 icon: 'nothing'
                 more: '(<a href="/guides/sql/sql-intro-started.html">Guide</a>)'
+                link: 'https://usfca.zoom.us/rec/share/ag8ehi7GnC4znQ0o-Esrt-B42NLg29ZdHHQS0JirzmEhpNRpPajOF1CsPZHxUFAZ.gk7ww4JXR9Cp92j1?startTime=1619460254000'
 
               - text: '– Joining Data'
                 icon: 'nothing'
                 more: '(<a href="/guides/sql/sql-intro-joining.html">Guide</a>)'
+                link: 'https://usfca.zoom.us/rec/share/8Kb2HMaIZJwxktSX-UO9ztq6as6acDjrzQQ92ghFVJgNZZQM8iZzMGQmzR7bGFQ7.y4--FMJ9mA9NINO5?startTime=1619461846000'
 
               - text: '– Enforcing Relationships'
                 icon: 'nothing'
                 more: '(<a href="/guides/sql/sql-intro-enforcing.html">Guide</a>)'
+                link: 'https://usfca.zoom.us/rec/share/X0nEoga88IRwBAd2D2SFYhX9I8joBwfAys-p2e9UfmYMenljV0MbJ7lrR6zquBoK.wAB4n81d4ArJSQWP?startTime=1619463416000'
 
               - text: 'Database Accounts'
                 icon: 'website'
