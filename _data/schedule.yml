@@ -1776,7 +1776,7 @@ weeks:
               - text: '– Part 4: Faculty Servlet'
                 icon: 'nothing'
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/JDBC/src/main/java/FacultyServlet.java">Code</a>)'
-                link: ''
+                link: 'https://usfca.zoom.us/rec/share/dfWB31TNul9eeLkNgKPFImc5FfgbrgRWBoLCYrz0yshHYUCpkh0ebinMlsii4t9L.r1DwZqmGvKjulCL_?startTime=1620669064000'
 
           - <<: *deadlines
             items:
