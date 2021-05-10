@@ -1778,6 +1778,11 @@ weeks:
                 more: '(<a href="https://github.com/usf-cs212-spring2021/lectures/blob/main/JDBC/src/main/java/FacultyServlet.java">Code</a>)'
                 link: 'https://usfca.zoom.us/rec/share/dfWB31TNul9eeLkNgKPFImc5FfgbrgRWBoLCYrz0yshHYUCpkh0ebinMlsii4t9L.r1DwZqmGvKjulCL_?startTime=1620669064000'
 
+          - <<: *assignments
+            items:
+              - file: 'participation'
+                name: 'course_evaluation'
+
           - <<: *deadlines
             items:
               - file: 'projects'
@@ -1834,23 +1839,23 @@ weeks:
                 show: true
                 link: '/guides/projects/final-review.html'
 
+          - label: 'End of Semester Deadlines'
+            items:
               - text: 'Exam 2 Asynchronous Retake'
                 icon: exam
                 date: 2020-05-16
-                type: 'bump'
                 show: true
                 link: 'https://usfca.instructure.com/courses/1597848/assignments/7077401'
 
-          - label: 'End of Semester Deadlines'
-            items:
-              - text: 'End of Semester Survey'
-                type: *pending
-
               - file: 'participation'
                 name: 'forum_post'
+                type: 'bump'
 
               - file: 'participation'
                 name: 'forum_response'
+
+              - file: 'participation'
+                name: 'course_evaluation'
 
   - text: 'Finals'
     days:

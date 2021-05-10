@@ -31,12 +31,14 @@ project_setup:
 forum_post:
   <<: *default
   text: 'Forum Post'
+  show: true
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7040991'
   date: 2021-05-14
 
 forum_response:
   <<: *default
   text: 'Forum Response'
+  show: true
   link: 'https://usfca.instructure.com/courses/1597848/assignments/7040992'
   date: 2021-05-14
 
@@ -69,3 +71,10 @@ sql_discussion:
   text: 'SQL Discussion'
   link: 'https://usfca.instructure.com/courses/1597848/discussion_topics/7991385'
   date: 2021-04-30
+
+course_evaluation:
+  <<: *default
+  text: 'Course Evaluation'
+  show: true
+  link: 'https://usfca.instructure.com/courses/1597848/assignments/7079043'
+  date: 2021-05-19
