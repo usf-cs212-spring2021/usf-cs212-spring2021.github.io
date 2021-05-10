@@ -4,10 +4,6 @@ navbar: Guides
 layout: guides
 key: 2.5
 
-tags:
-  - text: 'New'
-    type: 'is-primary'
-
 assignments:
   - text: 'Project 4 Web Crawler'
     link: 'https://usfca.instructure.com/courses/1597848/assignments/7043815'

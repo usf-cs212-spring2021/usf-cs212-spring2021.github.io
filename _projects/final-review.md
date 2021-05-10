@@ -6,8 +6,8 @@ key: 3.0
 bump: true
 
 tags:
-  - text: 'New'
-    type: 'is-primary'
+  - text: 'Important'
+    type: 'is-danger'
 
 ---
 

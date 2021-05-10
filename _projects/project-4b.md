@@ -5,8 +5,8 @@ layout: guides
 key: 2.6
 
 tags:
-  - text: 'Pending'
-    type: 'is-light'
+  - text: 'Updated'
+    type: 'is-primary'
 
 assignments:
   - text: 'Project 4 Search Engine'
