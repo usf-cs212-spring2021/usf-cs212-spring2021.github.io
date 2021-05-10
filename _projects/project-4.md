@@ -5,9 +5,9 @@ layout: guides
 key: 2.4
 bump: true
 
-tags:
-  - text: 'Updated'
-    type: 'is-primary'
+#tags:
+#  - text: 'Updated'
+#    type: 'is-primary'
 
 assignments:
   - text: 'Project 4 Web Crawler'
