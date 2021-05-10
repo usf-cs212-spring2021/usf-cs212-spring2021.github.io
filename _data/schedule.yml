@@ -1749,7 +1749,33 @@ weeks:
           - label: 'Content (Async)'
             items:
               - text: 'Java Database Connectivity'
-                type: *pending
+                icon: 'video'
+                more: '(<a href="">Slides</a>)'
+                link: 'https://usfca.zoom.us/rec/share/qcMsU58jJtrayK2cWtCS26qbLxzOlsxh_ep1fby7VaqpF_py8i1CsMhivTpvySbi.oSzwGWnKyzHMWAtO?startTime=1619649771000'
+
+              - text: 'Faculty Contact Server'
+                icon: 'video'
+                type: 'bump'
+
+              - text: '– Part 1: SQL and HTML'
+                icon: 'nothing'
+                more: '(<a href="">Code</a>)'
+                link: 'https://usfca.zoom.us/rec/share/KFninz978zMvC5dF2pYgMxpBf8KL6M6h7wvcmnpUVIJZNvY6xnD2U0tpr3bIr-vA.C8vw_jPJbzqM3xBh?startTime=1620420180000'
+
+              - text: '– Part 2: Database Connector'
+                icon: 'nothing'
+                more: '(<a href="">Code</a>)'
+                link: 'https://usfca.zoom.us/rec/share/TBBew6LzCyhx7GnqaLKlvb_M97GwIR1JgrZz1LmW8Q0jpX811m3Lu0XTgbYB-k4V.kZc-PZkROZZ4mTIz?startTime=1620428568000'
+
+              - text: '– Part 3: Faculty Server'
+                icon: 'nothing'
+                more: '(<a href="">Code</a>)'
+                link: 'https://usfca.zoom.us/rec/share/21uWbPU4DBy7gkkpL0x2L40FrzrGOquSCa_h2qMIoBfFbiSOmliCDSWfBWR4-76Q.jS5SHoabbbVWMvF8?startTime=1620429714000'
+
+              - text: '– Part 4: Faculty Servlet'
+                icon: 'nothing'
+                more: '(<a href="">Code</a>)'
+                link: ''
 
           - <<: *deadlines
             items:
