@@ -1531,8 +1531,6 @@ weeks:
 
       - date: 2021-04-23
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
@@ -1663,8 +1661,6 @@ weeks:
 
       - date: 2021-04-30
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
@@ -1727,8 +1723,6 @@ weeks:
 
       - date: 2021-05-07
         sections:
-          - <<: *labs
-
           - label: 'Lab (Sync)'
             items:
               - text: 'Homework Help'
