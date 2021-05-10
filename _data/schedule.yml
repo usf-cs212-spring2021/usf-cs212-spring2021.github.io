@@ -1807,6 +1807,13 @@ weeks:
                 show: true
                 link: '/guides/projects/final-review.html'
 
+              - text: 'Exam 2 Asynchronous Retake'
+                icon: exam
+                date: 2020-05-16
+                type: 'bump'
+                show: true
+                link: 'https://usfca.instructure.com/courses/1597848/assignments/7077401'
+
           - label: 'End of Semester Deadlines'
             items:
               - text: 'End of Semester Survey'
