@@ -117,6 +117,7 @@ The following miscellaneous features may also be implemented:
 | **Partial/Exact Search Toggle:** Allow the user to toggle on/off partial versus exact search using a checkbox on the search form. | 5 |
 | **Web Framework:** Design a search engine using any popular CSS/style framework to create a consistent style for all the web pages. For example, consider using [Bulma](https://bulma.io/), [Bootstrap (Twitter)](https://getbootstrap.com/), [Pure.css](https://purecss.io/), [Material (Google)](https://material.io/develop/web/), [Semantic UI](https://semantic-ui.com/), and many more. | 5 |
 | **Search Brand:** Design a search engine with a distinct brand, logo, and tagline. This includes creating a logo and tagline, and including it on all of the web pages. **Do not use unlicensed unattributed media on your website.**{: .has-text-danger } | 5 |
+| **Light/Dark Mode Toggle:** Allow users to toggle between light mode (light colored background with dark text) and dark mode (dark colored background with light text) styles for your website. | 5 |
 {: .table .is-hoverable .features }
 
 ### Potential Deductions
