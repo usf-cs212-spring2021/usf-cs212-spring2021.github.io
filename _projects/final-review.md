@@ -121,7 +121,7 @@ The projects you will have graded during your final code review appointment depe
 
   - **11:59pm May 15 (Sat), Offline/Asynchronous Request**: This is the deadline to *correctly* create a pull request on Github requesting an offline or asynchronous code review and have the result of that offline asynchronous code review influence which projects you will have graded in your final code review appointment.
 
-  - **11:59pm May 16 (Sun), Project Functionality**: This is the deadline to *correctly* create a functionality issue on Github and have it influence which projects you will have graded in your final code review appointment.
+  - **11:59pm May 16 (Sun), Project Functionality or Design Issues**: This is the deadline to *correctly* create a  issue on Github for a project grade and have it influence which projects you will have graded in your final code review appointment.
 
 **THESE ARE HARD DEADLINES.** For example, if you submit a functionality issue at 12:03am after the deadline, it will NOT influence which projects you have graded in your final code review appointment. Similarly, if you incorrectly create a pull request (for example, never mark it as "Ready to Review") and do not have it corrected by the deadline, it will NOT influence which projects you have graded in your final code review appointment.
 
