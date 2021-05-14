@@ -1703,8 +1703,6 @@ weeks:
     days:
       - date: 2021-05-04
         sections:
-          - <<: *lectures
-
           - label: 'Lecture (Sync)'
             items:
               - text: 'Exam 2'
@@ -1713,8 +1711,6 @@ weeks:
 
       - date: 2021-05-06
         sections:
-          - <<: *lectures
-
           - label: 'Lecture (Sync)'
             items:
               - text: 'Exam 2 Retake'
@@ -1790,7 +1786,15 @@ weeks:
 
       - date: 2021-05-13
         sections:
-          - <<: *lectures
+          - <<: *recordings
+            items:
+              - text: 'CS 212-01 Recording'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/opk6VDE3-_n32NNFiKsCK7_B0phecoySX9u5pRz0d_mA1TWxPlep9NK3jcwFMyIA.hrS2UELMJ5_SzF22?startTime=1620933855000'
+
+              - text: 'CS 212-02 Recording'
+                icon: 'video'
+                link: 'https://usfca.zoom.us/rec/share/by4w7L1jwdvnPWvdH1t8SWaGKuBojbSQQEDIHuOwKnljX1QJ1nq1j-vUfUtqQrSc.D9Q2ohTjPGxDAl2B?startTime=1620947887000'
 
           - label: 'Lecture (Sync)'
             items:
@@ -1798,7 +1802,8 @@ weeks:
                 type: *pending
 
               - text: "What's Next"
-                type: *pending
+                icon: 'slides'
+                link: 'https://docs.google.com/presentation/d/e/2PACX-1vT1Dh_HlXAKJ7mFXJUrXFxRp5h94Sn1vgv8lZst8LsVUNSLZO9h6SFZtROySF29qD4CdBORjdndx_Jn/pub?start=false&loop=false&delayms=3000'
 
           - <<: *deadlines
             items:
